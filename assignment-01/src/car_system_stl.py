@@ -40,11 +40,11 @@ for filename in filenames:
 
     results = {
         "trace": filename,
-        "reaches_soon": reaches_soon(trace, time=0, quantitative=False, dt=1),
-        "settled_tight": settled_tight(trace, time=0, quantitative=False, dt=1),
-        "settled_loose": settled_loose(trace, time=0, quantitative=False, dt=1),
-        "keeps_distance": keeps_distance(trace, time=0, quantitative=False, dt=1),
-        "accel_bounded": accel_bounded(trace, time=0, quantitative=False, dt=1),
+        "reaches_soon": reaches_soon(trace, time=0, quantitative=False),
+        "settled_tight": settled_tight(trace, time=0, quantitative=False),
+        "settled_loose": settled_loose(trace, time=0, quantitative=False),
+        "keeps_distance": keeps_distance(trace, time=0, quantitative=False),
+        "accel_bounded": accel_bounded(trace, time=0, quantitative=False),
     }
 
     all_results.append(results)
@@ -52,10 +52,7 @@ for filename in filenames:
 output = pd.DataFrame(all_results)
 #print(output)
 
-for column in output.columns:
-    if column != "trace":
-        output[column] = output[column].map(
-            lambda value: str(value).lower()
-        )
+output = output.replace({True: "true", False: "false"})
+
 
 output.to_csv("results/car_system_stl.csv", index=False)

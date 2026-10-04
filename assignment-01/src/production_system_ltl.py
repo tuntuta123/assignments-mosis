@@ -105,11 +105,7 @@ for i in range(1, 11):
 output = pd.DataFrame(all_results)
 #print(output)
 
-for column in output.columns:
-    if column != "trace":
-        output[column] = output[column].map(
-            lambda value: str(value).lower()
-        )
+output = output.replace({True: "true", False: "false"})
 
 output.to_csv(
     "results/production_system_ltl.csv",
