@@ -1,0 +1,11 @@
+trace,reaches_soon,settled_tight,settled_loose,keeps_distance,accel_bounded
+car_system_kp100_ki1_kd100.csv,true,true,true,true,true
+car_system_kp210_ki1_kd1.csv,true,false,true,true,true
+car_system_kp250_ki5_kd5.csv,true,true,true,true,true
+car_system_kp280_ki10_kd10.csv,true,true,true,true,true
+car_system_kp300_ki1_kd20.csv,true,true,true,true,true
+car_system_kp300_ki20_kd1.csv,true,false,false,false,false
+car_system_kp320_ki15_kd5.csv,true,true,true,true,true
+car_system_kp350_ki20_kd10.csv,true,true,true,true,true
+car_system_kp370_ki10_kd15.csv,true,true,true,true,true
+car_system_kp390_ki5_kd20.csv,true,true,true,true,true
