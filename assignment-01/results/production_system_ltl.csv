@@ -1,0 +1,11 @@
+trace,m1_one_mode,m2_one_mode,max_one_part,not_both_in_repair,part_at_m1_mode,machines_not_both_holding,m1_before_m2,eventually_shipped,wait_may_continue
+production_system_1.csv,true,true,true,true,true,true,true,true,true
+production_system_2.csv,true,true,true,true,true,true,true,true,true
+production_system_3.csv,true,true,true,true,true,true,true,true,true
+production_system_4.csv,true,true,true,true,true,true,true,true,true
+production_system_5.csv,true,true,true,true,true,true,true,true,true
+production_system_6.csv,true,true,true,true,true,true,true,true,true
+production_system_7.csv,true,true,true,true,true,true,true,true,true
+production_system_8.csv,true,true,true,true,true,true,true,true,true
+production_system_9.csv,true,true,true,true,true,true,true,true,true
+production_system_10.csv,true,true,true,true,true,true,true,true,true
