@@ -17,9 +17,9 @@ for i in range(1, 11):
 
     one_lamp = mtl.parse(
         "G[0,201] ("
-        "((red & ~yellow) & ~green) |"
-        "((~red & yellow) & ~green) |"
-        "((~red & ~yellow) & green)"
+        "((red & ~yellow) & ~green)"
+        "| ((~red & yellow) & ~green)"
+        "| ((~red & ~yellow) & green)"
         ")"
     )
 
@@ -59,7 +59,6 @@ for i in range(1, 11):
         "G[0, 200] ((red & X yellow) -> X (yellow W green))"
     )
 
-
     results = {
         "trace": filename,
         "one_lamp": one_lamp(trace, time=0, quantitative=False, dt=1),
@@ -71,12 +70,11 @@ for i in range(1, 11):
         "no_green_to_red": no_green_to_red(trace, time=0, quantitative=False, dt=1),
         "yellow_opens_to_green": yellow_opens_to_green(trace, time=0, quantitative=False, dt=1),
         "yellow_returns_to_red": yellow_returns_to_red(trace, time=0, quantitative=False, dt=1),
-        "yellow_after_red_may_wait": yellow_after_red_may_wait(trace, time=0, quantitative=False, dt=1),
+        "yellow_after_red_may_wait": yellow_after_red_may_wait(trace, time=0, quantitative=False, dt=1)
     }
 
     all_results.append(results)
 
-    
 output = pd.DataFrame(all_results)
 
 output = output.replace({True: "true", False: "false"})
