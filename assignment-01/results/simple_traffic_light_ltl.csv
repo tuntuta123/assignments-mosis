@@ -1,0 +1,11 @@
+trace,one_lamp,starts_red,always_red,eventually_green,red_stays_or_next_yellow,no_red_to_green,no_green_to_red,yellow_opens_to_green,yellow_returns_to_red,yellow_after_red_may_wait
+simple_traffic_light_1.csv,true,true,false,true,true,true,true,true,true,true
+simple_traffic_light_2.csv,true,true,false,true,true,true,true,true,true,true
+simple_traffic_light_3.csv,true,true,false,true,true,true,true,true,true,true
+simple_traffic_light_4.csv,true,true,false,true,true,true,true,true,true,true
+simple_traffic_light_5.csv,true,true,false,true,true,true,true,true,true,true
+simple_traffic_light_6.csv,true,true,false,true,true,true,true,true,true,true
+simple_traffic_light_7.csv,true,true,false,true,true,true,true,true,true,true
+simple_traffic_light_8.csv,true,true,false,true,true,true,true,true,true,true
+simple_traffic_light_9.csv,true,true,false,true,true,true,true,true,true,true
+simple_traffic_light_10.csv,true,true,false,true,true,true,true,true,true,true
