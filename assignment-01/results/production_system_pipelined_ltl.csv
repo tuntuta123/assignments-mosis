@@ -1,0 +1,11 @@
+trace,m1_one_mode,not_both_in_repair,both_machines_holding,m1_while_buffer_full,m1_to_buffer,ship_removes_only_out,arrival_only_fills_in
+production_system_pipelined_1.csv,true,true,true,true,true,true,true
+production_system_pipelined_2.csv,true,true,true,true,true,true,true
+production_system_pipelined_3.csv,true,true,true,true,true,true,true
+production_system_pipelined_4.csv,true,true,true,true,true,true,true
+production_system_pipelined_5.csv,true,true,true,true,true,true,true
+production_system_pipelined_6.csv,true,true,true,true,true,true,true
+production_system_pipelined_7.csv,true,true,true,true,true,true,true
+production_system_pipelined_8.csv,true,true,true,true,true,true,true
+production_system_pipelined_9.csv,true,true,true,true,true,true,true
+production_system_pipelined_10.csv,true,true,true,true,true,true,true
