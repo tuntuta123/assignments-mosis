@@ -1,0 +1,11 @@
+trace,angle_within_half,angle_within_limit,reaches_by_8s,settled,no_overshoot
+gantry_system_kp100_ki5_kd50.csv,false,false,true,true,true
+gantry_system_kp10_ki50_kd10.csv,false,false,true,false,false
+gantry_system_kp1_ki0_kd10.csv,true,true,false,false,true
+gantry_system_kp200_ki0_kd400.csv,false,true,true,true,true
+gantry_system_kp200_ki20_kd100.csv,false,false,true,true,false
+gantry_system_kp400_ki2_kd50.csv,false,false,true,true,false
+gantry_system_kp500_ki0_kd200.csv,false,false,true,true,true
+gantry_system_kp50_ki0_kd100.csv,false,true,true,true,true
+gantry_system_kp50_ki10_kd100.csv,false,true,true,false,false
+gantry_system_kp50_ki1_kd100.csv,false,true,true,true,true
