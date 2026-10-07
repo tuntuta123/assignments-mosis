@@ -78,12 +78,7 @@ for i in range(1, 11):
 
     eventually_shipped = mtl.parse("F[0,201] p_out")
 
-    wait_may_continue = mtl.parse(
-        "G[0,200] ("
-        "((p_out & X ~(p_out)) & X idle) -> " #pout and next not pout so idle start
-        "X (idle W p_in)" #until p_in comes idle goes on however p_in might not come
-        ")"
-    )
+    wait_may_continue = mtl.parse("G[0,200] (p_out -> X (idle W p_in))")
 
 
     results = {
@@ -103,11 +98,11 @@ for i in range(1, 11):
 
 
 output = pd.DataFrame(all_results)
-#print(output)
+
 
 output = output.replace({True: "true", False: "false"})
-
-output.to_csv(
-    "results/production_system_ltl.csv",
-    index=False
-)
+print(output)
+#output.to_csv(
+#    "results/production_system_ltl.csv",
+#    index=False
+#)
