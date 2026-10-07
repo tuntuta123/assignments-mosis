@@ -1,0 +1,11 @@
+trace,reaches_setpoint,no_temperature_overshoot,settled_after_half_day,level_in_band,heater_stays_on
+water_heating_system_kp50_ki50_kd10.csv,true,false,false,true,false
+water_heating_system_kp100_ki0_kd10.csv,true,true,false,true,true
+water_heating_system_kp100_ki1_kd40.csv,true,false,false,true,false
+water_heating_system_kp100_ki5_kd10.csv,true,false,false,true,false
+water_heating_system_kp100_ki20_kd10.csv,true,false,false,true,false
+water_heating_system_kp200_ki2_kd40.csv,true,false,false,true,false
+water_heating_system_kp300_ki0_kd45.csv,true,true,true,true,true
+water_heating_system_kp300_ki10_kd20.csv,true,false,false,true,false
+water_heating_system_kp500_ki0_kd50.csv,true,true,true,true,true
+water_heating_system_kp500_ki5_kd0.csv,true,false,false,true,false

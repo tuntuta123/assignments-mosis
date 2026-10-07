@@ -36,11 +36,16 @@ for filename in filenames:
     level_in_band = mtl.parse("G[0, 86400.1] (level_low & level_high)")
     heater_stays_on = mtl.parse("G[0, 86400.1] heater_on")
 
-results = {
-
-        #todo
-        
+    results = {
+        "trace": filename,
+        "reaches_setpoint": reaches_setpoint(trace, time=0, quantitative=False),
+        "no_temperature_overshoot": no_temperature_overshoot(trace, time=0, quantitative=False),
+        "settled_after_half_day": settled_after_half_day(trace, time=0, quantitative=False),
+        "level_in_band": level_in_band(trace, time=0, quantitative=False),
+        "heater_stays_on": heater_stays_on(trace, time=0, quantitative=False),
     }
+
+    all_results.append(results)
 
 output = pd.DataFrame(all_results)
 #print(output)
