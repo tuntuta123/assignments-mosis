@@ -1,0 +1,26 @@
+<p>C:/Users/user1/AppData/Local/Temp/OpenModelica/OMEdit/SuspensionSystem.ActuatorTestBench/ActuatorTestBench.exe -port=60217 -logFormat=xmltcp -startTime=0 -stopTime=2 -stepSize=0.002 -tolerance=1e-06 -s=dassl -outputFormat=mat -variableFilter=.* -r=C:/Users/user1/AppData/Local/Temp/OpenModelica/OMEdit/SuspensionSystem.ActuatorTestBench/ActuatorTestBench_res.mat -w -lv=LOG_STDOUT,LOG_ASSERT,LOG_STATS -inputPath=C:/Users/user1/AppData/Local/Temp/OpenModelica/OMEdit/SuspensionSystem.ActuatorTestBench -outputPath=C:/Users/user1/AppData/Local/Temp/OpenModelica/OMEdit/SuspensionSystem.ActuatorTestBench</p>
+LOG_SUCCESS		| info	 | <p>The initialization finished successfully without homotopy method.</p>
+LOG_STATS		| info	 | <p>### STATISTICS ###</p>
+|		| |	 | | <p>timer</p>
+|		| |	 | | | <p>   0.0010212s          reading init.xml</p>
+|		| |	 | | | <p>   0.0004841s          reading info.xml</p>
+|		| |	 | | | <p>   0.0003502s [  4.1%] pre-initialization</p>
+|		| |	 | | | <p>    7.32e-05s [  0.8%] initialization</p>
+|		| |	 | | | <p>     6.2e-06s [  0.1%] steps</p>
+|		| |	 | | | <p>    1.74e-05s [  0.2%] solver (excl. callbacks)</p>
+|		| |	 | | | <p>    0.000621s [  7.2%] creating output-file</p>
+|		| |	 | | | <p>    3.33e-05s [  0.4%] event-handling</p>
+|		| |	 | | | <p>   0.0004599s [  5.3%] overhead</p>
+|		| |	 | | | <p>   0.0070624s [ 81.9%] simulation</p>
+|		| |	 | | | <p>   0.0086236s [100.0%] total</p>
+|		| |	 | | <p>events</p>
+|		| |	 | | | <p>    1 state events</p>
+|		| |	 | | | <p>    0 time events</p>
+|		| |	 | | <p>solver: euler</p>
+|		| |	 | | | <p> 1502 steps taken</p>
+|		| |	 | | | <p> 1502 calls of functionODE</p>
+|		| |	 | | | <p>    0 evaluations of jacobian</p>
+|		| |	 | | | <p>    0 error test failures</p>
+|		| |	 | | | <p>    0 convergence test failures</p>
+|		| |	 | | | <p>0s time of jacobian evaluation</p>
+LOG_SUCCESS		| info	 | <p>The simulation finished successfully.</p>
