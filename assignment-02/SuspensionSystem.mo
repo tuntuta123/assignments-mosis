@@ -6,16 +6,15 @@ package SuspensionSystem
       Placement(transformation(origin = {30, 10}, extent = {{-10, -10}, {10, 10}}), iconTransformation(origin = {50, 10}, extent = {{-10, -10}, {10, 10}})));
     Modelica.Blocks.Interfaces.RealInput control_in(unit = "N") annotation(
       Placement(transformation(origin = {-12, 48}, extent = {{-20, -20}, {20, 20}}), iconTransformation(origin = {0, 46}, extent = {{-20, -20}, {20, 20}})));
-
     type CubicSpringConstant = Real(unit = "N/m3");
     type CubicDampingConstant = Real(unit = "N.s3/m3");
-
     parameter Modelica.Units.SI.TranslationalSpringConstant c1 = 20000 "Linear stiffness of the spring";
-    parameter CubicSpringConstant c2 = 200000 "Nonlinear stiffness of the spring" annotation(Evaluate=false);
+    parameter CubicSpringConstant c2 = 200000 "Nonlinear stiffness of the spring" annotation(
+      Evaluate = false);
     parameter Modelica.Units.SI.TranslationalDampingConstant d1 = 1500 "Linear damping coefficient";
-    parameter CubicDampingConstant d2 = 6000 "Nonlinear damping coefficient" annotation(Evaluate=false);
+    parameter CubicDampingConstant d2 = 6000 "Nonlinear damping coefficient" annotation(
+      Evaluate = false);
     parameter Modelica.Units.SI.Length srel0 = 0.35 "Natural spring length";
-
     Modelica.Units.SI.Length srel "Relative displacement";
     Modelica.Units.SI.Velocity vrel "Relative velocity";
     Modelica.Units.SI.Force fspring "Spring force";
@@ -51,17 +50,19 @@ package SuspensionSystem
   end gravity_mass;
 
   model ActuatorTestBench
-    parameter Real c2 = 200000 "Nonlinear spring stiffness" annotation(Evaluate=false);
-    parameter Real d2 = 6000 "Nonlinear damping coefficient" annotation(Evaluate=false);
-    Actuator actuator(c2=c2, d2=d2) annotation(
+    parameter Real c2 = 200000 "Nonlinear spring stiffness" annotation(
+      Evaluate = false);
+    parameter Real d2 = 6000 "Nonlinear damping coefficient" annotation(
+      Evaluate = false);
+    Actuator actuator(c2 = c2, d2 = d2) annotation(
       Placement(transformation(origin = {-32, 20}, extent = {{-10, -10}, {10, 10}})));
-    Modelica.Mechanics.Translational.Sources.Position hydraulicPress(exact = true)  annotation(
+    Modelica.Mechanics.Translational.Sources.Position hydraulicPress(exact = true) annotation(
       Placement(transformation(origin = {-26, -2}, extent = {{-10, -10}, {10, 10}})));
     Modelica.Mechanics.Translational.Components.Fixed fixedFrame annotation(
       Placement(transformation(origin = {-70, 32}, extent = {{-10, -10}, {10, 10}})));
-    Modelica.Blocks.Sources.CombiTimeTable motionProfile(table = [0, 0.35; 1, 0.05; 2, 0.35])  annotation(
+    Modelica.Blocks.Sources.CombiTimeTable motionProfile(table = [0, 0.35; 1, 0.05; 2, 0.35]) annotation(
       Placement(transformation(origin = {-64, -8}, extent = {{-10, -10}, {10, 10}})));
-    Modelica.Blocks.Sources.Constant constantForce(k = 0)  annotation(
+    Modelica.Blocks.Sources.Constant constantForce(k = 0) annotation(
       Placement(transformation(origin = {-50, 56}, extent = {{-10, -10}, {10, 10}})));
   equation
     connect(fixedFrame.flange, actuator.flange_a) annotation(
@@ -77,88 +78,157 @@ package SuspensionSystem
   end ActuatorTestBench;
 
   model QuarterCarPlant
-  Modelica.Blocks.Sources.CombiTimeTable roadProfile(table = [0, 0.00; 5, 0.00; 9, 0.08; 12, 0.08; 16, 0.00; 18, 0.00; 19.5, 0.05; 20, 0.00; 21.5, 0.05; 22, 0.00; 24, 0.00; 28, -0.05; 30, -0.05; 35, 0.00; 40, 0.00])  annotation(
+    Modelica.Blocks.Sources.CombiTimeTable roadProfile(table = [0, 0.00; 5, 0.00; 9, 0.08; 12, 0.08; 16, 0.00; 18, 0.00; 19.5, 0.05; 20, 0.00; 21.5, 0.05; 22, 0.00; 24, 0.00; 28, -0.05; 30, -0.05; 35, 0.00; 40, 0.00]) annotation(
       Placement(transformation(origin = {-8, -94}, extent = {{-10, -10}, {10, 10}}, rotation = 90)));
-  Modelica.Mechanics.Translational.Sources.Position roadSurface(f_crit = 0.8)  annotation(
+    Modelica.Mechanics.Translational.Sources.Position roadSurface(f_crit = 0.8) annotation(
       Placement(transformation(origin = {-8, -64}, extent = {{-10, -10}, {10, 10}}, rotation = 90)));
-  Modelica.Mechanics.Translational.Components.Spring tireSpring(c = 200000, s_rel0 = 0.3)  annotation(
+    Modelica.Mechanics.Translational.Components.Spring tireSpring(c = 200000, s_rel0 = 0.3) annotation(
       Placement(transformation(origin = {-8, -38}, extent = {{-10, -10}, {10, 10}}, rotation = 90)));
-  gravity_mass wheelHub(m = 40)  annotation(
+    gravity_mass wheelHub(m = 40) annotation(
       Placement(transformation(origin = {-8, -12}, extent = {{-10, -10}, {10, 10}}, rotation = 90)));
-  Actuator actuator annotation(
+    Actuator actuator annotation(
       Placement(transformation(origin = {-8, 16}, extent = {{-10, -10}, {10, 10}}, rotation = 90)));
-  Modelica.Blocks.Sources.Constant suspensionOff(k = 0)  annotation(
-      Placement(transformation(origin = {-46, 16}, extent = {{-10, -10}, {10, 10}})));
-  gravity_mass carChassis(m = 300)  annotation(
+    gravity_mass carChassis(m = 300) annotation(
       Placement(transformation(origin = {-8, 42}, extent = {{-10, -10}, {10, 10}}, rotation = 90)));
-  Modelica.Mechanics.Translational.Components.SpringDamper cabinSeat(c = 40000, d = 1000, s_rel0 = 0.10)  annotation(
+    Modelica.Mechanics.Translational.Components.SpringDamper cabinSeat(c = 40000, d = 1000, s_rel0 = 0.10) annotation(
       Placement(transformation(origin = {-8, 72}, extent = {{-10, -10}, {10, 10}}, rotation = 90)));
-  gravity_mass lowerBody(m = 24)  annotation(
+    gravity_mass lowerBody(m = 24) annotation(
       Placement(transformation(origin = {-8, 102}, extent = {{-10, -10}, {10, 10}}, rotation = 90)));
-  Modelica.Mechanics.Translational.Components.SpringDamper spine(c = 70000, d = 1500, s_rel0 = 0.45)  annotation(
+    Modelica.Mechanics.Translational.Components.SpringDamper spine(c = 70000, d = 1500, s_rel0 = 0.45) annotation(
       Placement(transformation(origin = {-8, 132}, extent = {{-10, -10}, {10, 10}}, rotation = 90)));
-  gravity_mass upperTorso(m = 14)  annotation(
+    gravity_mass upperTorso(m = 14) annotation(
       Placement(transformation(origin = {-8, 164}, extent = {{-10, -10}, {10, 10}}, rotation = 90)));
-  Modelica.Mechanics.Translational.Components.SpringDamper neck(c = 34000, d = 230, s_rel0 = 0.25)  annotation(
+    Modelica.Mechanics.Translational.Components.SpringDamper neck(c = 34000, d = 230, s_rel0 = 0.25) annotation(
       Placement(transformation(origin = {-40, 198}, extent = {{-10, -10}, {10, 10}}, rotation = 90)));
-  gravity_mass head(m = 5.1)  annotation(
+    gravity_mass head(m = 5.1) annotation(
       Placement(transformation(origin = {-40, 236}, extent = {{-10, -10}, {10, 10}}, rotation = 90)));
-  Modelica.Mechanics.Translational.Components.SpringDamper shoulders(c = 6400, d = 61, s_rel0 = 0.45)  annotation(
+    Modelica.Mechanics.Translational.Components.SpringDamper shoulders(c = 6400, d = 61, s_rel0 = 0.45) annotation(
       Placement(transformation(origin = {20, 198}, extent = {{-10, -10}, {10, 10}}, rotation = 90)));
-  gravity_mass arms(m = 7.2)  annotation(
+    gravity_mass arms(m = 7.2) annotation(
       Placement(transformation(origin = {20, 236}, extent = {{-10, -10}, {10, 10}}, rotation = 90)));
-    initial equation
-        wheelHub.mass.v = 0;
-        wheelHub.mass.a = 0;
-        carChassis.mass.v = 0;
-        carChassis.mass.a = 0;
-        lowerBody.mass.v = 0;
-        lowerBody.mass.a = 0;
-        upperTorso.mass.v = 0;
-        upperTorso.mass.a = 0;
-        head.mass.v = 0;
-        head.mass.a = 0;
-        arms.mass.v = 0;
-        arms.mass.a = 0;
-        
-        der(tireSpring.s_rel) = 0;
-        der(cabinSeat.s_rel) = 0;
-        der(spine.s_rel) = 0;
-        der(neck.s_rel) = 0;
-        der(shoulders.s_rel) = 0;
+  initial equation
+    wheelHub.mass.v = 0;
+    wheelHub.mass.a = 0;
+    carChassis.mass.v = 0;
+    carChassis.mass.a = 0;
+    lowerBody.mass.v = 0;
+    lowerBody.mass.a = 0;
+    upperTorso.mass.v = 0;
+    upperTorso.mass.a = 0;
+    head.mass.v = 0;
+    head.mass.a = 0;
+    arms.mass.v = 0;
+    arms.mass.a = 0;
+    der(tireSpring.s_rel) = 0;
+    der(cabinSeat.s_rel) = 0;
+    der(spine.s_rel) = 0;
+    der(neck.s_rel) = 0;
+    der(shoulders.s_rel) = 0;
   equation
-  connect(roadSurface.flange, tireSpring.flange_a) annotation(
+    connect(roadSurface.flange, tireSpring.flange_a) annotation(
       Line(points = {{-8, -54}, {-8, -48}}, color = {0, 127, 0}));
-  connect(roadProfile.y[1], roadSurface.s_ref) annotation(
+    connect(roadProfile.y[1], roadSurface.s_ref) annotation(
       Line(points = {{-8, -83}, {-8, -76}}, color = {0, 0, 127}));
-  connect(tireSpring.flange_b, wheelHub.flange_a) annotation(
+    connect(tireSpring.flange_b, wheelHub.flange_a) annotation(
       Line(points = {{-8, -28}, {-8, -22}}, color = {0, 127, 0}));
-  connect(wheelHub.flange_b, actuator.flange_a) annotation(
+    connect(wheelHub.flange_b, actuator.flange_a) annotation(
       Line(points = {{-8, -2}, {-8, 5}, {-9, 5}, {-9, 9}}, color = {0, 127, 0}));
-  connect(actuator.flange_b, carChassis.flange_a) annotation(
+    connect(actuator.flange_b, carChassis.flange_a) annotation(
       Line(points = {{-8, 22}, {-8, 32}}, color = {0, 127, 0}));
-  connect(suspensionOff.y, actuator.control_in) annotation(
-      Line(points = {{-35, 16}, {-12, 16}}, color = {0, 0, 127}));
-  connect(carChassis.flange_b, cabinSeat.flange_a) annotation(
+    connect(carChassis.flange_b, cabinSeat.flange_a) annotation(
       Line(points = {{-8, 52}, {-8, 62}}, color = {0, 127, 0}));
-  connect(cabinSeat.flange_b, lowerBody.flange_a) annotation(
+    connect(cabinSeat.flange_b, lowerBody.flange_a) annotation(
       Line(points = {{-8, 82}, {-8, 92}}, color = {0, 127, 0}));
-  connect(lowerBody.flange_b, spine.flange_a) annotation(
+    connect(lowerBody.flange_b, spine.flange_a) annotation(
       Line(points = {{-8, 112}, {-8, 122}}, color = {0, 127, 0}));
-  connect(spine.flange_b, upperTorso.flange_a) annotation(
+    connect(spine.flange_b, upperTorso.flange_a) annotation(
       Line(points = {{-8, 142}, {-8, 154}}, color = {0, 127, 0}));
-  connect(upperTorso.flange_b, neck.flange_a) annotation(
+    connect(upperTorso.flange_b, neck.flange_a) annotation(
       Line(points = {{-8, 174}, {-40, 174}, {-40, 188}}, color = {0, 127, 0}));
-  connect(neck.flange_b, head.flange_a) annotation(
+    connect(neck.flange_b, head.flange_a) annotation(
       Line(points = {{-40, 208}, {-40, 226}}, color = {0, 127, 0}));
-  connect(upperTorso.flange_b, shoulders.flange_a) annotation(
+    connect(upperTorso.flange_b, shoulders.flange_a) annotation(
       Line(points = {{-8, 174}, {20, 174}, {20, 188}}, color = {0, 127, 0}));
-  connect(shoulders.flange_b, arms.flange_a) annotation(
+    connect(shoulders.flange_b, arms.flange_a) annotation(
       Line(points = {{20, 208}, {20, 226}}, color = {0, 127, 0}));
     annotation(
       experiment(StartTime = 0, StopTime = 40, Tolerance = 1e-06, Interval = 0.002));
   end QuarterCarPlant;
 
+  block PIDController
+  parameter Real Kp = 10000 "Proportional gain";
+  parameter Real Ki = 1 "Integral gain";
+  parameter Real Kd = 100 "Derivative gain";
+  Modelica.Blocks.Interfaces.RealOutput control_output annotation(
+      Placement(transformation(origin = {92, 0}, extent = {{-10, -10}, {10, 10}}), iconTransformation(origin = {54, 2}, extent = {{-10, -10}, {10, 10}})));
+    Modelica.Blocks.Interfaces.RealInput setpoint annotation(
+      Placement(transformation(origin = {-100, 68}, extent = {{-16, -16}, {16, 16}}), iconTransformation(origin = {-52, 38}, extent = {{-20, -20}, {20, 20}})));
+    Modelica.Blocks.Interfaces.RealInput measured_height annotation(
+      Placement(transformation(origin = {-100, 8}, extent = {{-16, -16}, {16, 16}}), iconTransformation(origin = {-82, -24}, extent = {{-20, -20}, {20, 20}})));
+    Modelica.Blocks.Math.Add add(k2 = -1) annotation(
+      Placement(transformation(origin = {-64, 38}, extent = {{-10, -10}, {10, 10}})));
+  Modelica.Blocks.Math.Gain gain(k = Kp)  annotation(
+      Placement(transformation(origin = {-28, 38}, extent = {{-10, -10}, {10, 10}})));
+  Modelica.Blocks.Continuous.Integrator integrator(initType = Modelica.Blocks.Types.Init.InitialOutput, y_start = 0)  annotation(
+      Placement(transformation(origin = {-28, -4}, extent = {{-10, -10}, {10, 10}})));
+  Modelica.Blocks.Continuous.Derivative derivative(initType = Modelica.Blocks.Types.Init.SteadyState)  annotation(
+      Placement(transformation(origin = {-24, -38}, extent = {{-10, -10}, {10, 10}})));
+  Modelica.Blocks.Math.Gain gain1(k = Ki)  annotation(
+      Placement(transformation(origin = {12, -2}, extent = {{-10, -10}, {10, 10}})));
+  Modelica.Blocks.Math.Gain gain2(k = Kd)  annotation(
+      Placement(transformation(origin = {10, -38}, extent = {{-10, -10}, {10, 10}})));
+  Modelica.Blocks.Math.Add3 add3 annotation(
+      Placement(transformation(origin = {46, -2}, extent = {{-10, -10}, {10, 10}})));
+  equation
+    connect(add.u2, measured_height) annotation(
+      Line(points = {{-76, 32}, {-100, 32}, {-100, 8}}, color = {0, 0, 127}));
+    connect(add.u1, setpoint) annotation(
+      Line(points = {{-76, 44}, {-100, 44}, {-100, 68}}, color = {0, 0, 127}));
+    connect(add.y, gain.u) annotation(
+      Line(points = {{-53, 38}, {-40, 38}}, color = {0, 0, 127}));
+    connect(add.y, integrator.u) annotation(
+      Line(points = {{-53, 38}, {-44, 38}, {-44, 17}, {-40, 17}, {-40, -4}}, color = {0, 0, 127}));
+    connect(add.y, derivative.u) annotation(
+      Line(points = {{-52, 38}, {-47, 38}, {-47, 28}, {-48, 28}, {-48, -33.25}, {-36, -33.25}, {-36, -38}}, color = {0, 0, 127}));
+    connect(gain.y, add3.u1) annotation(
+      Line(points = {{-16, 38}, {34, 38}, {34, 6}}, color = {0, 0, 127}));
+    connect(gain1.y, add3.u2) annotation(
+      Line(points = {{24, -2}, {34, -2}}, color = {0, 0, 127}));
+    connect(gain2.y, add3.u3) annotation(
+      Line(points = {{22, -38}, {34, -38}, {34, -10}}, color = {0, 0, 127}));
+  connect(control_output, add3.y) annotation(
+      Line(points = {{92, 0}, {58, 0}, {58, -2}}, color = {0, 0, 127}));
+  connect(integrator.y, gain1.u) annotation(
+      Line(points = {{-16, -4}, {0, -4}, {0, -2}}, color = {0, 0, 127}));
+  connect(derivative.y, gain2.u) annotation(
+      Line(points = {{-12, -38}, {-2, -38}}, color = {0, 0, 127}));
+  end PIDController;
+
+  model ControlledCar
+    extends SuspensionSystem.QuarterCarPlant;
+  Modelica.Mechanics.Translational.Sensors.PositionSensor positionSensor annotation(
+      Placement(transformation(origin = {-88, -10}, extent = {{-10, -10}, {10, 10}})));
+  Modelica.Blocks.Sources.Constant setpoint(k = 0.5)  annotation(
+      Placement(transformation(origin = {-88, 46}, extent = {{-10, -10}, {10, 10}})));
+  PIDController pIDController(Kp = Kp, Ki = Ki, Kd = Kd)  annotation(
+      Placement(transformation(origin = {-58, 8}, extent = {{-10, -10}, {10, 10}})));
+  Modelica.Blocks.Math.Gain gain(k = -1)  annotation(
+      Placement(transformation(origin = {-30, 8}, extent = {{-10, -10}, {10, 10}})));
+  parameter Real Kp = 10000 annotation(Evaluate=false);
+  parameter Real Ki = 1 annotation(Evaluate=false);
+  parameter Real Kd = 100 annotation(Evaluate=false);
+  equation
+  connect(positionSensor.s, pIDController.measured_height) annotation(
+      Line(points = {{-76, -10}, {-66, -10}, {-66, 6}}, color = {0, 0, 127}));
+  connect(setpoint.y, pIDController.setpoint) annotation(
+      Line(points = {{-76, 46}, {-64, 46}, {-64, 12}}, color = {0, 0, 127}));
+  connect(pIDController.control_output, gain.u) annotation(
+      Line(points = {{-52, 8}, {-42, 8}}, color = {0, 0, 127}));
+  connect(gain.y, actuator.control_in) annotation(
+      Line(points = {{-19, 8}, {-12, 8}, {-12, 16}}, color = {0, 0, 127}));
+  connect(positionSensor.flange, cabinSeat.flange_a) annotation(
+      Line(points = {{-98, -10}, {-98, 26}, {-46, 26}, {-46, 62}, {-8, 62}}, color = {0, 127, 0}));
+  end ControlledCar;
   annotation(
     uses(Modelica(version = "4.1.0")));
 end SuspensionSystem;
