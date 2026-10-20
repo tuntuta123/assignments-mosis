@@ -158,7 +158,7 @@ package SuspensionSystem
   block PIDController
   parameter Real Kp = 10000 "Proportional gain";
   parameter Real Ki = 1 "Integral gain";
-  parameter Real Kd = 100 "Derivative gain";
+  parameter Real Kd = 200 "Derivative gain";
   Modelica.Blocks.Interfaces.RealOutput control_output annotation(
       Placement(transformation(origin = {92, 0}, extent = {{-10, -10}, {10, 10}}), iconTransformation(origin = {54, 2}, extent = {{-10, -10}, {10, 10}})));
     Modelica.Blocks.Interfaces.RealInput setpoint annotation(
@@ -217,7 +217,31 @@ package SuspensionSystem
   parameter Real Kp = 10000 annotation(Evaluate=false);
   parameter Real Ki = 1 annotation(Evaluate=false);
   parameter Real Kd = 100 annotation(Evaluate=false);
+  Real cost(start = 0, fixed = true);
+  parameter Real headAccelerationLimit = 0.315;
+  parameter Real minHeight = 0.45;
+  parameter Real maxHeight = 0.55;
+  parameter Real costLimit = 1e30;
+  
+  Boolean headLimitExceeded(start = false, fixed = true);
+  Boolean heightLimitExceeded(start = false, fixed = true);
+  Boolean costLimitExceeded(start = false, fixed = true);
   equation
+  der(cost) = abs(carChassis.mass.s - 0.5);
+  when abs(head.mass.a) > headAccelerationLimit then
+    headLimitExceeded = true;
+    terminate("Head acceleration exceeded the limit.");
+  end when;
+  
+  when carChassis.mass.s < minHeight or carChassis.mass.s > maxHeight then
+    heightLimitExceeded = true;
+    terminate("Chassis height exceeded the allowed range.");
+  end when;
+  
+  when cost > costLimit then
+    costLimitExceeded = true;
+    terminate("Cost exceeded the limit.");
+  end when;
   connect(positionSensor.s, pIDController.measured_height) annotation(
       Line(points = {{-76, -10}, {-66, -10}, {-66, 6}}, color = {0, 0, 127}));
   connect(setpoint.y, pIDController.setpoint) annotation(
