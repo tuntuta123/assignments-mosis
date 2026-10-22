@@ -1,0 +1,28 @@
+<p>C:/Users/user1/AppData/Local/Temp/OpenModelica/OMEdit/SuspensionSystem.ControlledCar/ControlledCar.exe -port=58633 -logFormat=xmltcp -startTime=0 -stopTime=40 -stepSize=0.002 -tolerance=1e-06 -s=dassl -outputFormat=mat -variableFilter=.* -r=C:/Users/user1/AppData/Local/Temp/OpenModelica/OMEdit/SuspensionSystem.ControlledCar/ControlledCar_res.mat -w -lv=LOG_STDOUT,LOG_ASSERT,LOG_STATS -inputPath=C:/Users/user1/AppData/Local/Temp/OpenModelica/OMEdit/SuspensionSystem.ControlledCar -outputPath=C:/Users/user1/AppData/Local/Temp/OpenModelica/OMEdit/SuspensionSystem.ControlledCar</p>
+LOG_SUCCESS		| info	 | <p>The initialization finished successfully without homotopy method.</p>
+LOG_STDOUT		| info	 | <p>Simulation call terminate() at time 9.101791 Message : Chassis height exceeded the allowed range.</p>
+LOG_STATS		| info	 | <p>### STATISTICS ###</p>
+|		| |	 | | <p>timer</p>
+|		| |	 | | | <p>   0.0043126s          reading init.xml</p>
+|		| |	 | | | <p>   0.0010535s          reading info.xml</p>
+|		| |	 | | | <p>    0.000622s [  1.4%] pre-initialization</p>
+|		| |	 | | | <p>   0.0001561s [  0.3%] initialization</p>
+|		| |	 | | | <p>    2.65e-05s [  0.1%] steps</p>
+|		| |	 | | | <p>   0.0014657s [  3.2%] solver (excl. callbacks)</p>
+|		| |	 | | | <p>   0.0084249s [ 18.6%] creating output-file</p>
+|		| |	 | | | <p>   0.0020057s [  4.4%] event-handling</p>
+|		| |	 | | | <p>    0.001824s [  4.0%] overhead</p>
+|		| |	 | | | <p>   0.0308727s [ 68.0%] simulation</p>
+|		| |	 | | | <p>   0.0453976s [100.0%] total</p>
+|		| |	 | | <p>events</p>
+|		| |	 | | | <p>    3 state events</p>
+|		| |	 | | | <p>    0 time events</p>
+|		| |	 | | <p>solver: dassl</p>
+|		| |	 | | | <p>  282 steps taken</p>
+|		| |	 | | | <p>  376 calls of functionODE</p>
+|		| |	 | | | <p>   65 evaluations of jacobian</p>
+|		| |	 | | | <p>    6 error test failures</p>
+|		| |	 | | | <p>    0 convergence test failures</p>
+|		| |	 | | | <p>0.0002157s time of jacobian evaluation</p>
+LOG_SUCCESS		| info	 | <p>The simulation finished successfully.</p>
+stdout		| unknown	 | <p>[C:/Users/user1/PycharmProjects/assignments-mosis/assignment-02/SuspensionSystem.mo:238:5-238:60:writable] </p>

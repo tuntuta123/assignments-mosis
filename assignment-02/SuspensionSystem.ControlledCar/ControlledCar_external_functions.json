@@ -1,0 +1,8 @@
+[
+"ModelicaStandardTables_CombiTimeTable_nextTimeEvent",
+"ModelicaStandardTables_CombiTimeTable_maximumTime",
+"ModelicaStandardTables_CombiTimeTable_minimumTime",
+"ModelicaStandardTables_CombiTimeTable_getValue",
+"ModelicaStandardTables_CombiTimeTable_init3",
+"ModelicaStandardTables_CombiTimeTable_close"
+]
