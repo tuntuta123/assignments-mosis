@@ -1,0 +1,69 @@
+#!/usr/bin/python3
+# This file was automatically generated from drawio2cbd with the command:
+#   {{command}}
+
+from CBD.model import *
+from CBD.library import *
+{% for im, obj in imports %}
+    {% if obj is none %}
+import {{ im }}
+    {% else %}
+from {{ im }} import {{ obj }}
+    {% endif %}
+{% endfor %}
+{% for file in files %}
+    {% if file.endswith(".py") %}
+from {{ file[:-3] }} import *
+    {% endif %}
+{% endfor %}
+
+{% if delta is defined and delta is not none %}
+DELTA_T = {{delta}}
+{% endif %}
+
+{% for block in nodes %}
+class {{block.class_name}}(CBD):
+    {% if '__docstring__' in block.properties %}
+    """
+    {{ block.__docstring__ }}
+    """
+    {% endif %}
+    def __init__(self, block_name{{block.get_properties_string(ignore)}}):
+        super().__init__(block_name, input_ports={{block.get_inputs()}}, output_ports={{block.get_outputs()}})
+
+        # Create the Blocks
+        {% for child in block.children %}
+        {% set name = child.block_name %}
+        {% if name is undefined or name == "" %}
+            {% set name = child.id %}
+        {% endif %}
+        self.addBlock({{child.class_name}}("{{name}}"{{child.get_properties_string(ignore)}}))
+        {% endfor %}
+
+        # Create the Connections
+        {% for (sblock, sport), targets in block.get_connections().items() %}
+            {% set source = sblock %}
+            {% set send = "" %}
+            {% if sport != "" %}
+                {% set source = sblock.block_name %}
+                {% set send = ", output_port_name='" + sport + "'" %}
+            {% endif %}
+            {% if source == "" %}
+                {% set source = sblock.id %}
+            {% endif %}
+            {% for tblock, tport in targets %}
+                {% set target = tblock %}
+                {% set tend = "" %}
+                {% if tport != "" %}
+                    {% set target = tblock.block_name %}
+                    {% set tend = ", input_port_name='" + tport + "'" %}
+                {% endif %}
+                {% if target == "" %}
+                    {% set target = tblock.id %}
+                {% endif %}
+        self.addConnection("{{source}}", "{{target}}"{{send}}{{tend}})
+            {% endfor %}
+        {% endfor %}
+
+
+{% endfor %}

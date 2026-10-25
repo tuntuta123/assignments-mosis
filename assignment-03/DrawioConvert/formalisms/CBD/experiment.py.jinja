@@ -1,0 +1,32 @@
+#!/usr/bin/python3
+# This file was automatically generated from drawio2cbd with the command:
+#   {{command}}
+
+{% for im, obj in imports %}
+    {% if obj is none %}
+import {{ im }}
+    {% else %}
+from {{ im }} import {{ obj }}
+    {% endif %}
+{% endfor %}
+{% for file in files %}
+    {% if file.endswith(".py") %}
+from {{ file[:-3] }} import *
+    {% endif %}
+{% endfor %}
+from CBD.simulator import Simulator
+
+{% if delta is defined %}
+DELTA_T = {{ delta }}
+{% endif %}
+
+cbd = {{entry}}("{{entry}}")
+
+# Run the Simulation
+sim = Simulator(cbd)
+{% if delta is defined %}
+sim.setDeltaT(DELTA_T)
+{% endif %}
+sim.run({{time}})
+
+# TODO: Process Your Simulation Results
