@@ -67,17 +67,26 @@ class Port:
         """
         Walk incoming connections to the port that produces the value for this port.
         """
-        incoming = self.getIncoming()
+        visited = set()
+        current = self
 
-        if incoming is None: #no incoming connection
-            return None  
+        while True:
+            if current in visited:
+                raise ValueError("Circular port connection detected.")
 
-        source = incoming.source
+            visited.add(current)
 
-        if isinstance(source.block, CBD): #cbd check
-            return source.getSourcePort()
+            incoming = current.getIncoming()
 
-        return source
+            if incoming is None:  # No incoming connection
+                return None
+
+            source = incoming.source
+
+            if not isinstance(source.block, CBD):  # Atomic block reached
+                return source
+
+            current = source
 
     @staticmethod
     def connect(source, target):
@@ -186,8 +195,13 @@ class BaseBlock:
         ``curIteration`` selects that output's history index. 
         ``-1`` selects the latest sample.
         """
-        # TODO: Part 1, Task 2
-        raise NotImplementedError("BaseBlock.getInputSignal")
+        port = self.getInputPortByName(input_port)
+        source = port.getSourcePort()
+
+        if source is None:
+            raise ValueError(f"input port: '{input_port}' not connected!")
+
+        return source.getHistory()[curIteration] #returns signal list element curIteration
 
     def getDependencies(self, curIteration):
         """Atomic blocks that feed this block at ``curIteration``.
