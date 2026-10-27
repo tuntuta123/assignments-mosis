@@ -66,8 +66,7 @@ class NegatorBlock(BaseBlock):
         BaseBlock.__init__(self, block_name, ["IN1"], ["OUT1"])
 
     def compute(self, curIteration, time, delta_t):
-        # TODO: Part 1, Task 5
-        raise NotImplementedError("NegatorBlock.compute")
+        self.appendToSignal(-self.getInputSignal(curIteration, "IN1").value, time=time)
 
 
 class InverterBlock(BaseBlock):
@@ -80,10 +79,12 @@ class InverterBlock(BaseBlock):
         self.tolerance = tolerance
 
     def compute(self, curIteration, time, delta_t):
-        # TODO: Part 1, Task 5
-        raise NotImplementedError("InverterBlock.compute")
+        value = self.getInputSignal(curIteration, "IN1").value
 
+        if abs(value) < self.tolerance:
+            raise ZeroDivisionError("abs(input) < tolerance")
 
+        self.appendToSignal(1 / value, time=time)
 class ProductBlock(BaseBlock):
     """Outputs the product of inputs ``IN1`` .. ``INn``."""
 
@@ -95,8 +96,10 @@ class ProductBlock(BaseBlock):
         return self._numberOfInputs
 
     def compute(self, curIteration, time, delta_t):
-        # TODO: Part 1, Task 5
-        raise NotImplementedError("ProductBlock.compute")
+        total = 1.0
+        for index in range(1, self._numberOfInputs + 1):
+                total *= self.getInputSignal(curIteration, "IN%d" % index).value
+        self.appendToSignal(total, time=time)
 
 
 class GenericBlock(BaseBlock):
@@ -112,8 +115,8 @@ class GenericBlock(BaseBlock):
         return self._block_operator
 
     def compute(self, curIteration, time, delta_t):
-        # TODO: Part 1, Task 5
-        raise NotImplementedError("GenericBlock.compute")
+        operation = getattr(math, self._block_operator)
+        self.appendToSignal(operation(self.getInputSignal(curIteration, "IN1").value), time=time)
 
 
 class DelayBlock(BaseBlock):
@@ -127,12 +130,22 @@ class DelayBlock(BaseBlock):
         BaseBlock.__init__(self, block_name, ["IN1", "IC"], ["OUT1"])
 
     def getDependencies(self, curIteration):
-        # TODO: Part 1, Task 5
-        raise NotImplementedError("DelayBlock.getDependencies")
+        if curIteration == 0:
+            port = self.getInputPortByName("IC")
+            source = port.getSourcePort()
+
+            if source is not None:
+                return [source.block]
+
+        return []
 
     def compute(self, curIteration, time, delta_t):
-        # TODO: Part 1, Task 5
-        raise NotImplementedError("DelayBlock.compute")
+        if curIteration == 0:
+            value = self.getInputSignal(curIteration, "IC").value
+        else:
+            value = self.getInputSignal(curIteration - 1, "IN1").value
+
+        self.appendToSignal(value, time=time)
 
 
 class DeltaTBlock(BaseBlock):
@@ -142,8 +155,7 @@ class DeltaTBlock(BaseBlock):
         BaseBlock.__init__(self, block_name, [], ["OUT1"])
 
     def compute(self, curIteration, time, delta_t):
-        # TODO: Part 1, Task 5
-        raise NotImplementedError("DeltaTBlock.compute")
+        self.appendToSignal(delta_t, time=time)
 
 
 class TimeBlock(BaseBlock):
@@ -156,8 +168,8 @@ class TimeBlock(BaseBlock):
         BaseBlock.__init__(self, block_name, [], ["OUT1", "relative"])
 
     def compute(self, curIteration, time, delta_t):
-        # TODO: Part 1, Task 5
-        raise NotImplementedError("TimeBlock.compute")
+        self.appendToSignal(time, name_output="OUT1", time=time)
+        self.appendToSignal(time, name_output="relative", time=time)
 
 # Part 2. Both blocks are hierarchical CBDs built from the blocks above.
 
@@ -171,8 +183,18 @@ class IntegratorBlock(CBD):
 
     def __init__(self, block_name):
         CBD.__init__(self, block_name, input_ports=["IN1", "IC", "DT"], output_ports=["OUT1"])
-        # TODO: Part 2, Task 1
-        raise NotImplementedError("IntegratorBlock")
+        self.addBlock(ProductBlock("product", numberOfInputs=(2)))
+        self.addBlock(AdderBlock("adder", numberOfInputs=(2)))
+        self.addBlock(DelayBlock("delay"))
+                
+        # Create the Connections
+        self.addConnection("IN1", "product", input_port_name='IN1')
+        self.addConnection("DT", "product", input_port_name='IN2')
+        self.addConnection("product", "adder", output_port_name='OUT1', input_port_name='IN1')
+        self.addConnection("adder", "delay", output_port_name='OUT1', input_port_name='IN1')
+        self.addConnection("IC", "delay", input_port_name='IC')
+        self.addConnection("delay", "adder", output_port_name='OUT1', input_port_name='IN2')
+        self.addConnection("delay", "OUT1", output_port_name='OUT1')
 
 
 class DerivatorBlock(CBD):
@@ -184,8 +206,32 @@ class DerivatorBlock(CBD):
 
     def __init__(self, block_name):
         CBD.__init__(self, block_name, input_ports=["IN1", "IC", "DT"], output_ports=["OUT1"])
-        # TODO: Part 2, Task 1
-        raise NotImplementedError("DerivatorBlock")
+        # Create the Blocks
+        self.addBlock(AdderBlock("adder1", numberOfInputs=(2)))
+        self.addBlock(DelayBlock("delay1"))
+        self.addBlock(NegatorBlock("negator1"))
+        self.addBlock(ProductBlock("product1", numberOfInputs=(2)))
+        self.addBlock(InverterBlock("inverter1"))
+        self.addBlock(ProductBlock("product2", numberOfInputs=(2)))
+        self.addBlock(NegatorBlock("negator2"))
+        self.addBlock(AdderBlock("adder2", numberOfInputs=(2)))
+
+        # Create the Connections
+        self.addConnection("IN1", "delay1", input_port_name='IN1')
+        self.addConnection("IN1", "adder1", input_port_name='IN1')
+        self.addConnection("IN1", "adder2", input_port_name='IN1')
+        self.addConnection("DT", "inverter1", input_port_name='IN1')
+        self.addConnection("DT", "product2", input_port_name='IN1')
+        self.addConnection("IC", "product2", input_port_name='IN2')
+        self.addConnection("delay1", "negator1", output_port_name='OUT1', input_port_name='IN1')
+        self.addConnection("negator1", "adder1", output_port_name='OUT1', input_port_name='IN2')
+        self.addConnection("inverter1", "product1", output_port_name='OUT1', input_port_name='IN1')
+        self.addConnection("adder1", "product1", output_port_name='OUT1', input_port_name='IN2')
+        self.addConnection("product1", "OUT1", output_port_name='OUT1')
+        self.addConnection("product2", "negator2", output_port_name='OUT1', input_port_name='IN1')
+        self.addConnection("negator2", "adder2", output_port_name='OUT1', input_port_name='IN2')
+        self.addConnection("adder2", "delay1", output_port_name='OUT1', input_port_name='IC')
+        
 
 
 # Part 4: Task 3
