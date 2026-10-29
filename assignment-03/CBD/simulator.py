@@ -202,8 +202,8 @@ class Simulator:
         for block in cbd.getBlocks():
             if isinstance(block, CBD): #found CBD, then iterate the inner blocks
                 atomic_blocks.extend(self._collect_atomic_blocks(block))
-        else:
-            atomic_blocks.append(block)
+            else:
+                atomic_blocks.append(block)
 
         return atomic_blocks
 

@@ -217,8 +217,8 @@ class BaseBlock:
         for port in self.getInputPorts():
             source = port.getSourcePort()
 
-        if source is not None:
-            dependencies.append(source.block)
+            if source is not None:
+                dependencies.append(source.block)
 
         return dependencies
 
