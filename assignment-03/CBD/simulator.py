@@ -5,7 +5,6 @@ CBD simulator skeleton.
 from .linear_solver import is_linear, solve_linear_loop
 from .model import CBD, Signal
 
-
 __all__ = [
     "DependencyGraph",
     "strongly_connected_components",
@@ -200,7 +199,7 @@ class Simulator:
         atomic_blocks = []
 
         for block in cbd.getBlocks():
-            if isinstance(block, CBD): #found CBD, then iterate the inner blocks
+            if isinstance(block, CBD):  # found CBD, then iterate the inner blocks
                 atomic_blocks.extend(self._collect_atomic_blocks(block))
             else:
                 atomic_blocks.append(block)
@@ -227,7 +226,7 @@ class Simulator:
                 graph.addDependency(block, dependency)
 
         return graph
-        
+
     def _step(self, curIteration, time):
         """Compute every atomic block once, then update the CBD output ports.
 
@@ -241,8 +240,21 @@ class Simulator:
 
         Finish by copying atomic outputs onto the CBD ports that expose them.
         """
-        # TODO: Part 1, Task 4
-        raise NotImplementedError("Simulator._step")
+
+        self._dep_graph = self._build_dependency_graph(curIteration)
+        components = strongly_connected_components(self._dep_graph)
+        ordered = topological_sort(self._dep_graph, components)
+
+        for component in ordered:
+            if not is_algebraic_loop(component, self._dep_graph):
+                component[0].compute(curIteration, time, self._delta_t)
+            elif is_linear(component):
+                solve_linear_loop(component, curIteration, time)
+            else:
+                names = ", ".join(block.getPath() for block in component)
+                raise ValueError(f"Non-linear algebraic loop detected: {names}")
+
+        self._update_cbd_ports(self.model, time)
 
     def _update_cbd_ports(self, cbd, time):
         """Copy each nested output onto the CBD port that exposes it.
@@ -253,5 +265,17 @@ class Simulator:
         level. ``Port.getSourcePort`` finds the atomic output behind a
         boundary port.
         """
-        # TODO: Part 1, Task 4
-        raise NotImplementedError("Simulator._update_cbd_ports")
+
+        for block in cbd.getBlocks():
+            if isinstance(block, CBD):
+                self._update_cbd_ports(block, time)
+
+        for port in cbd.getOutputPorts():
+            source = port.getSourcePort()
+            if source is not None:
+                history = source.getHistory()
+                if not history:
+                    raise ValueError(
+                        f"No signal available for CBD output: {port.getPath()}"
+                    )
+                port.set(history[-1])
