@@ -2,9 +2,15 @@
 Linear algebraic loop solver. 
 
 """
-
+from .library import (
+    AdderBlock,
+    DelayBlock,
+    GenericBlock,
+    InverterBlock,
+    NegatorBlock,
+    ProductBlock,
+)
 import numpy as np
-
 
 __all__ = [
     "is_linear",
@@ -21,8 +27,27 @@ def is_linear(component):
     fewer than two of its inputs are unknowns of this same loop. An inverter,
     a generic block, or a product of two unknowns is not linear.
     """
-    # TODO: Part 1, Task 3
-    raise NotImplementedError("is_linear")
+
+    component_blocks = set(component)
+
+    for block in component:
+        if isinstance(block, (AdderBlock, NegatorBlock, DelayBlock)):
+            continue
+
+        if isinstance(block, ProductBlock):
+            unknown_inputs = sum(
+                1
+                for port in block.getInputPorts()
+                if (source := port.getSourcePort()) is not None
+                and source.block in component_blocks
+            )
+            if unknown_inputs < 2:
+                continue
+
+        # raise ValueError(f"Unsupported or nonlinear block type: {block.getBlockType()}")
+        return False
+
+    return True
 
 
 def build_system(component, curIteration):
@@ -31,8 +56,58 @@ def build_system(component, curIteration):
     Row ``i`` is the equation of ``component[i]``, 
     and ``x[i]`` is that block's output. 
     """
-    # TODO: Part 1, Task 3
-    raise NotImplementedError("build_system")
+
+    size = len(component)
+    column = {block: i for i, block in enumerate(component)}
+    A = np.zeros((size, size))
+    b = np.zeros(size)
+
+    for i, block in enumerate(component):
+        A[i, i] = -1.0
+
+        if isinstance(block, DelayBlock):
+            input_name = "IC" if curIteration == 0 else "IN1"
+            input_iteration = 0 if curIteration == 0 else curIteration - 1
+            source = block.getInputPortByName(input_name).getSourcePort()
+
+            if curIteration == 0 and source is not None and source.block in column:
+                A[i, column[source.block]] += 1.0
+            else:
+                b[i] = -block.getInputSignal(input_iteration, input_name).value
+
+            continue
+
+        unknown = []
+        known = []
+
+        for port in block.getInputPorts():
+            source = port.getSourcePort()
+            if source is not None and source.block in column:
+                unknown.append(column[source.block])
+            else:
+                known.append(block.getInputSignal(curIteration, port.name).value)
+
+        if isinstance(block, AdderBlock):
+            for j in unknown:
+                A[i, j] += 1.0
+            b[i] = -sum(known)
+
+        elif isinstance(block, NegatorBlock):
+            for j in unknown:
+                A[i, j] -= 1.0
+            b[i] = sum(known)
+
+        elif isinstance(block, ProductBlock):
+            if unknown:
+                A[i, unknown[0]] += np.prod(known)
+            else:
+                b[i] = -np.prod(known)
+
+        else:
+            raise ValueError(f"Unsupported block type: {block.getBlockType()}")
+
+    return A, b
+
 
 def solve_linear_loop(component, curIteration, time, matrix=None):
     """Solve the loop and append one output per block.
@@ -40,9 +115,17 @@ def solve_linear_loop(component, curIteration, time, matrix=None):
     Without ``matrix``, build the whole system. With ``matrix``, reuse that
     ``A`` and rebuild ``b``. Raise ``ValueError`` when the system is singular.
     """
-    # TODO: Part 1, Task 3
-    raise NotImplementedError("solve_linear_loop")
+    A, b = build_system(component, curIteration)
 
+    if matrix is not None:
+        A = matrix
+    try:
+        x = np.linalg.solve(A, b)
+    except np.linalg.LinAlgError as err:
+        raise ValueError("Algebraic loop has no unique solution") from err
 
-if __name__ == "__main__":
-    print("Implement is_linear, build_system, rebuild_rhs and solve_linear_loop.")
+    for block, value in zip(component, x):
+        block.appendToSignal(float(value), time=time)
+
+# if __name__ == "__main__":
+#     print("Implement is_linear, build_system, rebuild_rhs and solve_linear_loop.")
