@@ -109,16 +109,68 @@ def build_system(component, curIteration):
     return A, b
 
 
+def rebuild_rhs(component, curIteration):
+    """Rebuilding the right hand side (Rhs)
+        A remains unchanged, so it can be cached. However RHS needs to be rebuilt every step
+    """
+    size = len(component)
+    component_blocks = set(component)
+    b = np.zeros(size)
+
+    for i, block in enumerate(component):
+
+        if isinstance(block, DelayBlock):
+            input_name = "IC" if curIteration == 0 else "IN1"
+            input_iteration = 0 if curIteration == 0 else curIteration - 1
+            source = block.getInputPortByName(input_name).getSourcePort()
+
+            if not (curIteration == 0 and source is not None and source.block in component_blocks):
+                b[i] = -block.getInputSignal(input_iteration, input_name).value
+
+            continue
+
+        known = []
+        unknown_count = 0
+
+        for port in block.getInputPorts():
+            source = port.getSourcePort()
+
+            if source is not None and source.block in component_blocks:
+                unknown_count += 1
+            else:
+                known.append(block.getInputSignal(curIteration, port.name).value)
+
+        if isinstance(block, AdderBlock):
+            b[i] = -sum(known)
+
+        elif isinstance(block, NegatorBlock):
+            b[i] = sum(known)
+
+        elif isinstance(block, ProductBlock):
+            if unknown_count == 0:
+                b[i] = -np.prod(known)
+
+        else:
+            raise ValueError(
+                f"Unsupported block type: {block.getBlockType()}"
+            )
+
+    return b
+
+
+
 def solve_linear_loop(component, curIteration, time, matrix=None):
     """Solve the loop and append one output per block.
 
     Without ``matrix``, build the whole system. With ``matrix``, reuse that
     ``A`` and rebuild ``b``. Raise ``ValueError`` when the system is singular.
     """
-    A, b = build_system(component, curIteration)
-
-    if matrix is not None:
+    #check cache
+    if matrix is None:
+        A, b = build_system(component, curIteration)
+    else:
         A = matrix
+        b = rebuild_rhs(component, curIteration)
     try:
         x = np.linalg.solve(A, b)
     except np.linalg.LinAlgError as err:
@@ -127,5 +179,6 @@ def solve_linear_loop(component, curIteration, time, matrix=None):
     for block, value in zip(component, x):
         block.appendToSignal(float(value), time=time)
 
+    return A
 # if __name__ == "__main__":
 #     print("Implement is_linear, build_system, rebuild_rhs and solve_linear_loop.")
