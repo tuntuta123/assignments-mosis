@@ -1,0 +1,15 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+\[
+\begin{aligned}
+\frac{d}{dt} \mathrm{Integral.IntegratorX.OUT1}(t) &= \mathrm{Integral.negator.OUT1}(t) \\[4pt]
+\mathrm{Integral.IntegratorX.OUT1}(0) &= \mathrm{Integral.constant0.OUT1}(0) \\[4pt]
+\frac{d}{dt} \mathrm{Integral.IntegratorV.OUT1}(t) &= \mathrm{Integral.IntegratorX.OUT1}(t) \\[4pt]
+\mathrm{Integral.IntegratorV.OUT1}(0) &= \mathrm{Integral.constant1.OUT1}(0) \\[4pt]
+\mathrm{Integral.negator.OUT1}(t) &= -\mathrm{Integral.IntegratorV.OUT1}(t) \\[4pt]
+\mathrm{Integral.constant0.OUT1}(t) &= 0 \\[4pt]
+\mathrm{Integral.constant1.OUT1}(t) &= 1
+\end{aligned}
+\]
+\end{document}

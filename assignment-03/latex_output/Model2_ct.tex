@@ -1,0 +1,19 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+\[
+\begin{aligned}
+\mathrm{Model2.neg\_d.OUT1}(t) &= -\mathrm{Model2.delay\_d.OUT1}(t) \\[4pt]
+\mathrm{Model2.delay\_d.OUT1}(0) &= \mathrm{Model2.c7.OUT1}(0) \\[4pt]
+\mathrm{Model2.delay\_d.OUT1}(t) &= \mathrm{Model2.neg\_d.OUT1}(t-\Delta t), \quad t=n\Delta t,\ n\geq1 \\[4pt]
+\mathrm{Model2.c7.OUT1}(t) &= 7 \\[4pt]
+\mathrm{Model2.time.OUT1}(t) &= t \\[4pt]
+\mathrm{Model2.time.relative}(t) &= t \\[4pt]
+\mathrm{Model2.sum1.OUT1}(t) &= \mathrm{Model2.time.OUT1}(t) + \mathrm{Model2.c11.OUT1}(t) \\[4pt]
+\mathrm{Model2.c11.OUT1}(t) &= 11 \\[4pt]
+\mathrm{Model2.sum2.OUT1}(t) &= \mathrm{Model2.sum1.OUT1}(t) + \mathrm{Model2.neg\_y.OUT1}(t) \\[4pt]
+\mathrm{Model2.neg\_y.OUT1}(t) &= -\mathrm{Model2.prod1.OUT1}(t) \\[4pt]
+\mathrm{Model2.prod1.OUT1}(t) &= \mathrm{Model2.delay\_d.OUT1}(t) \cdot \mathrm{Model2.sum2.OUT1}(t)
+\end{aligned}
+\]
+\end{document}

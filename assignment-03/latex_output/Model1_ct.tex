@@ -1,0 +1,20 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+\[
+\begin{aligned}
+\mathrm{Model1.sum2.OUT1}(t) &= \mathrm{Model1.sum1.OUT1}(t) + \mathrm{Model1.neg1.OUT1}(t) \\[4pt]
+\mathrm{Model1.sum1.OUT1}(t) &= \mathrm{Model1.c53.OUT1}(t) + \mathrm{Model1.d.OUT1}(t) \\[4pt]
+\mathrm{Model1.c53.OUT1}(t) &= 1.6666666666666667 \\[4pt]
+\mathrm{Model1.d.OUT1}(0) &= \mathrm{Model1.c17.OUT1}(0) \\[4pt]
+\mathrm{Model1.d.OUT1}(t) &= \mathrm{Model1.sin1.OUT1}(t-\Delta t), \quad t=n\Delta t,\ n\geq1 \\[4pt]
+\mathrm{Model1.c17.OUT1}(t) &= 17 \\[4pt]
+\mathrm{Model1.sin1.OUT1}(t) &= \sin\left(\mathrm{Model1.time.OUT1}(t)\right) \\[4pt]
+\mathrm{Model1.neg1.OUT1}(t) &= -\mathrm{Model1.prod1.OUT1}(t) \\[4pt]
+\mathrm{Model1.prod1.OUT1}(t) &= \mathrm{Model1.time.OUT1}(t) \cdot \mathrm{Model1.c01.OUT1}(t) \\[4pt]
+\mathrm{Model1.c01.OUT1}(t) &= 0.1 \\[4pt]
+\mathrm{Model1.time.OUT1}(t) &= t \\[4pt]
+\mathrm{Model1.time.relative}(t) &= t
+\end{aligned}
+\]
+\end{document}

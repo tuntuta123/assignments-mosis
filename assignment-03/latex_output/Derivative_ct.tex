@@ -1,0 +1,15 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+\[
+\begin{aligned}
+\mathrm{Derivative.negator.OUT1}(t) &= -\mathrm{Derivative.DerivatorV.OUT1}(t) \\[4pt]
+\mathrm{Derivative.DerivatorX.OUT1}(t) &= \frac{d}{dt} \mathrm{Derivative.negator.OUT1}(t) \\[4pt]
+\mathrm{Derivative.DerivatorX.OUT1}(0) &= \mathrm{Derivative.constant0.OUT1}(0) \\[4pt]
+\mathrm{Derivative.DerivatorV.OUT1}(t) &= \frac{d}{dt} \mathrm{Derivative.DerivatorX.OUT1}(t) \\[4pt]
+\mathrm{Derivative.DerivatorV.OUT1}(0) &= \mathrm{Derivative.constant1.OUT1}(0) \\[4pt]
+\mathrm{Derivative.constant0.OUT1}(t) &= 0 \\[4pt]
+\mathrm{Derivative.constant1.OUT1}(t) &= 1
+\end{aligned}
+\]
+\end{document}
