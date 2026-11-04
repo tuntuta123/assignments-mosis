@@ -286,8 +286,16 @@ class FMUBlock(BaseBlock):
         return []
 
     def compute(self, curIteration, time, delta_t):
-        #TODO: Part 4, Task 4
-        raise NotImplementedError("FMUBlock.compute")
+        if curIteration == 0:
+            self._open()
+
+        else:
+            force = self.getInputSignal(curIteration - 1, "IN1").value
+            self._fmu.set_real(self._input_reference, force)
+            self._fmu.do_step(time - delta_t, delta_t)
+
+        output = self._fmu.get_real(self._output_reference)
+        self.appendToSignal(output, time=time)
 
     def _open(self):
         if self._fmu is not None:
