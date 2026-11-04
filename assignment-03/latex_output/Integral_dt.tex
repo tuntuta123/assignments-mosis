@@ -1,0 +1,8 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\begin{document}
+\begin{center}
+\resizebox{\textwidth}{!}{$\left\{\begin{array}{rcl}\mathrm{Integral.IntegratorX.OUT1}(0) & = & \mathrm{Integral.constant0.OUT1}(0) \\ \mathrm{Integral.IntegratorX.OUT1}(i) & = & \mathrm{Integral.IntegratorX.OUT1}(i-1) + \mathrm{Integral.deltaT.OUT1}(i-1) \cdot \mathrm{Integral.negator.OUT1}(i-1), \quad i \geq 1 \\ \mathrm{Integral.IntegratorV.OUT1}(0) & = & \mathrm{Integral.constant1.OUT1}(0) \\ \mathrm{Integral.IntegratorV.OUT1}(i) & = & \mathrm{Integral.IntegratorV.OUT1}(i-1) + \mathrm{Integral.deltaT.OUT1}(i-1) \cdot \mathrm{Integral.IntegratorX.OUT1}(i-1), \quad i \geq 1 \\ \mathrm{Integral.negator.OUT1}(i) & = & -\mathrm{Integral.IntegratorV.OUT1}(i) \\ \mathrm{Integral.deltaT.OUT1}(i) & = & \Delta t \\ \mathrm{Integral.constant0.OUT1}(i) & = & 0 \\ \mathrm{Integral.constant1.OUT1}(i) & = & 1\end{array}\right.$}
+\end{center}
+\end{document}

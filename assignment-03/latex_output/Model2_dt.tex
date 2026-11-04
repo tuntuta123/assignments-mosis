@@ -1,0 +1,8 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\begin{document}
+\begin{center}
+\resizebox{\textwidth}{!}{$\left\{\begin{array}{rcl}\mathrm{Model2.neg\_d.OUT1}(i) & = & -\mathrm{Model2.delay\_d.OUT1}(i) \\ \mathrm{Model2.delay\_d.OUT1}(0) & = & \mathrm{Model2.c7.OUT1}(0) \\ \mathrm{Model2.delay\_d.OUT1}(i) & = & \mathrm{Model2.neg\_d.OUT1}(i-1), \quad i \geq 1 \\ \mathrm{Model2.c7.OUT1}(i) & = & 7 \\ \mathrm{Model2.time.OUT1}(i) & = & i\Delta t \\ \mathrm{Model2.time.relative}(i) & = & i\Delta t \\ \mathrm{Model2.sum1.OUT1}(i) & = & \mathrm{Model2.time.OUT1}(i) + \mathrm{Model2.c11.OUT1}(i) \\ \mathrm{Model2.c11.OUT1}(i) & = & 11 \\ \mathrm{Model2.sum2.OUT1}(i) & = & \mathrm{Model2.sum1.OUT1}(i) + \mathrm{Model2.neg\_y.OUT1}(i) \\ \mathrm{Model2.neg\_y.OUT1}(i) & = & -\mathrm{Model2.prod1.OUT1}(i) \\ \mathrm{Model2.prod1.OUT1}(i) & = & \mathrm{Model2.delay\_d.OUT1}(i) \cdot \mathrm{Model2.sum2.OUT1}(i)\end{array}\right.$}
+\end{center}
+\end{document}

@@ -1,0 +1,8 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\begin{document}
+\begin{center}
+\resizebox{\textwidth}{!}{$\left\{\begin{array}{rcl}\mathrm{Derivative.negator.OUT1}(i) & = & -\mathrm{Derivative.DerivatorV.OUT1}(i) \\ \mathrm{Derivative.DerivatorX.OUT1}(0) & = & \mathrm{Derivative.constant0.OUT1}(0) \\ \mathrm{Derivative.DerivatorX.OUT1}(i) & = & \frac{\mathrm{Derivative.negator.OUT1}(i) - \mathrm{Derivative.negator.OUT1}(i-1)}{\mathrm{Derivative.deltaT.OUT1}(i)}, \quad i \geq 1 \\ \mathrm{Derivative.DerivatorV.OUT1}(0) & = & \mathrm{Derivative.constant1.OUT1}(0) \\ \mathrm{Derivative.DerivatorV.OUT1}(i) & = & \frac{\mathrm{Derivative.DerivatorX.OUT1}(i) - \mathrm{Derivative.DerivatorX.OUT1}(i-1)}{\mathrm{Derivative.deltaT.OUT1}(i)}, \quad i \geq 1 \\ \mathrm{Derivative.constant0.OUT1}(i) & = & 0 \\ \mathrm{Derivative.constant1.OUT1}(i) & = & 1 \\ \mathrm{Derivative.deltaT.OUT1}(i) & = & \Delta t\end{array}\right.$}
+\end{center}
+\end{document}

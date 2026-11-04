@@ -13,16 +13,12 @@ def latex_port(port):
 
 
 def input_source(block, input_name):
-    # Get the specified input port
     port = block.getInputPortByName(input_name)
-
-    # Find the incoming connection
     connection = port.getIncoming()
 
     if connection is None:
         raise ValueError(f"Input {input_name} is not connected")
 
-    # Return the source port
     return connection.source
 
 
@@ -207,6 +203,9 @@ def generate_ct_equations(model):
 
     return equations
 
+# ai assistance was used to improve latex formatting in
+# format_ct_latex() and save_ct_document().
+
 def format_ct_latex(equations):
     lines = []
 
@@ -243,15 +242,27 @@ def save_ct_document(model):
     return filename
 
 if __name__ == "__main__":
+    from generated.CBD_equation_1 import CBD_equation_1
+    from generated.CBD_equation_2 import CBD_equation_2
+    from generated.CBD_equation_3 import CBD_equation_3
+    from generated.OscillatorIntegral import OscillatorIntegral
+    from generated.OscillatorDerivative import OscillatorDerivative
+
     models = [
+        CBD_equation_1("Model1"),
+        CBD_equation_2("Model2"),
+        CBD_equation_3("Model3"),
         OscillatorIntegral("Integral"),
         OscillatorDerivative("Derivative")
     ]
 
     for model in models:
-        print(f"\nmodel: {model.getBlockName()}")
+        print(f"\nModel: {model.getBlockName()}")
 
         equations = generate_ct_equations(model)
 
         for equation in equations:
             print(equation)
+
+        filename = save_ct_document(model)
+        print(f"Generated: {filename}")
