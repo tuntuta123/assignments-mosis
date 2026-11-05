@@ -67,23 +67,17 @@ class Port:
         """
         Walk incoming connections to the port that produces the value for this port.
         """
-        visited = set()
         current = self
 
         while True:
-            if current in visited:
-                raise ValueError("Circular port connection detected.")
-
-            visited.add(current)
-
             incoming = current.getIncoming()
 
-            if incoming is None:  # No incoming connection
+            if incoming is None:
                 return None
 
             source = incoming.source
 
-            if not isinstance(source.block, CBD):  # Atomic block reached
+            if not isinstance(source.block, CBD):
                 return source
 
             current = source
