@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # This file was automatically generated from drawio2cbd with the command:
-#   __main__.py ../diagrams/OscillatorIntegral.drawio -F CBD -e OscillatorIntegral -d ../generated
+#   __main__.py ../diagrams/OscillatorIntegral.drawio -F CBD -e OscillatorIntegral -d ../generated -f
 
 from CBD.model import *
 from CBD.library import *
@@ -19,14 +19,14 @@ class OscillatorIntegral(CBD):
         self.addBlock(ConstantBlock("constant1", value=(1)))
 
         # Create the Connections
-        self.addConnection("IntegratorV", "negator", output_port_name='OUT1', input_port_name='IN1')
-        self.addConnection("IntegratorV", "V", output_port_name='OUT1')
-        self.addConnection("negator", "IntegratorX", output_port_name='OUT1', input_port_name='IN1')
-        self.addConnection("IntegratorX", "IntegratorV", output_port_name='OUT1', input_port_name='IN1')
-        self.addConnection("IntegratorX", "X", output_port_name='OUT1')
         self.addConnection("constant1", "IntegratorV", output_port_name='OUT1', input_port_name='IC')
         self.addConnection("deltaT", "IntegratorV", output_port_name='OUT1', input_port_name='DT')
         self.addConnection("deltaT", "IntegratorX", output_port_name='OUT1', input_port_name='DT')
+        self.addConnection("IntegratorX", "X", output_port_name='OUT1')
+        self.addConnection("IntegratorX", "negator", output_port_name='OUT1', input_port_name='IN1')
+        self.addConnection("IntegratorV", "V", output_port_name='OUT1')
+        self.addConnection("IntegratorV", "IntegratorX", output_port_name='OUT1', input_port_name='IN1')
         self.addConnection("constant0", "IntegratorX", output_port_name='OUT1', input_port_name='IC')
+        self.addConnection("negator", "IntegratorV", output_port_name='OUT1', input_port_name='IN1')
 
 
