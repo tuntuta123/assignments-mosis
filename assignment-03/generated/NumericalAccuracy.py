@@ -10,8 +10,8 @@ T_END = 20.0
 OUTPUT_FILE = "NumericalAccuracy_table.csv"
 
 MODELS = [
-    ("Integral", OscillatorIntegral, "X", "V", -1.0),
-    ("Derivative", OscillatorDerivative, "X", "V", 1.0),
+    ("Integral", OscillatorIntegral, "X", "V"),
+    ("Derivative", OscillatorDerivative, "X", "V"),
 ]
 
 
@@ -27,14 +27,14 @@ def run(cls, x_port, v_port, delta_t):
 
 
 rows = []
-for name, cls, x_port, v_port, sign in MODELS:
+for name, cls, x_port, v_port in MODELS:
     for dt in STEP_SIZES:
         t, x, v = run(cls, x_port, v_port, dt)
         rows.append(
             {
                 "Model": name,
                 "dt": dt,
-                "MSE x": np.mean((x - sign * np.sin(t)) ** 2),
+                "MSE x": np.mean((x - np.sin(t)) ** 2),
                 "MSE v": np.mean((v - np.cos(t)) ** 2),
             }
         )
