@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\begin{document}
+\newlength{\lhswidth}
+\settowidth{\lhswidth}{$\begin{array}{@{}r@{}}\mathrm{Derivative.constant0.OUT1}(i) \\ \mathrm{Derivative.deltaT.OUT1}(i) \\ \mathrm{Derivative.constant1.OUT1}(i) \\ \mathrm{Derivative.DerivatorX.OUT1}(0) \\ \mathrm{Derivative.DerivatorX.OUT1}(i) \\ \mathrm{Derivative.DerivatorV.OUT1}(0) \\ \mathrm{Derivative.DerivatorV.OUT1}(i) \\ \mathrm{Derivative.negator.OUT1}(i)\end{array}$}
+\[
+\resizebox{\textwidth}{!}{$\begin{array}{@{}l@{}l@{}}
+ & \begin{array}{rcl}
+\makebox[\lhswidth][r]{$\mathrm{Derivative.constant0.OUT1}(i)$} & = & 0 \\
+\makebox[\lhswidth][r]{$\mathrm{Derivative.deltaT.OUT1}(i)$} & = & \Delta t \\
+\makebox[\lhswidth][r]{$\mathrm{Derivative.constant1.OUT1}(i)$} & = & 1
+\end{array} \\
+\left\{\vphantom{\begin{array}{rcl}
+\makebox[\lhswidth][r]{$\mathrm{Derivative.DerivatorX.OUT1}(0)$} & = & \mathrm{Derivative.constant0.OUT1}(0) \\
+\makebox[\lhswidth][r]{$\mathrm{Derivative.DerivatorX.OUT1}(i)$} & = & \frac{\mathrm{Derivative.negator.OUT1}(i) - \mathrm{Derivative.negator.OUT1}(i-1)}{\mathrm{Derivative.deltaT.OUT1}(i)}, \quad i \geq 1 \\
+\makebox[\lhswidth][r]{$\mathrm{Derivative.DerivatorV.OUT1}(0)$} & = & \mathrm{Derivative.constant1.OUT1}(0) \\
+\makebox[\lhswidth][r]{$\mathrm{Derivative.DerivatorV.OUT1}(i)$} & = & \frac{\mathrm{Derivative.DerivatorX.OUT1}(i) - \mathrm{Derivative.DerivatorX.OUT1}(i-1)}{\mathrm{Derivative.deltaT.OUT1}(i)}, \quad i \geq 1 \\
+\makebox[\lhswidth][r]{$\mathrm{Derivative.negator.OUT1}(i)$} & = & -\mathrm{Derivative.DerivatorV.OUT1}(i)
+\end{array}}\right. & \begin{array}{rcl}
+\makebox[\lhswidth][r]{$\mathrm{Derivative.DerivatorX.OUT1}(0)$} & = & \mathrm{Derivative.constant0.OUT1}(0) \\
+\makebox[\lhswidth][r]{$\mathrm{Derivative.DerivatorX.OUT1}(i)$} & = & \frac{\mathrm{Derivative.negator.OUT1}(i) - \mathrm{Derivative.negator.OUT1}(i-1)}{\mathrm{Derivative.deltaT.OUT1}(i)}, \quad i \geq 1 \\
+\makebox[\lhswidth][r]{$\mathrm{Derivative.DerivatorV.OUT1}(0)$} & = & \mathrm{Derivative.constant1.OUT1}(0) \\
+\makebox[\lhswidth][r]{$\mathrm{Derivative.DerivatorV.OUT1}(i)$} & = & \frac{\mathrm{Derivative.DerivatorX.OUT1}(i) - \mathrm{Derivative.DerivatorX.OUT1}(i-1)}{\mathrm{Derivative.deltaT.OUT1}(i)}, \quad i \geq 1 \\
+\makebox[\lhswidth][r]{$\mathrm{Derivative.negator.OUT1}(i)$} & = & -\mathrm{Derivative.DerivatorV.OUT1}(i)
+\end{array}
+\end{array}$}
+\]
+\end{document}

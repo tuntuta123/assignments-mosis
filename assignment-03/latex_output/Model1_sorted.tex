@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\begin{document}
+\newlength{\lhswidth}
+\settowidth{\lhswidth}{$\begin{array}{@{}r@{}}\mathrm{Model1.c53.OUT1}(i) \\ \mathrm{Model1.c17.OUT1}(i) \\ \mathrm{Model1.time.OUT1}(i) \\ \mathrm{Model1.time.relative}(i) \\ \mathrm{Model1.c01.OUT1}(i) \\ \mathrm{Model1.d.OUT1}(0) \\ \mathrm{Model1.d.OUT1}(i) \\ \mathrm{Model1.sin1.OUT1}(i) \\ \mathrm{Model1.prod1.OUT1}(i) \\ \mathrm{Model1.sum1.OUT1}(i) \\ \mathrm{Model1.neg1.OUT1}(i) \\ \mathrm{Model1.sum2.OUT1}(i)\end{array}$}
+\[
+\resizebox{\textwidth}{!}{$\begin{array}{@{}l@{}l@{}}
+ & \begin{array}{rcl}
+\makebox[\lhswidth][r]{$\mathrm{Model1.c53.OUT1}(i)$} & = & 1.6666666666666667 \\
+\makebox[\lhswidth][r]{$\mathrm{Model1.c17.OUT1}(i)$} & = & 17 \\
+\makebox[\lhswidth][r]{$\mathrm{Model1.time.OUT1}(i)$} & = & i\Delta t \\
+\makebox[\lhswidth][r]{$\mathrm{Model1.time.relative}(i)$} & = & i\Delta t \\
+\makebox[\lhswidth][r]{$\mathrm{Model1.c01.OUT1}(i)$} & = & 0.1 \\
+\makebox[\lhswidth][r]{$\mathrm{Model1.d.OUT1}(0)$} & = & \mathrm{Model1.c17.OUT1}(0) \\
+\makebox[\lhswidth][r]{$\mathrm{Model1.d.OUT1}(i)$} & = & \mathrm{Model1.sin1.OUT1}(i-1), \quad i \geq 1 \\
+\makebox[\lhswidth][r]{$\mathrm{Model1.sin1.OUT1}(i)$} & = & \sin\left(\mathrm{Model1.time.OUT1}(i)\right) \\
+\makebox[\lhswidth][r]{$\mathrm{Model1.prod1.OUT1}(i)$} & = & \mathrm{Model1.time.OUT1}(i) \cdot \mathrm{Model1.c01.OUT1}(i) \\
+\makebox[\lhswidth][r]{$\mathrm{Model1.sum1.OUT1}(i)$} & = & \mathrm{Model1.c53.OUT1}(i) + \mathrm{Model1.d.OUT1}(i) \\
+\makebox[\lhswidth][r]{$\mathrm{Model1.neg1.OUT1}(i)$} & = & -\mathrm{Model1.prod1.OUT1}(i) \\
+\makebox[\lhswidth][r]{$\mathrm{Model1.sum2.OUT1}(i)$} & = & \mathrm{Model1.sum1.OUT1}(i) + \mathrm{Model1.neg1.OUT1}(i)
+\end{array}
+\end{array}$}
+\]
+\end{document}

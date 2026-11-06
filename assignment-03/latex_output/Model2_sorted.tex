@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\begin{document}
+\newlength{\lhswidth}
+\settowidth{\lhswidth}{$\begin{array}{@{}r@{}}\mathrm{Model2.c7.OUT1}(i) \\ \mathrm{Model2.time.OUT1}(i) \\ \mathrm{Model2.time.relative}(i) \\ \mathrm{Model2.c11.OUT1}(i) \\ \mathrm{Model2.delay\_d.OUT1}(0) \\ \mathrm{Model2.delay\_d.OUT1}(i) \\ \mathrm{Model2.sum1.OUT1}(i) \\ \mathrm{Model2.neg\_d.OUT1}(i) \\ \mathrm{Model2.prod1.OUT1}(i) \\ \mathrm{Model2.neg\_y.OUT1}(i) \\ \mathrm{Model2.sum2.OUT1}(i)\end{array}$}
+\[
+\resizebox{\textwidth}{!}{$\begin{array}{@{}l@{}l@{}}
+ & \begin{array}{rcl}
+\makebox[\lhswidth][r]{$\mathrm{Model2.c7.OUT1}(i)$} & = & 7 \\
+\makebox[\lhswidth][r]{$\mathrm{Model2.time.OUT1}(i)$} & = & i\Delta t \\
+\makebox[\lhswidth][r]{$\mathrm{Model2.time.relative}(i)$} & = & i\Delta t \\
+\makebox[\lhswidth][r]{$\mathrm{Model2.c11.OUT1}(i)$} & = & 11 \\
+\makebox[\lhswidth][r]{$\mathrm{Model2.delay\_d.OUT1}(0)$} & = & \mathrm{Model2.c7.OUT1}(0) \\
+\makebox[\lhswidth][r]{$\mathrm{Model2.delay\_d.OUT1}(i)$} & = & \mathrm{Model2.neg\_d.OUT1}(i-1), \quad i \geq 1 \\
+\makebox[\lhswidth][r]{$\mathrm{Model2.sum1.OUT1}(i)$} & = & \mathrm{Model2.time.OUT1}(i) + \mathrm{Model2.c11.OUT1}(i) \\
+\makebox[\lhswidth][r]{$\mathrm{Model2.neg\_d.OUT1}(i)$} & = & -\mathrm{Model2.delay\_d.OUT1}(i)
+\end{array} \\
+\left\{\vphantom{\begin{array}{rcl}
+\makebox[\lhswidth][r]{$\mathrm{Model2.prod1.OUT1}(i)$} & = & \mathrm{Model2.delay\_d.OUT1}(i) \cdot \mathrm{Model2.sum2.OUT1}(i) \\
+\makebox[\lhswidth][r]{$\mathrm{Model2.neg\_y.OUT1}(i)$} & = & -\mathrm{Model2.prod1.OUT1}(i) \\
+\makebox[\lhswidth][r]{$\mathrm{Model2.sum2.OUT1}(i)$} & = & \mathrm{Model2.sum1.OUT1}(i) + \mathrm{Model2.neg\_y.OUT1}(i)
+\end{array}}\right. & \begin{array}{rcl}
+\makebox[\lhswidth][r]{$\mathrm{Model2.prod1.OUT1}(i)$} & = & \mathrm{Model2.delay\_d.OUT1}(i) \cdot \mathrm{Model2.sum2.OUT1}(i) \\
+\makebox[\lhswidth][r]{$\mathrm{Model2.neg\_y.OUT1}(i)$} & = & -\mathrm{Model2.prod1.OUT1}(i) \\
+\makebox[\lhswidth][r]{$\mathrm{Model2.sum2.OUT1}(i)$} & = & \mathrm{Model2.sum1.OUT1}(i) + \mathrm{Model2.neg\_y.OUT1}(i)
+\end{array}
+\end{array}$}
+\]
+\end{document}
