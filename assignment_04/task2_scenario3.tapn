@@ -777,8 +777,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="570" yCoord="527"/>
-      <arcpath arcPointType="false" id="1" xCoord="716" yCoord="542"/>
+      <arcpath arcPointType="false" id="0" xCoord="570" yCoord="526"/>
+      <arcpath arcPointType="false" id="1" xCoord="715" yCoord="541"/>
     </arc>
     <arc id="A1" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_idle" target="start_A_priority" type="timed" weight="1">
       <hlinscription>
@@ -796,8 +796,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="646" yCoord="580"/>
-      <arcpath arcPointType="false" id="1" xCoord="716" yCoord="552"/>
+      <arcpath arcPointType="false" id="0" xCoord="644" yCoord="579"/>
+      <arcpath arcPointType="false" id="1" xCoord="714" yCoord="551"/>
     </arc>
     <arc id="A2" inscription="1" nameOffsetX="0" nameOffsetY="0" source="start_A_priority" target="oven_busy_A" type="normal" weight="1">
       <hlinscription>
@@ -815,8 +815,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="727" yCoord="537"/>
-      <arcpath arcPointType="false" id="1" xCoord="799" yCoord="489"/>
+      <arcpath arcPointType="false" id="0" xCoord="725" yCoord="535"/>
+      <arcpath arcPointType="false" id="1" xCoord="797" yCoord="488"/>
     </arc>
     <arc id="A3" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_idle" target="start_B_priority" type="timed" weight="1">
       <hlinscription>
@@ -834,8 +834,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="642" yCoord="596"/>
-      <arcpath arcPointType="false" id="1" xCoord="717" yCoord="657"/>
+      <arcpath arcPointType="false" id="0" xCoord="642" yCoord="595"/>
+      <arcpath arcPointType="false" id="1" xCoord="715" yCoord="656"/>
     </arc>
     <arc id="A4" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="queue_B" target="start_B_priority" type="timed" weight="1">
       <hlinscription>
@@ -853,8 +853,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="570" yCoord="648"/>
-      <arcpath arcPointType="false" id="1" xCoord="716" yCoord="667"/>
+      <arcpath arcPointType="false" id="0" xCoord="570" yCoord="647"/>
+      <arcpath arcPointType="false" id="1" xCoord="715" yCoord="666"/>
     </arc>
     <arc id="A5" inscription="1" nameOffsetX="0" nameOffsetY="0" source="start_B_priority" target="oven_busy_B" type="normal" weight="1">
       <hlinscription>
@@ -872,8 +872,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="726" yCoord="667"/>
-      <arcpath arcPointType="false" id="1" xCoord="797" yCoord="687"/>
+      <arcpath arcPointType="false" id="0" xCoord="725" yCoord="665"/>
+      <arcpath arcPointType="false" id="1" xCoord="796" yCoord="686"/>
     </arc>
     <arc id="A6" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_busy_A" target="oven_breakdown_A" type="timed" weight="1">
       <hlinscription>
@@ -891,8 +891,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="823" yCoord="490"/>
-      <arcpath arcPointType="false" id="1" xCoord="867" yCoord="521"/>
+      <arcpath arcPointType="false" id="0" xCoord="822" yCoord="489"/>
+      <arcpath arcPointType="false" id="1" xCoord="865" yCoord="521"/>
     </arc>
     <arc id="A7" inscription="1" nameOffsetX="0" nameOffsetY="0" source="oven_breakdown_A" target="oven_down_A" type="normal" weight="1">
       <hlinscription>
@@ -910,8 +910,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="877" yCoord="521"/>
-      <arcpath arcPointType="false" id="1" xCoord="949" yCoord="473"/>
+      <arcpath arcPointType="false" id="0" xCoord="875" yCoord="520"/>
+      <arcpath arcPointType="false" id="1" xCoord="947" yCoord="473"/>
     </arc>
     <arc id="A8" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_down_A" target="oven_repairing_A" type="timed" weight="1">
       <hlinscription>
@@ -929,8 +929,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="973" yCoord="474"/>
-      <arcpath arcPointType="false" id="1" xCoord="1031" yCoord="520"/>
+      <arcpath arcPointType="false" id="0" xCoord="972" yCoord="474"/>
+      <arcpath arcPointType="false" id="1" xCoord="1030" yCoord="520"/>
     </arc>
     <arc id="A9" inscription="1" nameOffsetX="0" nameOffsetY="0" source="oven_repairing_A" target="oven_repair_A" type="normal" weight="1">
       <hlinscription>
@@ -948,8 +948,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="1040" yCoord="531"/>
-      <arcpath arcPointType="false" id="1" xCoord="1112" yCoord="489"/>
+      <arcpath arcPointType="false" id="0" xCoord="1040" yCoord="530"/>
+      <arcpath arcPointType="false" id="1" xCoord="1112" yCoord="488"/>
     </arc>
     <arc id="A10" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_busy_B" target="oven_breakdown_B" type="timed" weight="1">
       <hlinscription>
@@ -967,8 +967,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="823" yCoord="682"/>
-      <arcpath arcPointType="false" id="1" xCoord="866" yCoord="651"/>
+      <arcpath arcPointType="false" id="0" xCoord="822" yCoord="681"/>
+      <arcpath arcPointType="false" id="1" xCoord="865" yCoord="651"/>
     </arc>
     <arc id="A11" inscription="1" nameOffsetX="0" nameOffsetY="0" source="oven_breakdown_B" target="oven_down_B" type="normal" weight="1">
       <hlinscription>
@@ -986,8 +986,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="876" yCoord="651"/>
-      <arcpath arcPointType="false" id="1" xCoord="949" yCoord="698"/>
+      <arcpath arcPointType="false" id="0" xCoord="875" yCoord="650"/>
+      <arcpath arcPointType="false" id="1" xCoord="947" yCoord="697"/>
     </arc>
     <arc id="A12" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_down_B" target="oven_repairing_B" type="timed" weight="1">
       <hlinscription>
@@ -1005,7 +1005,7 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="973" yCoord="697"/>
+      <arcpath arcPointType="false" id="0" xCoord="972" yCoord="696"/>
       <arcpath arcPointType="false" id="1" xCoord="1030" yCoord="654"/>
     </arc>
     <arc id="A13" inscription="1" nameOffsetX="0" nameOffsetY="0" source="oven_repairing_B" target="oven_repair_B" type="normal" weight="1">
@@ -1024,8 +1024,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="1040" yCoord="651"/>
-      <arcpath arcPointType="false" id="1" xCoord="1113" yCoord="698"/>
+      <arcpath arcPointType="false" id="0" xCoord="1040" yCoord="650"/>
+      <arcpath arcPointType="false" id="1" xCoord="1112" yCoord="697"/>
     </arc>
     <arc id="A14" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_repair_B" target="oven_restart_B" type="timed" weight="1">
       <hlinscription>
@@ -1045,7 +1045,7 @@
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1112" yCoord="712"/>
       <arcpath arcPointType="false" id="1" xCoord="975" yCoord="780"/>
-      <arcpath arcPointType="false" id="2" xCoord="966" yCoord="787"/>
+      <arcpath arcPointType="false" id="2" xCoord="965" yCoord="785"/>
     </arc>
     <arc id="A15" inscription="1" nameOffsetX="0" nameOffsetY="0" source="oven_restart_B" target="oven_busy_B" type="normal" weight="1">
       <hlinscription>
@@ -1063,8 +1063,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="956" yCoord="787"/>
-      <arcpath arcPointType="false" id="1" xCoord="823" yCoord="699"/>
+      <arcpath arcPointType="false" id="0" xCoord="955" yCoord="786"/>
+      <arcpath arcPointType="false" id="1" xCoord="822" yCoord="698"/>
     </arc>
     <arc id="A16" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_repair_A" target="oven_restart_A" type="timed" weight="1">
       <hlinscription>
@@ -1082,8 +1082,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="1112" yCoord="474"/>
-      <arcpath arcPointType="false" id="1" xCoord="966" yCoord="397"/>
+      <arcpath arcPointType="false" id="0" xCoord="1112" yCoord="473"/>
+      <arcpath arcPointType="false" id="1" xCoord="965" yCoord="395"/>
     </arc>
     <arc id="A17" inscription="1" nameOffsetX="0" nameOffsetY="0" source="oven_restart_A" target="oven_busy_A" type="normal" weight="1">
       <hlinscription>
@@ -1101,8 +1101,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="956" yCoord="397"/>
-      <arcpath arcPointType="false" id="1" xCoord="824" yCoord="473"/>
+      <arcpath arcPointType="false" id="0" xCoord="955" yCoord="396"/>
+      <arcpath arcPointType="false" id="1" xCoord="823" yCoord="473"/>
     </arc>
     <arc id="A18" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_busy_B" target="finish_B" type="timed" weight="1">
       <hlinscription>
@@ -1120,8 +1120,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="813" yCoord="706"/>
-      <arcpath arcPointType="false" id="1" xCoord="826" yCoord="810"/>
+      <arcpath arcPointType="false" id="0" xCoord="812" yCoord="705"/>
+      <arcpath arcPointType="false" id="1" xCoord="825" yCoord="810"/>
     </arc>
     <arc id="A19" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_busy_A" target="finish_A" type="timed" weight="1">
       <hlinscription>
@@ -1139,8 +1139,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="814" yCoord="467"/>
-      <arcpath arcPointType="false" id="1" xCoord="841" yCoord="361"/>
+      <arcpath arcPointType="false" id="0" xCoord="814" yCoord="465"/>
+      <arcpath arcPointType="false" id="1" xCoord="840" yCoord="360"/>
     </arc>
     <arc id="A20" inscription="1" nameOffsetX="0" nameOffsetY="0" source="finish_B" target="oven_idle" type="normal" weight="1">
       <hlinscription>
@@ -1159,7 +1159,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="820" yCoord="831"/>
-      <arcpath arcPointType="false" id="1" xCoord="640" yCoord="598"/>
+      <arcpath arcPointType="false" id="1" xCoord="639" yCoord="597"/>
     </arc>
     <arc id="A21" inscription="1" nameOffsetX="0" nameOffsetY="0" source="finish_A" target="oven_idle" type="normal" weight="1">
       <hlinscription>
@@ -1177,8 +1177,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="836" yCoord="351"/>
-      <arcpath arcPointType="false" id="1" xCoord="641" yCoord="574"/>
+      <arcpath arcPointType="false" id="0" xCoord="835" yCoord="351"/>
+      <arcpath arcPointType="false" id="1" xCoord="640" yCoord="574"/>
     </arc>
     <arc id="A22" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="availible_repairmen" target="oven_repairing_A" type="timed" weight="1">
       <hlinscription>
@@ -1196,7 +1196,7 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="946" yCoord="566"/>
+      <arcpath arcPointType="false" id="0" xCoord="944" yCoord="565"/>
       <arcpath arcPointType="false" id="1" xCoord="1030" yCoord="534"/>
     </arc>
     <arc id="A23" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="availible_repairmen" target="oven_repairing_B" type="timed" weight="1">
@@ -1215,8 +1215,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="943" yCoord="580"/>
-      <arcpath arcPointType="false" id="1" xCoord="1031" yCoord="640"/>
+      <arcpath arcPointType="false" id="0" xCoord="942" yCoord="579"/>
+      <arcpath arcPointType="false" id="1" xCoord="1030" yCoord="640"/>
     </arc>
     <arc id="A24" inscription="1" nameOffsetX="0" nameOffsetY="0" source="oven_restart_B" target="availible_repairmen" type="normal" weight="1">
       <hlinscription>
@@ -1234,16 +1234,16 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="961" yCoord="766"/>
-      <arcpath arcPointType="false" id="1" xCoord="933" yCoord="586"/>
+      <arcpath arcPointType="false" id="0" xCoord="960" yCoord="765"/>
+      <arcpath arcPointType="false" id="1" xCoord="932" yCoord="585"/>
     </arc>
-    <arc id="I28" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_1" target="finish_A" type="tapnInhibitor" weight="1">
-      <arcpath arcPointType="false" id="0" xCoord="1231" yCoord="390"/>
-      <arcpath arcPointType="false" id="1" xCoord="846" yCoord="354"/>
+    <arc id="I25" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_1" target="finish_A" type="tapnInhibitor" weight="1">
+      <arcpath arcPointType="false" id="0" xCoord="1230" yCoord="389"/>
+      <arcpath arcPointType="false" id="1" xCoord="844" yCoord="354"/>
     </arc>
-    <arc id="I29" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_2" target="finish_B" type="tapnInhibitor" weight="1">
-      <arcpath arcPointType="false" id="0" xCoord="1231" yCoord="768"/>
-      <arcpath arcPointType="false" id="1" xCoord="831" yCoord="823"/>
+    <arc id="I26" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_2" target="finish_B" type="tapnInhibitor" weight="1">
+      <arcpath arcPointType="false" id="0" xCoord="1230" yCoord="767"/>
+      <arcpath arcPointType="false" id="1" xCoord="830" yCoord="822"/>
     </arc>
     <arc id="A30" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_ready" target="finish_A" type="timed" weight="1">
       <hlinscription>
@@ -1261,8 +1261,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="390" yCoord="216"/>
-      <arcpath arcPointType="false" id="1" xCoord="837" yCoord="341"/>
+      <arcpath arcPointType="false" id="0" xCoord="389" yCoord="214"/>
+      <arcpath arcPointType="false" id="1" xCoord="835" yCoord="341"/>
     </arc>
     <arc id="A31" inscription="1" nameOffsetX="0" nameOffsetY="0" source="finish_A" target="oven_done" type="normal" weight="1">
       <hlinscription>
@@ -1280,16 +1280,16 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="847" yCoord="337"/>
-      <arcpath arcPointType="false" id="1" xCoord="1531" yCoord="184"/>
+      <arcpath arcPointType="false" id="0" xCoord="845" yCoord="336"/>
+      <arcpath arcPointType="false" id="1" xCoord="1530" yCoord="183"/>
     </arc>
-    <arc id="I32" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="queue_A" target="skip_idle" type="tapnInhibitor" weight="1">
+    <arc id="I29" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="queue_A" target="skip_idle" type="tapnInhibitor" weight="1">
       <arcpath arcPointType="false" id="0" xCoord="560" yCoord="511"/>
-      <arcpath arcPointType="false" id="1" xCoord="676" yCoord="167"/>
+      <arcpath arcPointType="false" id="1" xCoord="675" yCoord="165"/>
     </arc>
-    <arc id="I33" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="queue_B" target="skip_idle" type="tapnInhibitor" weight="1">
-      <arcpath arcPointType="false" id="0" xCoord="559" yCoord="631"/>
-      <arcpath arcPointType="false" id="1" xCoord="676" yCoord="167"/>
+    <arc id="I30" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="queue_B" target="skip_idle" type="tapnInhibitor" weight="1">
+      <arcpath arcPointType="false" id="0" xCoord="559" yCoord="630"/>
+      <arcpath arcPointType="false" id="1" xCoord="675" yCoord="165"/>
     </arc>
     <arc id="A34" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_ready" target="skip_idle" type="timed" weight="1">
       <hlinscription>
@@ -1307,8 +1307,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="390" yCoord="208"/>
-      <arcpath arcPointType="false" id="1" xCoord="670" yCoord="152"/>
+      <arcpath arcPointType="false" id="0" xCoord="390" yCoord="207"/>
+      <arcpath arcPointType="false" id="1" xCoord="670" yCoord="151"/>
     </arc>
     <arc id="A35" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_idle" target="skip_idle" type="timed" weight="1">
       <hlinscription>
@@ -1326,8 +1326,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="632" yCoord="571"/>
-      <arcpath arcPointType="false" id="1" xCoord="676" yCoord="167"/>
+      <arcpath arcPointType="false" id="0" xCoord="632" yCoord="570"/>
+      <arcpath arcPointType="false" id="1" xCoord="675" yCoord="165"/>
     </arc>
     <arc id="A36" inscription="1" nameOffsetX="0" nameOffsetY="0" source="skip_idle" target="oven_done" type="normal" weight="1">
       <hlinscription>
@@ -1345,8 +1345,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="680" yCoord="151"/>
-      <arcpath arcPointType="false" id="1" xCoord="1531" yCoord="181"/>
+      <arcpath arcPointType="false" id="0" xCoord="680" yCoord="150"/>
+      <arcpath arcPointType="false" id="1" xCoord="1530" yCoord="179"/>
     </arc>
     <arc id="A37" inscription="1" nameOffsetX="0" nameOffsetY="0" source="skip_idle" target="oven_idle" type="normal" weight="1">
       <hlinscription>
@@ -1364,8 +1364,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="676" yCoord="167"/>
-      <arcpath arcPointType="false" id="1" xCoord="632" yCoord="571"/>
+      <arcpath arcPointType="false" id="0" xCoord="675" yCoord="165"/>
+      <arcpath arcPointType="false" id="1" xCoord="632" yCoord="570"/>
     </arc>
     <arc id="A38" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_ready" target="start_A_priority" type="timed" weight="1">
       <hlinscription>
@@ -1383,8 +1383,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="387" yCoord="221"/>
-      <arcpath arcPointType="false" id="1" xCoord="717" yCoord="532"/>
+      <arcpath arcPointType="false" id="0" xCoord="386" yCoord="220"/>
+      <arcpath arcPointType="false" id="1" xCoord="716" yCoord="531"/>
     </arc>
     <arc id="A39" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_ready" target="start_B_priority" type="timed" weight="1">
       <hlinscription>
@@ -1402,8 +1402,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="384" yCoord="223"/>
-      <arcpath arcPointType="false" id="1" xCoord="717" yCoord="652"/>
+      <arcpath arcPointType="false" id="0" xCoord="384" yCoord="222"/>
+      <arcpath arcPointType="false" id="1" xCoord="716" yCoord="651"/>
     </arc>
     <arc id="A40" inscription="1" nameOffsetX="0" nameOffsetY="0" source="start_A_priority" target="oven_done" type="normal" weight="1">
       <hlinscription>
@@ -1421,8 +1421,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="726" yCoord="547"/>
-      <arcpath arcPointType="false" id="1" xCoord="1532" yCoord="188"/>
+      <arcpath arcPointType="false" id="0" xCoord="725" yCoord="545"/>
+      <arcpath arcPointType="false" id="1" xCoord="1531" yCoord="186"/>
     </arc>
     <arc id="A41" inscription="1" nameOffsetX="0" nameOffsetY="0" source="start_B_priority" target="oven_done" type="normal" weight="1">
       <hlinscription>
@@ -1440,8 +1440,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="727" yCoord="657"/>
-      <arcpath arcPointType="false" id="1" xCoord="1532" yCoord="189"/>
+      <arcpath arcPointType="false" id="0" xCoord="725" yCoord="655"/>
+      <arcpath arcPointType="false" id="1" xCoord="1532" yCoord="188"/>
     </arc>
     <arc id="A42" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_ready" target="finish_B" type="timed" weight="1">
       <hlinscription>
@@ -1459,8 +1459,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="384" yCoord="223"/>
-      <arcpath arcPointType="false" id="1" xCoord="821" yCoord="821"/>
+      <arcpath arcPointType="false" id="0" xCoord="384" yCoord="222"/>
+      <arcpath arcPointType="false" id="1" xCoord="820" yCoord="821"/>
     </arc>
     <arc id="A43" inscription="1" nameOffsetX="0" nameOffsetY="0" source="finish_B" target="oven_done" type="normal" weight="1">
       <hlinscription>
@@ -1478,8 +1478,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="831" yCoord="817"/>
-      <arcpath arcPointType="false" id="1" xCoord="1534" yCoord="191"/>
+      <arcpath arcPointType="false" id="0" xCoord="830" yCoord="816"/>
+      <arcpath arcPointType="false" id="1" xCoord="1534" yCoord="190"/>
     </arc>
     <arc id="A44" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_ready" target="oven_breakdown_A" type="timed" weight="1">
       <hlinscription>
@@ -1497,8 +1497,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="388" yCoord="219"/>
-      <arcpath arcPointType="false" id="1" xCoord="866" yCoord="531"/>
+      <arcpath arcPointType="false" id="0" xCoord="388" yCoord="218"/>
+      <arcpath arcPointType="false" id="1" xCoord="865" yCoord="531"/>
     </arc>
     <arc id="A45" inscription="1" nameOffsetX="0" nameOffsetY="0" source="oven_breakdown_A" target="oven_done" type="normal" weight="1">
       <hlinscription>
@@ -1516,8 +1516,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="876" yCoord="531"/>
-      <arcpath arcPointType="false" id="1" xCoord="1532" yCoord="188"/>
+      <arcpath arcPointType="false" id="0" xCoord="875" yCoord="530"/>
+      <arcpath arcPointType="false" id="1" xCoord="1532" yCoord="187"/>
     </arc>
     <arc id="A46" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_ready" target="oven_breakdown_B" type="timed" weight="1">
       <hlinscription>
@@ -1535,8 +1535,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="387" yCoord="221"/>
-      <arcpath arcPointType="false" id="1" xCoord="867" yCoord="641"/>
+      <arcpath arcPointType="false" id="0" xCoord="386" yCoord="220"/>
+      <arcpath arcPointType="false" id="1" xCoord="865" yCoord="641"/>
     </arc>
     <arc id="A47" inscription="1" nameOffsetX="0" nameOffsetY="0" source="oven_breakdown_B" target="oven_done" type="normal" weight="1">
       <hlinscription>
@@ -1554,8 +1554,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="877" yCoord="641"/>
-      <arcpath arcPointType="false" id="1" xCoord="1533" yCoord="190"/>
+      <arcpath arcPointType="false" id="0" xCoord="875" yCoord="640"/>
+      <arcpath arcPointType="false" id="1" xCoord="1533" yCoord="188"/>
     </arc>
     <arc id="A48" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_ready" target="oven_repairing_A" type="timed" weight="1">
       <hlinscription>
@@ -1573,8 +1573,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="389" yCoord="218"/>
-      <arcpath arcPointType="false" id="1" xCoord="1030" yCoord="528"/>
+      <arcpath arcPointType="false" id="0" xCoord="389" yCoord="217"/>
+      <arcpath arcPointType="false" id="1" xCoord="1030" yCoord="527"/>
     </arc>
     <arc id="A49" inscription="1" nameOffsetX="0" nameOffsetY="0" source="oven_repairing_A" target="oven_done" type="normal" weight="1">
       <hlinscription>
@@ -1592,8 +1592,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="1041" yCoord="521"/>
-      <arcpath arcPointType="false" id="1" xCoord="1533" yCoord="190"/>
+      <arcpath arcPointType="false" id="0" xCoord="1040" yCoord="520"/>
+      <arcpath arcPointType="false" id="1" xCoord="1533" yCoord="188"/>
     </arc>
     <arc id="A50" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_ready" target="oven_repairing_B" type="timed" weight="1">
       <hlinscription>
@@ -1611,8 +1611,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="388" yCoord="219"/>
-      <arcpath arcPointType="false" id="1" xCoord="1030" yCoord="648"/>
+      <arcpath arcPointType="false" id="0" xCoord="387" yCoord="218"/>
+      <arcpath arcPointType="false" id="1" xCoord="1030" yCoord="647"/>
     </arc>
     <arc id="A51" inscription="1" nameOffsetX="0" nameOffsetY="0" source="oven_repairing_B" target="oven_done" type="normal" weight="1">
       <hlinscription>
@@ -1630,8 +1630,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="1041" yCoord="641"/>
-      <arcpath arcPointType="false" id="1" xCoord="1534" yCoord="191"/>
+      <arcpath arcPointType="false" id="0" xCoord="1040" yCoord="640"/>
+      <arcpath arcPointType="false" id="1" xCoord="1534" yCoord="190"/>
     </arc>
     <arc id="A52" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_ready" target="skip_busy_A" type="timed" weight="1">
       <hlinscription>
@@ -1649,8 +1649,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="389" yCoord="204"/>
-      <arcpath arcPointType="false" id="1" xCoord="700" yCoord="47"/>
+      <arcpath arcPointType="false" id="0" xCoord="388" yCoord="203"/>
+      <arcpath arcPointType="false" id="1" xCoord="700" yCoord="46"/>
     </arc>
     <arc id="A53" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_busy_A" target="skip_busy_A" type="timed" weight="1">
       <hlinscription>
@@ -1668,8 +1668,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="808" yCoord="467"/>
-      <arcpath arcPointType="false" id="1" xCoord="706" yCoord="61"/>
+      <arcpath arcPointType="false" id="0" xCoord="806" yCoord="465"/>
+      <arcpath arcPointType="false" id="1" xCoord="705" yCoord="60"/>
     </arc>
     <arc id="A54" inscription="1" nameOffsetX="0" nameOffsetY="0" source="skip_busy_A" target="oven_busy_A" type="normal" weight="1">
       <hlinscription>
@@ -1687,8 +1687,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="706" yCoord="61"/>
-      <arcpath arcPointType="false" id="1" xCoord="808" yCoord="467"/>
+      <arcpath arcPointType="false" id="0" xCoord="705" yCoord="60"/>
+      <arcpath arcPointType="false" id="1" xCoord="806" yCoord="465"/>
     </arc>
     <arc id="A55" inscription="1" nameOffsetX="0" nameOffsetY="0" source="skip_busy_A" target="oven_done" type="normal" weight="1">
       <hlinscription>
@@ -1706,8 +1706,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="710" yCoord="46"/>
-      <arcpath arcPointType="false" id="1" xCoord="1531" yCoord="179"/>
+      <arcpath arcPointType="false" id="0" xCoord="710" yCoord="45"/>
+      <arcpath arcPointType="false" id="1" xCoord="1530" yCoord="178"/>
     </arc>
     <arc id="A56" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_ready" target="skip_busy_B" type="timed" weight="1">
       <hlinscription>
@@ -1725,8 +1725,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="390" yCoord="206"/>
-      <arcpath arcPointType="false" id="1" xCoord="790" yCoord="47"/>
+      <arcpath arcPointType="false" id="0" xCoord="389" yCoord="204"/>
+      <arcpath arcPointType="false" id="1" xCoord="790" yCoord="46"/>
     </arc>
     <arc id="A57" inscription="1" nameOffsetX="0" nameOffsetY="0" source="skip_busy_B" target="oven_busy_B" type="normal" weight="1">
       <hlinscription>
@@ -1744,8 +1744,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="796" yCoord="61"/>
-      <arcpath arcPointType="false" id="1" xCoord="811" yCoord="677"/>
+      <arcpath arcPointType="false" id="0" xCoord="795" yCoord="60"/>
+      <arcpath arcPointType="false" id="1" xCoord="810" yCoord="675"/>
     </arc>
     <arc id="A58" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_busy_B" target="skip_busy_B" type="timed" weight="1">
       <hlinscription>
@@ -1763,8 +1763,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="811" yCoord="677"/>
-      <arcpath arcPointType="false" id="1" xCoord="796" yCoord="61"/>
+      <arcpath arcPointType="false" id="0" xCoord="810" yCoord="675"/>
+      <arcpath arcPointType="false" id="1" xCoord="795" yCoord="60"/>
     </arc>
     <arc id="A59" inscription="1" nameOffsetX="0" nameOffsetY="0" source="skip_busy_B" target="oven_done" type="normal" weight="1">
       <hlinscription>
@@ -1782,8 +1782,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="800" yCoord="46"/>
-      <arcpath arcPointType="false" id="1" xCoord="1531" yCoord="179"/>
+      <arcpath arcPointType="false" id="0" xCoord="800" yCoord="45"/>
+      <arcpath arcPointType="false" id="1" xCoord="1530" yCoord="177"/>
     </arc>
     <arc id="A60" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_ready" target="skip_down_A" type="timed" weight="1">
       <hlinscription>
@@ -1801,8 +1801,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="390" yCoord="207"/>
-      <arcpath arcPointType="false" id="1" xCoord="896" yCoord="47"/>
+      <arcpath arcPointType="false" id="0" xCoord="389" yCoord="205"/>
+      <arcpath arcPointType="false" id="1" xCoord="895" yCoord="46"/>
     </arc>
     <arc id="A61" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_ready" target="skip_down_B" type="timed" weight="1">
       <hlinscription>
@@ -1820,8 +1820,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="390" yCoord="207"/>
-      <arcpath arcPointType="false" id="1" xCoord="986" yCoord="47"/>
+      <arcpath arcPointType="false" id="0" xCoord="389" yCoord="206"/>
+      <arcpath arcPointType="false" id="1" xCoord="985" yCoord="46"/>
     </arc>
     <arc id="A62" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_down_A" target="skip_down_A" type="timed" weight="1">
       <hlinscription>
@@ -1839,8 +1839,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="959" yCoord="451"/>
-      <arcpath arcPointType="false" id="1" xCoord="901" yCoord="61"/>
+      <arcpath arcPointType="false" id="0" xCoord="958" yCoord="450"/>
+      <arcpath arcPointType="false" id="1" xCoord="900" yCoord="60"/>
     </arc>
     <arc id="A63" inscription="1" nameOffsetX="0" nameOffsetY="0" source="skip_down_A" target="oven_down_A" type="normal" weight="1">
       <hlinscription>
@@ -1858,8 +1858,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="901" yCoord="61"/>
-      <arcpath arcPointType="false" id="1" xCoord="959" yCoord="451"/>
+      <arcpath arcPointType="false" id="0" xCoord="900" yCoord="60"/>
+      <arcpath arcPointType="false" id="1" xCoord="958" yCoord="450"/>
     </arc>
     <arc id="A64" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_down_B" target="skip_down_B" type="timed" weight="1">
       <hlinscription>
@@ -1877,8 +1877,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="962" yCoord="691"/>
-      <arcpath arcPointType="false" id="1" xCoord="991" yCoord="61"/>
+      <arcpath arcPointType="false" id="0" xCoord="961" yCoord="690"/>
+      <arcpath arcPointType="false" id="1" xCoord="990" yCoord="60"/>
     </arc>
     <arc id="A65" inscription="1" nameOffsetX="0" nameOffsetY="0" source="skip_down_B" target="oven_down_B" type="normal" weight="1">
       <hlinscription>
@@ -1896,8 +1896,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="991" yCoord="61"/>
-      <arcpath arcPointType="false" id="1" xCoord="962" yCoord="691"/>
+      <arcpath arcPointType="false" id="0" xCoord="990" yCoord="60"/>
+      <arcpath arcPointType="false" id="1" xCoord="961" yCoord="690"/>
     </arc>
     <arc id="A66" inscription="1" nameOffsetX="0" nameOffsetY="0" source="skip_down_A" target="oven_done" type="normal" weight="1">
       <hlinscription>
@@ -1915,8 +1915,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="906" yCoord="46"/>
-      <arcpath arcPointType="false" id="1" xCoord="1531" yCoord="178"/>
+      <arcpath arcPointType="false" id="0" xCoord="905" yCoord="45"/>
+      <arcpath arcPointType="false" id="1" xCoord="1530" yCoord="177"/>
     </arc>
     <arc id="A67" inscription="1" nameOffsetX="0" nameOffsetY="0" source="skip_down_B" target="oven_done" type="normal" weight="1">
       <hlinscription>
@@ -1934,16 +1934,16 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="996" yCoord="46"/>
-      <arcpath arcPointType="false" id="1" xCoord="1531" yCoord="178"/>
+      <arcpath arcPointType="false" id="0" xCoord="995" yCoord="45"/>
+      <arcpath arcPointType="false" id="1" xCoord="1530" yCoord="176"/>
     </arc>
-    <arc id="I68" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="availible_repairmen" target="skip_down_A" type="tapnInhibitor" weight="1">
-      <arcpath arcPointType="false" id="0" xCoord="930" yCoord="557"/>
-      <arcpath arcPointType="false" id="1" xCoord="901" yCoord="61"/>
+    <arc id="I65" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="availible_repairmen" target="skip_down_A" type="tapnInhibitor" weight="1">
+      <arcpath arcPointType="false" id="0" xCoord="929" yCoord="555"/>
+      <arcpath arcPointType="false" id="1" xCoord="900" yCoord="60"/>
     </arc>
-    <arc id="I69" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="availible_repairmen" target="skip_down_B" type="tapnInhibitor" weight="1">
-      <arcpath arcPointType="false" id="0" xCoord="933" yCoord="557"/>
-      <arcpath arcPointType="false" id="1" xCoord="991" yCoord="61"/>
+    <arc id="I66" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="availible_repairmen" target="skip_down_B" type="tapnInhibitor" weight="1">
+      <arcpath arcPointType="false" id="0" xCoord="932" yCoord="555"/>
+      <arcpath arcPointType="false" id="1" xCoord="990" yCoord="60"/>
     </arc>
     <arc id="A70" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="priority_A" target="start_A_priority" type="timed" weight="1">
       <hlinscription>
@@ -1961,8 +1961,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="390" yCoord="469"/>
-      <arcpath arcPointType="false" id="1" xCoord="717" yCoord="537"/>
+      <arcpath arcPointType="false" id="0" xCoord="390" yCoord="468"/>
+      <arcpath arcPointType="false" id="1" xCoord="715" yCoord="536"/>
     </arc>
     <arc id="A71" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="priority_B" target="start_B_priority" type="timed" weight="1">
       <hlinscription>
@@ -1980,8 +1980,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="390" yCoord="676"/>
-      <arcpath arcPointType="false" id="1" xCoord="716" yCoord="672"/>
+      <arcpath arcPointType="false" id="0" xCoord="390" yCoord="675"/>
+      <arcpath arcPointType="false" id="1" xCoord="714" yCoord="671"/>
     </arc>
     <arc id="A72" inscription="1" nameOffsetX="0" nameOffsetY="0" source="start_A_priority" target="priority_B" type="normal" weight="1">
       <hlinscription>
@@ -1999,8 +1999,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="716" yCoord="547"/>
-      <arcpath arcPointType="false" id="1" xCoord="390" yCoord="670"/>
+      <arcpath arcPointType="false" id="0" xCoord="715" yCoord="546"/>
+      <arcpath arcPointType="false" id="1" xCoord="389" yCoord="670"/>
     </arc>
     <arc id="A73" inscription="1" nameOffsetX="0" nameOffsetY="0" source="start_B_priority" target="priority_A" type="normal" weight="1">
       <hlinscription>
@@ -2018,8 +2018,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="716" yCoord="662"/>
-      <arcpath arcPointType="false" id="1" xCoord="389" yCoord="473"/>
+      <arcpath arcPointType="false" id="0" xCoord="715" yCoord="661"/>
+      <arcpath arcPointType="false" id="1" xCoord="388" yCoord="472"/>
     </arc>
     <arc id="A74" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="queue_A" target="start_A_fallback" type="timed" weight="1">
       <hlinscription>
@@ -2037,8 +2037,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="546" yCoord="514"/>
-      <arcpath arcPointType="false" id="1" xCoord="486" yCoord="444"/>
+      <arcpath arcPointType="false" id="0" xCoord="545" yCoord="514"/>
+      <arcpath arcPointType="false" id="1" xCoord="484" yCoord="444"/>
     </arc>
     <arc id="A75" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_idle" target="start_A_fallback" type="timed" weight="1">
       <hlinscription>
@@ -2056,8 +2056,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="620" yCoord="574"/>
-      <arcpath arcPointType="false" id="1" xCoord="486" yCoord="439"/>
+      <arcpath arcPointType="false" id="0" xCoord="619" yCoord="574"/>
+      <arcpath arcPointType="false" id="1" xCoord="485" yCoord="438"/>
     </arc>
     <arc id="A76" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_ready" target="start_A_fallback" type="timed" weight="1">
       <hlinscription>
@@ -2075,8 +2075,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="382" yCoord="224"/>
-      <arcpath arcPointType="false" id="1" xCoord="481" yCoord="420"/>
+      <arcpath arcPointType="false" id="0" xCoord="382" yCoord="223"/>
+      <arcpath arcPointType="false" id="1" xCoord="480" yCoord="420"/>
     </arc>
     <arc id="A77" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="priority_B" target="start_A_fallback" type="timed" weight="1">
       <hlinscription>
@@ -2094,12 +2094,12 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="382" yCoord="662"/>
-      <arcpath arcPointType="false" id="1" xCoord="481" yCoord="451"/>
+      <arcpath arcPointType="false" id="0" xCoord="381" yCoord="661"/>
+      <arcpath arcPointType="false" id="1" xCoord="480" yCoord="450"/>
     </arc>
-    <arc id="I78" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="queue_B" target="start_A_fallback" type="tapnInhibitor" weight="1">
+    <arc id="I75" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="queue_B" target="start_A_fallback" type="tapnInhibitor" weight="1">
       <arcpath arcPointType="false" id="0" xCoord="550" yCoord="631"/>
-      <arcpath arcPointType="false" id="1" xCoord="481" yCoord="451"/>
+      <arcpath arcPointType="false" id="1" xCoord="480" yCoord="450"/>
     </arc>
     <arc id="A79" inscription="1" nameOffsetX="0" nameOffsetY="0" source="start_A_fallback" target="oven_busy_A" type="normal" weight="1">
       <hlinscription>
@@ -2117,8 +2117,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="487" yCoord="433"/>
-      <arcpath arcPointType="false" id="1" xCoord="797" yCoord="479"/>
+      <arcpath arcPointType="false" id="0" xCoord="485" yCoord="432"/>
+      <arcpath arcPointType="false" id="1" xCoord="795" yCoord="478"/>
     </arc>
     <arc id="A80" inscription="1" nameOffsetX="0" nameOffsetY="0" source="start_A_fallback" target="oven_done" type="normal" weight="1">
       <hlinscription>
@@ -2136,8 +2136,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="487" yCoord="427"/>
-      <arcpath arcPointType="false" id="1" xCoord="1531" yCoord="184"/>
+      <arcpath arcPointType="false" id="0" xCoord="485" yCoord="426"/>
+      <arcpath arcPointType="false" id="1" xCoord="1530" yCoord="183"/>
     </arc>
     <arc id="A81" inscription="1" nameOffsetX="0" nameOffsetY="0" source="start_A_fallback" target="priority_B" type="normal" weight="1">
       <hlinscription>
@@ -2155,8 +2155,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="481" yCoord="451"/>
-      <arcpath arcPointType="false" id="1" xCoord="382" yCoord="662"/>
+      <arcpath arcPointType="false" id="0" xCoord="480" yCoord="450"/>
+      <arcpath arcPointType="false" id="1" xCoord="381" yCoord="661"/>
     </arc>
     <arc id="A89" inscription="1" nameOffsetX="0" nameOffsetY="0" source="finish_A" target="buffer_1_pending" type="normal" weight="1">
       <hlinscription>
@@ -2174,12 +2174,12 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="846" yCoord="349"/>
-      <arcpath arcPointType="false" id="1" xCoord="1441" yCoord="374"/>
+      <arcpath arcPointType="false" id="0" xCoord="845" yCoord="348"/>
+      <arcpath arcPointType="false" id="1" xCoord="1440" yCoord="374"/>
     </arc>
-    <arc id="I89" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_1_pending" target="finish_A" type="tapnInhibitor" weight="1">
-      <arcpath arcPointType="false" id="0" xCoord="1441" yCoord="374"/>
-      <arcpath arcPointType="false" id="1" xCoord="847" yCoord="343"/>
+    <arc id="I80" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_1_pending" target="finish_A" type="tapnInhibitor" weight="1">
+      <arcpath arcPointType="false" id="0" xCoord="1440" yCoord="374"/>
+      <arcpath arcPointType="false" id="1" xCoord="845" yCoord="342"/>
     </arc>
     <arc id="A90" inscription="1" nameOffsetX="0" nameOffsetY="0" source="finish_B" target="buffer_2_pending" type="normal" weight="1">
       <hlinscription>
@@ -2197,12 +2197,12 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="830" yCoord="829"/>
-      <arcpath arcPointType="false" id="1" xCoord="1411" yCoord="826"/>
+      <arcpath arcPointType="false" id="0" xCoord="829" yCoord="834"/>
+      <arcpath arcPointType="false" id="1" xCoord="1410" yCoord="825"/>
     </arc>
-    <arc id="I90" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_2_pending" target="finish_B" type="tapnInhibitor" weight="1">
-      <arcpath arcPointType="false" id="0" xCoord="1411" yCoord="826"/>
-      <arcpath arcPointType="false" id="1" xCoord="830" yCoord="834"/>
+    <arc id="I82" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_2_pending" target="finish_B" type="tapnInhibitor" weight="1">
+      <arcpath arcPointType="false" id="0" xCoord="1410" yCoord="825"/>
+      <arcpath arcPointType="false" id="1" xCoord="830" yCoord="828"/>
     </arc>
     <arc id="A91" inscription="1" nameOffsetX="0" nameOffsetY="0" source="oven_restart_A" target="returned_repairman" type="normal" weight="1">
       <hlinscription>
@@ -2220,8 +2220,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="961" yCoord="407"/>
-      <arcpath arcPointType="false" id="1" xCoord="891" yCoord="572"/>
+      <arcpath arcPointType="false" id="0" xCoord="960" yCoord="405"/>
+      <arcpath arcPointType="false" id="1" xCoord="891" yCoord="571"/>
     </arc>
     <arc id="A92" inscription="1" nameOffsetX="0" nameOffsetY="0" source="input_a" target="queue_A_pending" type="normal" weight="1">
       <hlinscription>
@@ -2239,8 +2239,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="170" yCoord="376"/>
-      <arcpath arcPointType="false" id="1" xCoord="228" yCoord="351"/>
+      <arcpath arcPointType="false" id="0" xCoord="170" yCoord="375"/>
+      <arcpath arcPointType="false" id="1" xCoord="226" yCoord="351"/>
     </arc>
     <arc id="A93" inscription="1" nameOffsetX="0" nameOffsetY="0" source="input_b" target="queue_B_pending" type="normal" weight="1">
       <hlinscription>
@@ -2258,8 +2258,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="241" yCoord="511"/>
-      <arcpath arcPointType="false" id="1" xCoord="278" yCoord="572"/>
+      <arcpath arcPointType="false" id="0" xCoord="240" yCoord="510"/>
+      <arcpath arcPointType="false" id="1" xCoord="277" yCoord="572"/>
     </arc>
     <arc id="A94" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="input_active" target="input_a" type="timed" weight="1">
       <hlinscription>
@@ -2278,7 +2278,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="113" yCoord="452"/>
-      <arcpath arcPointType="false" id="1" xCoord="161" yCoord="371"/>
+      <arcpath arcPointType="false" id="1" xCoord="160" yCoord="381"/>
     </arc>
     <arc id="A95" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="input_active" target="input_b" type="timed" weight="1">
       <hlinscription>
@@ -2296,8 +2296,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="120" yCoord="469"/>
-      <arcpath arcPointType="false" id="1" xCoord="237" yCoord="491"/>
+      <arcpath arcPointType="false" id="0" xCoord="119" yCoord="469"/>
+      <arcpath arcPointType="false" id="1" xCoord="235" yCoord="501"/>
     </arc>
     <arc id="A96" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="input_active" target="close_input" type="timed" weight="1">
       <hlinscription>
@@ -2315,8 +2315,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="120" yCoord="462"/>
-      <arcpath arcPointType="false" id="1" xCoord="266" yCoord="422"/>
+      <arcpath arcPointType="false" id="0" xCoord="119" yCoord="461"/>
+      <arcpath arcPointType="false" id="1" xCoord="265" yCoord="421"/>
     </arc>
     <arc id="A97" inscription="1" nameOffsetX="0" nameOffsetY="0" source="close_input" target="input_done" type="normal" weight="1">
       <hlinscription>
@@ -2334,8 +2334,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="271" yCoord="406"/>
-      <arcpath arcPointType="false" id="1" xCoord="322" yCoord="328"/>
+      <arcpath arcPointType="false" id="0" xCoord="270" yCoord="405"/>
+      <arcpath arcPointType="false" id="1" xCoord="322" yCoord="327"/>
     </arc>
     <arc id="A98" inscription="1" nameOffsetX="0" nameOffsetY="0" source="input_a" target="input_active" type="normal" weight="1">
       <hlinscription>
@@ -2353,8 +2353,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="160" yCoord="381"/>
-      <arcpath arcPointType="false" id="1" xCoord="113" yCoord="453"/>
+      <arcpath arcPointType="false" id="0" xCoord="160" yCoord="371"/>
+      <arcpath arcPointType="false" id="1" xCoord="113" yCoord="452"/>
     </arc>
     <arc id="A99" inscription="1" nameOffsetX="0" nameOffsetY="0" source="input_b" target="input_active" type="normal" weight="1">
       <hlinscription>
@@ -2372,8 +2372,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="236" yCoord="501"/>
-      <arcpath arcPointType="false" id="1" xCoord="120" yCoord="470"/>
+      <arcpath arcPointType="false" id="0" xCoord="235" yCoord="491"/>
+      <arcpath arcPointType="false" id="1" xCoord="120" yCoord="468"/>
     </arc>
     <arc id="A100" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="queue_B" target="start_B_fallback" type="timed" weight="1">
       <hlinscription>
@@ -2391,8 +2391,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="553" yCoord="660"/>
-      <arcpath arcPointType="false" id="1" xCoord="526" yCoord="826"/>
+      <arcpath arcPointType="false" id="0" xCoord="552" yCoord="660"/>
+      <arcpath arcPointType="false" id="1" xCoord="525" yCoord="825"/>
     </arc>
     <arc id="A101" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_idle" target="start_B_fallback" type="timed" weight="1">
       <hlinscription>
@@ -2410,8 +2410,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="626" yCoord="599"/>
-      <arcpath arcPointType="false" id="1" xCoord="526" yCoord="826"/>
+      <arcpath arcPointType="false" id="0" xCoord="624" yCoord="599"/>
+      <arcpath arcPointType="false" id="1" xCoord="525" yCoord="825"/>
     </arc>
     <arc id="A102" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_ready" target="start_B_fallback" type="timed" weight="1">
       <hlinscription>
@@ -2429,8 +2429,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="379" yCoord="226"/>
-      <arcpath arcPointType="false" id="1" xCoord="526" yCoord="826"/>
+      <arcpath arcPointType="false" id="0" xCoord="379" yCoord="225"/>
+      <arcpath arcPointType="false" id="1" xCoord="525" yCoord="825"/>
     </arc>
     <arc id="A103" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="priority_A" target="start_B_fallback" type="timed" weight="1">
       <hlinscription>
@@ -2449,11 +2449,11 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="381" yCoord="479"/>
-      <arcpath arcPointType="false" id="1" xCoord="526" yCoord="826"/>
+      <arcpath arcPointType="false" id="1" xCoord="525" yCoord="825"/>
     </arc>
     <arc id="I96" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="queue_A" target="start_B_fallback" type="tapnInhibitor" weight="1">
-      <arcpath arcPointType="false" id="0" xCoord="554" yCoord="540"/>
-      <arcpath arcPointType="false" id="1" xCoord="526" yCoord="826"/>
+      <arcpath arcPointType="false" id="0" xCoord="553" yCoord="540"/>
+      <arcpath arcPointType="false" id="1" xCoord="525" yCoord="825"/>
     </arc>
     <arc id="A104" inscription="1" nameOffsetX="0" nameOffsetY="0" source="start_B_fallback" target="oven_busy_B" type="normal" weight="1">
       <hlinscription>
@@ -2471,8 +2471,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="530" yCoord="847"/>
-      <arcpath arcPointType="false" id="1" xCoord="798" yCoord="699"/>
+      <arcpath arcPointType="false" id="0" xCoord="530" yCoord="845"/>
+      <arcpath arcPointType="false" id="1" xCoord="797" yCoord="697"/>
     </arc>
     <arc id="A105" inscription="1" nameOffsetX="0" nameOffsetY="0" source="start_B_fallback" target="priority_A" type="normal" weight="1">
       <hlinscription>
@@ -2490,7 +2490,7 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="526" yCoord="826"/>
+      <arcpath arcPointType="false" id="0" xCoord="525" yCoord="825"/>
       <arcpath arcPointType="false" id="1" xCoord="381" yCoord="479"/>
     </arc>
     <arc id="A106" inscription="1" nameOffsetX="0" nameOffsetY="0" source="start_B_fallback" target="oven_done" type="normal" weight="1">
@@ -2509,8 +2509,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="531" yCoord="837"/>
-      <arcpath arcPointType="false" id="1" xCoord="1533" yCoord="189"/>
+      <arcpath arcPointType="false" id="0" xCoord="530" yCoord="835"/>
+      <arcpath arcPointType="false" id="1" xCoord="1532" yCoord="188"/>
     </arc>
     <arc id="A107" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_ready" target="oven_restart_A" type="timed" weight="1">
       <hlinscription>
@@ -2528,8 +2528,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="390" yCoord="216"/>
-      <arcpath arcPointType="false" id="1" xCoord="957" yCoord="387"/>
+      <arcpath arcPointType="false" id="0" xCoord="389" yCoord="214"/>
+      <arcpath arcPointType="false" id="1" xCoord="955" yCoord="386"/>
     </arc>
     <arc id="A108" inscription="1" nameOffsetX="0" nameOffsetY="0" source="oven_restart_A" target="oven_done" type="normal" weight="1">
       <hlinscription>
@@ -2547,8 +2547,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="967" yCoord="387"/>
-      <arcpath arcPointType="false" id="1" xCoord="1531" yCoord="187"/>
+      <arcpath arcPointType="false" id="0" xCoord="965" yCoord="385"/>
+      <arcpath arcPointType="false" id="1" xCoord="1531" yCoord="185"/>
     </arc>
     <arc id="A109" inscription="1" nameOffsetX="0" nameOffsetY="0" source="oven_restart_B" target="oven_done" type="normal" weight="1">
       <hlinscription>
@@ -2566,8 +2566,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="967" yCoord="777"/>
-      <arcpath arcPointType="false" id="1" xCoord="1536" yCoord="192"/>
+      <arcpath arcPointType="false" id="0" xCoord="965" yCoord="775"/>
+      <arcpath arcPointType="false" id="1" xCoord="1535" yCoord="191"/>
     </arc>
     <arc id="A110" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_ready" target="oven_restart_B" type="timed" weight="1">
       <hlinscription>
@@ -2585,8 +2585,8 @@
           </numberof>
         </structure>
       </hlinscription>
-      <arcpath arcPointType="false" id="0" xCoord="387" yCoord="221"/>
-      <arcpath arcPointType="false" id="1" xCoord="957" yCoord="777"/>
+      <arcpath arcPointType="false" id="0" xCoord="386" yCoord="220"/>
+      <arcpath arcPointType="false" id="1" xCoord="955" yCoord="776"/>
     </arc>
   </net>
   <net active="true" id="machines" type="P/T net">
@@ -2878,7 +2878,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="508" yCoord="548"/>
-      <arcpath arcPointType="false" id="1" xCoord="565" yCoord="581"/>
+      <arcpath arcPointType="false" id="1" xCoord="570" yCoord="585"/>
     </arc>
     <arc id="A1" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m1_idle" target="start_m1" type="timed" weight="1">
       <hlinscription>
@@ -2897,7 +2897,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="509" yCoord="610"/>
-      <arcpath arcPointType="false" id="1" xCoord="565" yCoord="591"/>
+      <arcpath arcPointType="false" id="1" xCoord="570" yCoord="585"/>
     </arc>
     <arc id="A2" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m2_idle" target="start_m2" type="timed" weight="1">
       <hlinscription>
@@ -2916,7 +2916,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="509" yCoord="829"/>
-      <arcpath arcPointType="false" id="1" xCoord="580" yCoord="851"/>
+      <arcpath arcPointType="false" id="1" xCoord="585" yCoord="855"/>
     </arc>
     <arc id="A3" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_2" target="start_m2" type="timed" weight="1">
       <hlinscription>
@@ -2935,7 +2935,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="508" yCoord="908"/>
-      <arcpath arcPointType="false" id="1" xCoord="580" yCoord="861"/>
+      <arcpath arcPointType="false" id="1" xCoord="585" yCoord="855"/>
     </arc>
     <arc id="A4" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m1_busy" target="m1_breakdown" type="timed" weight="1">
       <hlinscription>
@@ -2954,7 +2954,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="656" yCoord="595"/>
-      <arcpath arcPointType="false" id="1" xCoord="700" yCoord="636"/>
+      <arcpath arcPointType="false" id="1" xCoord="705" yCoord="630"/>
     </arc>
     <arc id="A5" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m2_busy" target="m2_breakdown" type="timed" weight="1">
       <hlinscription>
@@ -2973,7 +2973,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="655" yCoord="844"/>
-      <arcpath arcPointType="false" id="1" xCoord="700" yCoord="791"/>
+      <arcpath arcPointType="false" id="1" xCoord="705" yCoord="795"/>
     </arc>
     <arc id="A6" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="availible_repairmen" target="repair_m1" type="timed" weight="1">
       <hlinscription>
@@ -2992,7 +2992,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="690" yCoord="703"/>
-      <arcpath arcPointType="false" id="1" xCoord="910" yCoord="669"/>
+      <arcpath arcPointType="false" id="1" xCoord="915" yCoord="675"/>
     </arc>
     <arc id="A7" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m1_down" target="repair_m1" type="timed" weight="1">
       <hlinscription>
@@ -3011,7 +3011,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="838" yCoord="609"/>
-      <arcpath arcPointType="false" id="1" xCoord="910" yCoord="661"/>
+      <arcpath arcPointType="false" id="1" xCoord="915" yCoord="660"/>
     </arc>
     <arc id="A8" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m2_down" target="repair_m2" type="timed" weight="1">
       <hlinscription>
@@ -3030,7 +3030,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="839" yCoord="834"/>
-      <arcpath arcPointType="false" id="1" xCoord="910" yCoord="796"/>
+      <arcpath arcPointType="false" id="1" xCoord="915" yCoord="795"/>
     </arc>
     <arc id="A9" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="availible_repairmen" target="repair_m2" type="timed" weight="1">
       <hlinscription>
@@ -3049,7 +3049,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="689" yCoord="710"/>
-      <arcpath arcPointType="false" id="1" xCoord="910" yCoord="790"/>
+      <arcpath arcPointType="false" id="1" xCoord="915" yCoord="795"/>
     </arc>
     <arc id="A10" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m1_repair" target="m1_restart" type="timed" weight="1">
       <hlinscription>
@@ -3068,7 +3068,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="991" yCoord="565"/>
-      <arcpath arcPointType="false" id="1" xCoord="815" yCoord="500"/>
+      <arcpath arcPointType="false" id="1" xCoord="810" yCoord="495"/>
     </arc>
     <arc id="A11" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m2_repair" target="m2_restart" type="timed" weight="1">
       <hlinscription>
@@ -3087,7 +3087,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="991" yCoord="860"/>
-      <arcpath arcPointType="false" id="1" xCoord="815" yCoord="925"/>
+      <arcpath arcPointType="false" id="1" xCoord="810" yCoord="930"/>
     </arc>
     <arc id="A12" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m2_busy" target="finish_m2" type="timed" weight="1">
       <hlinscription>
@@ -3106,7 +3106,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="655" yCoord="866"/>
-      <arcpath arcPointType="false" id="1" xCoord="805" yCoord="1015"/>
+      <arcpath arcPointType="false" id="1" xCoord="810" yCoord="1020"/>
     </arc>
     <arc id="A13" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m1_busy" target="finish_m1" type="timed" weight="1">
       <hlinscription>
@@ -3125,7 +3125,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="655" yCoord="574"/>
-      <arcpath arcPointType="false" id="1" xCoord="805" yCoord="414"/>
+      <arcpath arcPointType="false" id="1" xCoord="810" yCoord="420"/>
     </arc>
     <arc id="A14" inscription="1" nameOffsetX="0" nameOffsetY="0" source="start_m1" target="m1_busy" type="normal" weight="1">
       <hlinscription>
@@ -3144,7 +3144,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="575" yCoord="590"/>
-      <arcpath arcPointType="false" id="1" xCoord="630" yCoord="586"/>
+      <arcpath arcPointType="false" id="1" xCoord="630" yCoord="585"/>
     </arc>
     <arc id="A15" inscription="1" nameOffsetX="0" nameOffsetY="0" source="start_m2" target="m2_busy" type="normal" weight="1">
       <hlinscription>
@@ -3163,7 +3163,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="590" yCoord="850"/>
-      <arcpath arcPointType="false" id="1" xCoord="630" yCoord="854"/>
+      <arcpath arcPointType="false" id="1" xCoord="630" yCoord="855"/>
     </arc>
     <arc id="A16" inscription="1" nameOffsetX="0" nameOffsetY="0" source="m1_breakdown" target="m1_down" type="normal" weight="1">
       <hlinscription>
@@ -3182,7 +3182,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="710" yCoord="635"/>
-      <arcpath arcPointType="false" id="1" xCoord="811" yCoord="605"/>
+      <arcpath arcPointType="false" id="1" xCoord="810" yCoord="600"/>
     </arc>
     <arc id="A17" inscription="1" nameOffsetX="0" nameOffsetY="0" source="m2_breakdown" target="m2_down" type="normal" weight="1">
       <hlinscription>
@@ -3201,7 +3201,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="710" yCoord="790"/>
-      <arcpath arcPointType="false" id="1" xCoord="811" yCoord="834"/>
+      <arcpath arcPointType="false" id="1" xCoord="810" yCoord="840"/>
     </arc>
     <arc id="A18" inscription="1" nameOffsetX="0" nameOffsetY="0" source="repair_m1" target="m1_repair" type="normal" weight="1">
       <hlinscription>
@@ -3220,7 +3220,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="920" yCoord="665"/>
-      <arcpath arcPointType="false" id="1" xCoord="995" yCoord="581"/>
+      <arcpath arcPointType="false" id="1" xCoord="990" yCoord="585"/>
     </arc>
     <arc id="A19" inscription="1" nameOffsetX="0" nameOffsetY="0" source="repair_m2" target="m2_repair" type="normal" weight="1">
       <hlinscription>
@@ -3239,7 +3239,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="920" yCoord="790"/>
-      <arcpath arcPointType="false" id="1" xCoord="994" yCoord="846"/>
+      <arcpath arcPointType="false" id="1" xCoord="990" yCoord="840"/>
     </arc>
     <arc id="A20" inscription="1" nameOffsetX="0" nameOffsetY="0" source="m1_restart" target="m1_busy" type="normal" weight="1">
       <hlinscription>
@@ -3258,7 +3258,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="805" yCoord="496"/>
-      <arcpath arcPointType="false" id="1" xCoord="659" yCoord="578"/>
+      <arcpath arcPointType="false" id="1" xCoord="660" yCoord="585"/>
     </arc>
     <arc id="A22" inscription="1" nameOffsetX="0" nameOffsetY="0" source="m2_restart" target="m2_busy" type="normal" weight="1">
       <hlinscription>
@@ -3277,7 +3277,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="805" yCoord="931"/>
-      <arcpath arcPointType="false" id="1" xCoord="659" yCoord="861"/>
+      <arcpath arcPointType="false" id="1" xCoord="660" yCoord="855"/>
     </arc>
     <arc id="A26" inscription="1" nameOffsetX="0" nameOffsetY="0" source="finish_m2" target="m2_idle" type="normal" weight="1">
       <hlinscription>
@@ -3296,7 +3296,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="805" yCoord="1021"/>
-      <arcpath arcPointType="false" id="1" xCoord="508" yCoord="833"/>
+      <arcpath arcPointType="false" id="1" xCoord="510" yCoord="840"/>
     </arc>
     <arc id="A27" inscription="1" nameOffsetX="0" nameOffsetY="0" source="finish_m1" target="m1_idle" type="normal" weight="1">
       <hlinscription>
@@ -3315,15 +3315,15 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="805" yCoord="406"/>
-      <arcpath arcPointType="false" id="1" xCoord="508" yCoord="606"/>
+      <arcpath arcPointType="false" id="1" xCoord="510" yCoord="600"/>
     </arc>
-    <arc id="I27" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_3" target="finish_m1" type="tapnInhibitor" weight="1">
+    <arc id="I24" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_3" target="finish_m1" type="tapnInhibitor" weight="1">
       <arcpath arcPointType="false" id="0" xCoord="1231" yCoord="579"/>
-      <arcpath arcPointType="false" id="1" xCoord="815" yCoord="403"/>
+      <arcpath arcPointType="false" id="1" xCoord="810" yCoord="405"/>
     </arc>
-    <arc id="I28" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_4" target="finish_m2" type="tapnInhibitor" weight="1">
+    <arc id="I25" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_4" target="finish_m2" type="tapnInhibitor" weight="1">
       <arcpath arcPointType="false" id="0" xCoord="1216" yCoord="890"/>
-      <arcpath arcPointType="false" id="1" xCoord="815" yCoord="1024"/>
+      <arcpath arcPointType="false" id="1" xCoord="810" yCoord="1020"/>
     </arc>
     <arc id="A30" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m1_ready" target="start_m1" type="timed" weight="1">
       <hlinscription>
@@ -3361,7 +3361,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="509" yCoord="305"/>
-      <arcpath arcPointType="false" id="1" xCoord="805" yCoord="400"/>
+      <arcpath arcPointType="false" id="1" xCoord="810" yCoord="405"/>
     </arc>
     <arc id="A32" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m1_ready" target="m1_restart" type="timed" weight="1">
       <hlinscription>
@@ -3380,7 +3380,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="508" yCoord="308"/>
-      <arcpath arcPointType="false" id="1" xCoord="805" yCoord="490"/>
+      <arcpath arcPointType="false" id="1" xCoord="810" yCoord="495"/>
     </arc>
     <arc id="A33" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m1_ready" target="m1_breakdown" type="timed" weight="1">
       <hlinscription>
@@ -3399,7 +3399,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="503" yCoord="313"/>
-      <arcpath arcPointType="false" id="1" xCoord="700" yCoord="626"/>
+      <arcpath arcPointType="false" id="1" xCoord="705" yCoord="630"/>
     </arc>
     <arc id="A34" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m1_ready" target="repair_m1" type="timed" weight="1">
       <hlinscription>
@@ -3418,7 +3418,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="506" yCoord="310"/>
-      <arcpath arcPointType="false" id="1" xCoord="910" yCoord="655"/>
+      <arcpath arcPointType="false" id="1" xCoord="915" yCoord="660"/>
     </arc>
     <arc id="A35" inscription="1" nameOffsetX="0" nameOffsetY="0" source="finish_m1" target="m1_done" type="normal" weight="1">
       <hlinscription>
@@ -3437,7 +3437,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="815" yCoord="396"/>
-      <arcpath arcPointType="false" id="1" xCoord="1126" yCoord="290"/>
+      <arcpath arcPointType="false" id="1" xCoord="1125" yCoord="285"/>
     </arc>
     <arc id="A36" inscription="1" nameOffsetX="0" nameOffsetY="0" source="m1_restart" target="m1_done" type="normal" weight="1">
       <hlinscription>
@@ -3456,7 +3456,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="815" yCoord="490"/>
-      <arcpath arcPointType="false" id="1" xCoord="1128" yCoord="293"/>
+      <arcpath arcPointType="false" id="1" xCoord="1125" yCoord="300"/>
     </arc>
     <arc id="A37" inscription="1" nameOffsetX="0" nameOffsetY="0" source="repair_m1" target="m1_done" type="normal" weight="1">
       <hlinscription>
@@ -3475,7 +3475,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="920" yCoord="655"/>
-      <arcpath arcPointType="false" id="1" xCoord="1133" yCoord="298"/>
+      <arcpath arcPointType="false" id="1" xCoord="1140" yCoord="300"/>
     </arc>
     <arc id="A38" inscription="1" nameOffsetX="0" nameOffsetY="0" source="m1_breakdown" target="m1_done" type="normal" weight="1">
       <hlinscription>
@@ -3494,7 +3494,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="710" yCoord="625"/>
-      <arcpath arcPointType="false" id="1" xCoord="1129" yCoord="294"/>
+      <arcpath arcPointType="false" id="1" xCoord="1125" yCoord="300"/>
     </arc>
     <arc id="A39" inscription="1" nameOffsetX="0" nameOffsetY="0" source="start_m1" target="m1_done" type="normal" weight="1">
       <hlinscription>
@@ -3513,7 +3513,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="575" yCoord="580"/>
-      <arcpath arcPointType="false" id="1" xCoord="1126" yCoord="293"/>
+      <arcpath arcPointType="false" id="1" xCoord="1125" yCoord="300"/>
     </arc>
     <arc id="A40" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m2_ready" target="start_m2" type="timed" weight="1">
       <hlinscription>
@@ -3551,7 +3551,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="504" yCoord="1068"/>
-      <arcpath arcPointType="false" id="1" xCoord="700" yCoord="801"/>
+      <arcpath arcPointType="false" id="1" xCoord="705" yCoord="795"/>
     </arc>
     <arc id="A42" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m2_ready" target="m2_restart" type="timed" weight="1">
       <hlinscription>
@@ -3570,7 +3570,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="509" yCoord="1074"/>
-      <arcpath arcPointType="false" id="1" xCoord="805" yCoord="939"/>
+      <arcpath arcPointType="false" id="1" xCoord="810" yCoord="945"/>
     </arc>
     <arc id="A43" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m2_ready" target="finish_m2" type="timed" weight="1">
       <hlinscription>
@@ -3589,7 +3589,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="510" yCoord="1078"/>
-      <arcpath arcPointType="false" id="1" xCoord="805" yCoord="1029"/>
+      <arcpath arcPointType="false" id="1" xCoord="810" yCoord="1035"/>
     </arc>
     <arc id="A44" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m2_ready" target="repair_m2" type="timed" weight="1">
       <hlinscription>
@@ -3608,7 +3608,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="508" yCoord="1071"/>
-      <arcpath arcPointType="false" id="1" xCoord="910" yCoord="804"/>
+      <arcpath arcPointType="false" id="1" xCoord="915" yCoord="810"/>
     </arc>
     <arc id="A45" inscription="1" nameOffsetX="0" nameOffsetY="0" source="start_m2" target="m2_done" type="normal" weight="1">
       <hlinscription>
@@ -3627,7 +3627,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="590" yCoord="860"/>
-      <arcpath arcPointType="false" id="1" xCoord="1156" yCoord="1075"/>
+      <arcpath arcPointType="false" id="1" xCoord="1155" yCoord="1080"/>
     </arc>
     <arc id="A46" inscription="1" nameOffsetX="0" nameOffsetY="0" source="finish_m2" target="m2_done" type="normal" weight="1">
       <hlinscription>
@@ -3646,7 +3646,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="815" yCoord="1029"/>
-      <arcpath arcPointType="false" id="1" xCoord="1155" yCoord="1078"/>
+      <arcpath arcPointType="false" id="1" xCoord="1155" yCoord="1080"/>
     </arc>
     <arc id="A47" inscription="1" nameOffsetX="0" nameOffsetY="0" source="m2_restart" target="m2_done" type="normal" weight="1">
       <hlinscription>
@@ -3665,7 +3665,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="815" yCoord="935"/>
-      <arcpath arcPointType="false" id="1" xCoord="1156" yCoord="1074"/>
+      <arcpath arcPointType="false" id="1" xCoord="1155" yCoord="1080"/>
     </arc>
     <arc id="A48" inscription="1" nameOffsetX="0" nameOffsetY="0" source="repair_m2" target="m2_done" type="normal" weight="1">
       <hlinscription>
@@ -3684,7 +3684,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="920" yCoord="800"/>
-      <arcpath arcPointType="false" id="1" xCoord="1160" yCoord="1069"/>
+      <arcpath arcPointType="false" id="1" xCoord="1155" yCoord="1065"/>
     </arc>
     <arc id="A49" inscription="1" nameOffsetX="0" nameOffsetY="0" source="m2_breakdown" target="m2_done" type="normal" weight="1">
       <hlinscription>
@@ -3703,7 +3703,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="710" yCoord="800"/>
-      <arcpath arcPointType="false" id="1" xCoord="1158" yCoord="1073"/>
+      <arcpath arcPointType="false" id="1" xCoord="1155" yCoord="1080"/>
     </arc>
     <arc id="A50" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m1_ready" target="skip_idle_m1" type="timed" weight="1">
       <hlinscription>
@@ -3722,7 +3722,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="508" yCoord="291"/>
-      <arcpath arcPointType="false" id="1" xCoord="610" yCoord="226"/>
+      <arcpath arcPointType="false" id="1" xCoord="615" yCoord="225"/>
     </arc>
     <arc id="A51" inscription="1" nameOffsetX="0" nameOffsetY="0" source="skip_idle_m1" target="m1_idle" type="normal" weight="1">
       <hlinscription>
@@ -3741,7 +3741,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="615" yCoord="240"/>
-      <arcpath arcPointType="false" id="1" xCoord="500" yCoord="601"/>
+      <arcpath arcPointType="false" id="1" xCoord="495" yCoord="600"/>
     </arc>
     <arc id="A52" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m1_idle" target="skip_idle_m1" type="timed" weight="1">
       <hlinscription>
@@ -3779,7 +3779,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="620" yCoord="225"/>
-      <arcpath arcPointType="false" id="1" xCoord="1125" yCoord="284"/>
+      <arcpath arcPointType="false" id="1" xCoord="1125" yCoord="285"/>
     </arc>
     <arc id="A54" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m1_busy" target="skip_busy_m1" type="timed" weight="1">
       <hlinscription>
@@ -3817,7 +3817,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="765" yCoord="240"/>
-      <arcpath arcPointType="false" id="1" xCoord="650" yCoord="571"/>
+      <arcpath arcPointType="false" id="1" xCoord="645" yCoord="570"/>
     </arc>
     <arc id="A56" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m1_ready" target="skip_busy_m1" type="timed" weight="1">
       <hlinscription>
@@ -3836,7 +3836,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="510" yCoord="296"/>
-      <arcpath arcPointType="false" id="1" xCoord="760" yCoord="226"/>
+      <arcpath arcPointType="false" id="1" xCoord="765" yCoord="225"/>
     </arc>
     <arc id="A57" inscription="1" nameOffsetX="0" nameOffsetY="0" source="skip_busy_m1" target="m1_done" type="normal" weight="1">
       <hlinscription>
@@ -3855,7 +3855,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="770" yCoord="225"/>
-      <arcpath arcPointType="false" id="1" xCoord="1125" yCoord="283"/>
+      <arcpath arcPointType="false" id="1" xCoord="1125" yCoord="285"/>
     </arc>
     <arc id="A58" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m1_ready" target="skip_down_m1" type="timed" weight="1">
       <hlinscription>
@@ -3894,9 +3894,9 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="905" yCoord="225"/>
-      <arcpath arcPointType="false" id="1" xCoord="1125" yCoord="281"/>
+      <arcpath arcPointType="false" id="1" xCoord="1125" yCoord="285"/>
     </arc>
-    <arc id="I60" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_1" target="skip_idle_m1" type="tapnInhibitor" weight="1">
+    <arc id="I56" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_1" target="skip_idle_m1" type="tapnInhibitor" weight="1">
       <arcpath arcPointType="false" id="0" xCoord="500" yCoord="526"/>
       <arcpath arcPointType="false" id="1" xCoord="615" yCoord="240"/>
     </arc>
@@ -3936,7 +3936,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="900" yCoord="240"/>
-      <arcpath arcPointType="false" id="1" xCoord="828" yCoord="585"/>
+      <arcpath arcPointType="false" id="1" xCoord="825" yCoord="585"/>
     </arc>
     <arc id="A63" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m2_ready" target="skip_idle_m2" type="timed" weight="1">
       <hlinscription>
@@ -3955,7 +3955,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="508" yCoord="1089"/>
-      <arcpath arcPointType="false" id="1" xCoord="640" yCoord="1186"/>
+      <arcpath arcPointType="false" id="1" xCoord="645" yCoord="1185"/>
     </arc>
     <arc id="A64" inscription="1" nameOffsetX="0" nameOffsetY="0" source="skip_idle_m2" target="m2_done" type="normal" weight="1">
       <hlinscription>
@@ -3974,7 +3974,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="650" yCoord="1185"/>
-      <arcpath arcPointType="false" id="1" xCoord="1155" yCoord="1083"/>
+      <arcpath arcPointType="false" id="1" xCoord="1155" yCoord="1080"/>
     </arc>
     <arc id="A65" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m2_ready" target="skip_busy_m2" type="timed" weight="1">
       <hlinscription>
@@ -3993,7 +3993,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="509" yCoord="1085"/>
-      <arcpath arcPointType="false" id="1" xCoord="790" yCoord="1186"/>
+      <arcpath arcPointType="false" id="1" xCoord="795" yCoord="1185"/>
     </arc>
     <arc id="A66" inscription="1" nameOffsetX="0" nameOffsetY="0" source="skip_busy_m2" target="m2_done" type="normal" weight="1">
       <hlinscription>
@@ -4012,7 +4012,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="800" yCoord="1185"/>
-      <arcpath arcPointType="false" id="1" xCoord="1155" yCoord="1084"/>
+      <arcpath arcPointType="false" id="1" xCoord="1155" yCoord="1080"/>
     </arc>
     <arc id="A67" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m2_ready" target="skip_down_m2" type="timed" weight="1">
       <hlinscription>
@@ -4031,7 +4031,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="510" yCoord="1084"/>
-      <arcpath arcPointType="false" id="1" xCoord="925" yCoord="1186"/>
+      <arcpath arcPointType="false" id="1" xCoord="930" yCoord="1185"/>
     </arc>
     <arc id="A68" inscription="1" nameOffsetX="0" nameOffsetY="0" source="skip_down_m2" target="m2_done" type="normal" weight="1">
       <hlinscription>
@@ -4050,7 +4050,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="935" yCoord="1185"/>
-      <arcpath arcPointType="false" id="1" xCoord="1156" yCoord="1086"/>
+      <arcpath arcPointType="false" id="1" xCoord="1155" yCoord="1080"/>
     </arc>
     <arc id="A69" inscription="1" nameOffsetX="0" nameOffsetY="0" source="skip_idle_m2" target="m2_idle" type="normal" weight="1">
       <hlinscription>
@@ -4069,7 +4069,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="645" yCoord="1170"/>
-      <arcpath arcPointType="false" id="1" xCoord="501" yCoord="839"/>
+      <arcpath arcPointType="false" id="1" xCoord="495" yCoord="840"/>
     </arc>
     <arc id="A70" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m2_idle" target="skip_idle_m2" type="timed" weight="1">
       <hlinscription>
@@ -4107,7 +4107,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="795" yCoord="1170"/>
-      <arcpath arcPointType="false" id="1" xCoord="651" yCoord="869"/>
+      <arcpath arcPointType="false" id="1" xCoord="645" yCoord="870"/>
     </arc>
     <arc id="A72" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m2_busy" target="skip_busy_m2" type="timed" weight="1">
       <hlinscription>
@@ -4164,17 +4164,17 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="930" yCoord="1170"/>
-      <arcpath arcPointType="false" id="1" xCoord="830" yCoord="854"/>
+      <arcpath arcPointType="false" id="1" xCoord="825" yCoord="855"/>
     </arc>
-    <arc id="I75" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_2" target="skip_idle_m2" type="tapnInhibitor" weight="1">
+    <arc id="I71" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_2" target="skip_idle_m2" type="tapnInhibitor" weight="1">
       <arcpath arcPointType="false" id="0" xCoord="503" yCoord="928"/>
       <arcpath arcPointType="false" id="1" xCoord="645" yCoord="1170"/>
     </arc>
-    <arc id="I76" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="availible_repairmen" target="skip_down_m2" type="tapnInhibitor" weight="1">
+    <arc id="I72" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="availible_repairmen" target="skip_down_m2" type="tapnInhibitor" weight="1">
       <arcpath arcPointType="false" id="0" xCoord="683" yCoord="719"/>
       <arcpath arcPointType="false" id="1" xCoord="930" yCoord="1170"/>
     </arc>
-    <arc id="I77" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="availible_repairmen" target="skip_down_m1" type="tapnInhibitor" weight="1">
+    <arc id="I73" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="availible_repairmen" target="skip_down_m1" type="tapnInhibitor" weight="1">
       <arcpath arcPointType="false" id="0" xCoord="681" yCoord="691"/>
       <arcpath arcPointType="false" id="1" xCoord="900" yCoord="240"/>
     </arc>
@@ -4195,7 +4195,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="815" yCoord="409"/>
-      <arcpath arcPointType="false" id="1" xCoord="1096" yCoord="549"/>
+      <arcpath arcPointType="false" id="1" xCoord="1095" yCoord="555"/>
     </arc>
     <arc id="A77" inscription="1" nameOffsetX="0" nameOffsetY="0" source="finish_m2" target="buffer_4_pending" type="normal" weight="1">
       <hlinscription>
@@ -4214,15 +4214,15 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="815" yCoord="1011"/>
-      <arcpath arcPointType="false" id="1" xCoord="1098" yCoord="819"/>
+      <arcpath arcPointType="false" id="1" xCoord="1095" yCoord="825"/>
     </arc>
-    <arc id="I78" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_4_pending" target="finish_m2" type="tapnInhibitor" weight="1">
+    <arc id="I76" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_4_pending" target="finish_m2" type="tapnInhibitor" weight="1">
       <arcpath arcPointType="false" id="0" xCoord="1098" yCoord="819"/>
-      <arcpath arcPointType="false" id="1" xCoord="815" yCoord="1018"/>
+      <arcpath arcPointType="false" id="1" xCoord="810" yCoord="1020"/>
     </arc>
-    <arc id="I79" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_3_pending" target="finish_m1" type="tapnInhibitor" weight="1">
+    <arc id="I77" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_3_pending" target="finish_m1" type="tapnInhibitor" weight="1">
       <arcpath arcPointType="false" id="0" xCoord="1096" yCoord="549"/>
-      <arcpath arcPointType="false" id="1" xCoord="815" yCoord="414"/>
+      <arcpath arcPointType="false" id="1" xCoord="810" yCoord="420"/>
     </arc>
     <arc id="A78" inscription="1" nameOffsetX="0" nameOffsetY="0" source="m1_restart" target="returned_repairman" type="normal" weight="1">
       <hlinscription>
@@ -4241,7 +4241,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="805" yCoord="504"/>
-      <arcpath arcPointType="false" id="1" xCoord="523" yCoord="696"/>
+      <arcpath arcPointType="false" id="1" xCoord="525" yCoord="690"/>
     </arc>
     <arc id="A79" inscription="1" nameOffsetX="0" nameOffsetY="0" source="m2_restart" target="returned_repairman" type="normal" weight="1">
       <hlinscription>
@@ -4260,7 +4260,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="805" yCoord="925"/>
-      <arcpath arcPointType="false" id="1" xCoord="523" yCoord="714"/>
+      <arcpath arcPointType="false" id="1" xCoord="525" yCoord="720"/>
     </arc>
   </net>
   <net active="true" id="combine" type="P/T net">
@@ -4488,7 +4488,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="179" yCoord="259"/>
-      <arcpath arcPointType="false" id="1" xCoord="340" yCoord="310"/>
+      <arcpath arcPointType="false" id="1" xCoord="345" yCoord="315"/>
     </arc>
     <arc id="A1" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_4" target="start_combine" type="timed" weight="1">
       <hlinscription>
@@ -4507,7 +4507,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="179" yCoord="385"/>
-      <arcpath arcPointType="false" id="1" xCoord="340" yCoord="324"/>
+      <arcpath arcPointType="false" id="1" xCoord="345" yCoord="330"/>
     </arc>
     <arc id="A2" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="combine_idle" target="start_combine" type="timed" weight="1">
       <hlinscription>
@@ -4526,7 +4526,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="240" yCoord="315"/>
-      <arcpath arcPointType="false" id="1" xCoord="340" yCoord="317"/>
+      <arcpath arcPointType="false" id="1" xCoord="345" yCoord="315"/>
     </arc>
     <arc id="A3" inscription="1" nameOffsetX="0" nameOffsetY="0" source="start_combine" target="combine_busy" type="normal" weight="1">
       <hlinscription>
@@ -4545,7 +4545,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="350" yCoord="320"/>
-      <arcpath arcPointType="false" id="1" xCoord="435" yCoord="316"/>
+      <arcpath arcPointType="false" id="1" xCoord="435" yCoord="315"/>
     </arc>
     <arc id="A4" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="combine_busy" target="breakdown_combine" type="timed" weight="1">
       <hlinscription>
@@ -4564,7 +4564,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="462" yCoord="323"/>
-      <arcpath arcPointType="false" id="1" xCoord="550" yCoord="381"/>
+      <arcpath arcPointType="false" id="1" xCoord="555" yCoord="375"/>
     </arc>
     <arc id="A5" inscription="1" nameOffsetX="0" nameOffsetY="0" source="breakdown_combine" target="combine_down" type="normal" weight="1">
       <hlinscription>
@@ -4583,7 +4583,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="560" yCoord="380"/>
-      <arcpath arcPointType="false" id="1" xCoord="662" yCoord="322"/>
+      <arcpath arcPointType="false" id="1" xCoord="660" yCoord="315"/>
     </arc>
     <arc id="A6" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="combine_down" target="repair_combine" type="timed" weight="1">
       <hlinscription>
@@ -4602,7 +4602,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="689" yCoord="321"/>
-      <arcpath arcPointType="false" id="1" xCoord="820" yCoord="377"/>
+      <arcpath arcPointType="false" id="1" xCoord="825" yCoord="375"/>
     </arc>
     <arc id="A7" inscription="1" nameOffsetX="0" nameOffsetY="0" source="repair_combine" target="combine_repair" type="normal" weight="1">
       <hlinscription>
@@ -4621,7 +4621,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="830" yCoord="375"/>
-      <arcpath arcPointType="false" id="1" xCoord="946" yCoord="321"/>
+      <arcpath arcPointType="false" id="1" xCoord="945" yCoord="315"/>
     </arc>
     <arc id="A8" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="availible_repairmen" target="repair_combine" type="timed" weight="1">
       <hlinscription>
@@ -4640,7 +4640,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="659" yCoord="431"/>
-      <arcpath arcPointType="false" id="1" xCoord="820" yCoord="384"/>
+      <arcpath arcPointType="false" id="1" xCoord="825" yCoord="390"/>
     </arc>
     <arc id="A9" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="combine_repair" target="restart_combine" type="timed" weight="1">
       <hlinscription>
@@ -4659,7 +4659,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="949" yCoord="325"/>
-      <arcpath arcPointType="false" id="1" xCoord="635" yCoord="600"/>
+      <arcpath arcPointType="false" id="1" xCoord="630" yCoord="600"/>
     </arc>
     <arc id="A11" inscription="1" nameOffsetX="0" nameOffsetY="0" source="restart_combine" target="combine_busy" type="normal" weight="1">
       <hlinscription>
@@ -4678,7 +4678,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="625" yCoord="596"/>
-      <arcpath arcPointType="false" id="1" xCoord="458" yCoord="328"/>
+      <arcpath arcPointType="false" id="1" xCoord="465" yCoord="330"/>
     </arc>
     <arc id="A12" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="combine_busy" target="combine_finish" type="timed" weight="1">
       <hlinscription>
@@ -4697,11 +4697,11 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="463" yCoord="308"/>
-      <arcpath arcPointType="false" id="1" xCoord="670" yCoord="204"/>
+      <arcpath arcPointType="false" id="1" xCoord="675" yCoord="210"/>
     </arc>
-    <arc id="I14" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_5" target="combine_finish" type="tapnInhibitor" weight="1">
+    <arc id="I12" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_5" target="combine_finish" type="tapnInhibitor" weight="1">
       <arcpath arcPointType="false" id="0" xCoord="1095" yCoord="311"/>
-      <arcpath arcPointType="false" id="1" xCoord="679" yCoord="204"/>
+      <arcpath arcPointType="false" id="1" xCoord="675" yCoord="210"/>
     </arc>
     <arc id="A15" inscription="1" nameOffsetX="0" nameOffsetY="0" source="combine_finish" target="combine_idle" type="normal" weight="1">
       <hlinscription>
@@ -4720,7 +4720,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="670" yCoord="197"/>
-      <arcpath arcPointType="false" id="1" xCoord="240" yCoord="311"/>
+      <arcpath arcPointType="false" id="1" xCoord="240" yCoord="315"/>
     </arc>
     <arc id="A16" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_5" target="send_to_shipping" type="timed" weight="1">
       <hlinscription>
@@ -4739,7 +4739,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1123" yCoord="323"/>
-      <arcpath arcPointType="false" id="1" xCoord="1225" yCoord="386"/>
+      <arcpath arcPointType="false" id="1" xCoord="1230" yCoord="390"/>
     </arc>
     <arc id="A17" inscription="1" nameOffsetX="0" nameOffsetY="0" source="send_to_shipping" target="shipped_C" type="normal" weight="1">
       <hlinscription>
@@ -4758,11 +4758,11 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1235" yCoord="385"/>
-      <arcpath arcPointType="false" id="1" xCoord="1337" yCoord="323"/>
+      <arcpath arcPointType="false" id="1" xCoord="1335" yCoord="330"/>
     </arc>
-    <arc id="I18" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_5_pending" target="combine_finish" type="tapnInhibitor" weight="1">
+    <arc id="I16" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_5_pending" target="combine_finish" type="tapnInhibitor" weight="1">
       <arcpath arcPointType="false" id="0" xCoord="960" yCoord="252"/>
-      <arcpath arcPointType="false" id="1" xCoord="680" yCoord="192"/>
+      <arcpath arcPointType="false" id="1" xCoord="675" yCoord="195"/>
     </arc>
     <arc id="A18" inscription="1" nameOffsetX="0" nameOffsetY="0" source="combine_finish" target="buffer_5_pending" type="normal" weight="1">
       <hlinscription>
@@ -4781,7 +4781,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="680" yCoord="198"/>
-      <arcpath arcPointType="false" id="1" xCoord="960" yCoord="252"/>
+      <arcpath arcPointType="false" id="1" xCoord="960" yCoord="255"/>
     </arc>
     <arc id="A19" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="combine_ready" target="start_combine" type="timed" weight="1">
       <hlinscription>
@@ -4819,7 +4819,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="383" yCoord="103"/>
-      <arcpath arcPointType="false" id="1" xCoord="550" yCoord="371"/>
+      <arcpath arcPointType="false" id="1" xCoord="555" yCoord="375"/>
     </arc>
     <arc id="A21" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="combine_ready" target="combine_finish" type="timed" weight="1">
       <hlinscription>
@@ -4838,7 +4838,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="389" yCoord="95"/>
-      <arcpath arcPointType="false" id="1" xCoord="670" yCoord="190"/>
+      <arcpath arcPointType="false" id="1" xCoord="675" yCoord="195"/>
     </arc>
     <arc id="A22" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="combine_ready" target="repair_combine" type="timed" weight="1">
       <hlinscription>
@@ -4857,7 +4857,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="388" yCoord="98"/>
-      <arcpath arcPointType="false" id="1" xCoord="820" yCoord="370"/>
+      <arcpath arcPointType="false" id="1" xCoord="825" yCoord="375"/>
     </arc>
     <arc id="A23" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="combine_ready" target="restart_combine" type="timed" weight="1">
       <hlinscription>
@@ -4895,7 +4895,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="350" yCoord="310"/>
-      <arcpath arcPointType="false" id="1" xCoord="886" yCoord="66"/>
+      <arcpath arcPointType="false" id="1" xCoord="885" yCoord="60"/>
     </arc>
     <arc id="A25" inscription="1" nameOffsetX="0" nameOffsetY="0" source="combine_finish" target="combine_done" type="normal" weight="1">
       <hlinscription>
@@ -4914,7 +4914,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="680" yCoord="186"/>
-      <arcpath arcPointType="false" id="1" xCoord="887" yCoord="67"/>
+      <arcpath arcPointType="false" id="1" xCoord="885" yCoord="60"/>
     </arc>
     <arc id="A26" inscription="1" nameOffsetX="0" nameOffsetY="0" source="repair_combine" target="combine_done" type="normal" weight="1">
       <hlinscription>
@@ -4933,7 +4933,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="825" yCoord="360"/>
-      <arcpath arcPointType="false" id="1" xCoord="896" yCoord="75"/>
+      <arcpath arcPointType="false" id="1" xCoord="900" yCoord="75"/>
     </arc>
     <arc id="A27" inscription="1" nameOffsetX="0" nameOffsetY="0" source="breakdown_combine" target="combine_done" type="normal" weight="1">
       <hlinscription>
@@ -4952,7 +4952,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="560" yCoord="370"/>
-      <arcpath arcPointType="false" id="1" xCoord="889" yCoord="70"/>
+      <arcpath arcPointType="false" id="1" xCoord="885" yCoord="75"/>
     </arc>
     <arc id="A28" inscription="1" nameOffsetX="0" nameOffsetY="0" source="restart_combine" target="combine_done" type="normal" weight="1">
       <hlinscription>
@@ -4971,7 +4971,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="630" yCoord="585"/>
-      <arcpath arcPointType="false" id="1" xCoord="893" yCoord="73"/>
+      <arcpath arcPointType="false" id="1" xCoord="900" yCoord="75"/>
     </arc>
     <arc id="A31" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="combine_busy" target="combine_skip_busy" type="timed" weight="1">
       <hlinscription>
@@ -5009,7 +5009,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="420" yCoord="570"/>
-      <arcpath arcPointType="false" id="1" xCoord="448" yCoord="330"/>
+      <arcpath arcPointType="false" id="1" xCoord="450" yCoord="330"/>
     </arc>
     <arc id="A34" inscription="1" nameOffsetX="0" nameOffsetY="0" source="combine_skip_busy" target="combine_done" type="normal" weight="1">
       <hlinscription>
@@ -5028,7 +5028,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="425" yCoord="585"/>
-      <arcpath arcPointType="false" id="1" xCoord="890" yCoord="71"/>
+      <arcpath arcPointType="false" id="1" xCoord="885" yCoord="75"/>
     </arc>
     <arc id="A35" inscription="1" nameOffsetX="0" nameOffsetY="0" source="combine_skip_down" target="combine_done" type="normal" weight="1">
       <hlinscription>
@@ -5047,7 +5047,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="930" yCoord="585"/>
-      <arcpath arcPointType="false" id="1" xCoord="901" yCoord="75"/>
+      <arcpath arcPointType="false" id="1" xCoord="900" yCoord="75"/>
     </arc>
     <arc id="A36" inscription="1" nameOffsetX="0" nameOffsetY="0" source="combine_skip_down" target="combine_down" type="normal" weight="1">
       <hlinscription>
@@ -5066,7 +5066,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="925" yCoord="592"/>
-      <arcpath arcPointType="false" id="1" xCoord="685" yCoord="326"/>
+      <arcpath arcPointType="false" id="1" xCoord="690" yCoord="330"/>
     </arc>
     <arc id="A37" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="combine_down" target="combine_skip_down" type="timed" weight="1">
       <hlinscription>
@@ -5085,13 +5085,13 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="685" yCoord="326"/>
-      <arcpath arcPointType="false" id="1" xCoord="925" yCoord="598"/>
+      <arcpath arcPointType="false" id="1" xCoord="930" yCoord="600"/>
     </arc>
-    <arc id="I38" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="availible_repairmen" target="combine_skip_down" type="tapnInhibitor" weight="1">
+    <arc id="I34" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="availible_repairmen" target="combine_skip_down" type="tapnInhibitor" weight="1">
       <arcpath arcPointType="false" id="0" xCoord="658" yCoord="443"/>
-      <arcpath arcPointType="false" id="1" xCoord="924" yCoord="610"/>
+      <arcpath arcPointType="false" id="1" xCoord="930" yCoord="615"/>
     </arc>
-    <arc id="I41" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_4" target="skip_idle_no_B" type="tapnInhibitor" weight="1">
+    <arc id="I35" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_4" target="skip_idle_no_B" type="tapnInhibitor" weight="1">
       <arcpath arcPointType="false" id="0" xCoord="173" yCoord="403"/>
       <arcpath arcPointType="false" id="1" xCoord="240" yCoord="510"/>
     </arc>
@@ -5131,7 +5131,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="386" yCoord="100"/>
-      <arcpath arcPointType="false" id="1" xCoord="925" yCoord="604"/>
+      <arcpath arcPointType="false" id="1" xCoord="930" yCoord="600"/>
     </arc>
     <arc id="A40" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="combine_ready" target="skip_idle_no_A" type="timed" weight="1">
       <hlinscription>
@@ -5150,7 +5150,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="361" yCoord="95"/>
-      <arcpath arcPointType="false" id="1" xCoord="215" yCoord="145"/>
+      <arcpath arcPointType="false" id="1" xCoord="210" yCoord="150"/>
     </arc>
     <arc id="A41" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="combine_idle" target="skip_idle_no_A" type="timed" weight="1">
       <hlinscription>
@@ -5171,7 +5171,7 @@
       <arcpath arcPointType="false" id="0" xCoord="223" yCoord="300"/>
       <arcpath arcPointType="false" id="1" xCoord="210" yCoord="165"/>
     </arc>
-    <arc id="I42" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_3" target="skip_idle_no_A" type="tapnInhibitor" weight="1">
+    <arc id="I40" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_3" target="skip_idle_no_A" type="tapnInhibitor" weight="1">
       <arcpath arcPointType="false" id="0" xCoord="172" yCoord="242"/>
       <arcpath arcPointType="false" id="1" xCoord="210" yCoord="165"/>
     </arc>
@@ -5192,7 +5192,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="210" yCoord="165"/>
-      <arcpath arcPointType="false" id="1" xCoord="223" yCoord="300"/>
+      <arcpath arcPointType="false" id="1" xCoord="225" yCoord="300"/>
     </arc>
     <arc id="A44" inscription="1" nameOffsetX="0" nameOffsetY="0" source="skip_idle_no_A" target="combine_done" type="normal" weight="1">
       <hlinscription>
@@ -5211,7 +5211,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="215" yCoord="155"/>
-      <arcpath arcPointType="false" id="1" xCoord="885" yCoord="62"/>
+      <arcpath arcPointType="false" id="1" xCoord="885" yCoord="60"/>
     </arc>
     <arc id="A45" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="combine_ready" target="skip_idle_no_B" type="timed" weight="1">
       <hlinscription>
@@ -5268,7 +5268,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="240" yCoord="510"/>
-      <arcpath arcPointType="false" id="1" xCoord="226" yCoord="330"/>
+      <arcpath arcPointType="false" id="1" xCoord="225" yCoord="330"/>
     </arc>
     <arc id="A48" inscription="1" nameOffsetX="0" nameOffsetY="0" source="skip_idle_no_B" target="combine_done" type="normal" weight="1">
       <hlinscription>
@@ -5287,7 +5287,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="245" yCoord="525"/>
-      <arcpath arcPointType="false" id="1" xCoord="888" yCoord="69"/>
+      <arcpath arcPointType="false" id="1" xCoord="885" yCoord="75"/>
     </arc>
     <arc id="A49" inscription="1" nameOffsetX="0" nameOffsetY="0" source="restart_combine" target="returned_repairman" type="normal" weight="1">
       <hlinscription>
@@ -5306,7 +5306,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="625" yCoord="606"/>
-      <arcpath arcPointType="false" id="1" xCoord="539" yCoord="640"/>
+      <arcpath arcPointType="false" id="1" xCoord="540" yCoord="645"/>
     </arc>
     <arc id="A50" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="shipping_ready" target="send_to_shipping" type="timed" weight="1">
       <hlinscription>
@@ -5325,7 +5325,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1105" yCoord="543"/>
-      <arcpath arcPointType="false" id="1" xCoord="1225" yCoord="396"/>
+      <arcpath arcPointType="false" id="1" xCoord="1230" yCoord="390"/>
     </arc>
     <arc id="A51" inscription="1" nameOffsetX="0" nameOffsetY="0" source="send_to_shipping" target="shipping_done" type="normal" weight="1">
       <hlinscription>
@@ -5344,12 +5344,12 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1235" yCoord="395"/>
-      <arcpath arcPointType="false" id="1" xCoord="1370" yCoord="544"/>
+      <arcpath arcPointType="false" id="1" xCoord="1365" yCoord="540"/>
     </arc>
     <arc id="I50" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_5" target="skip_shipping" type="tapnInhibitor" weight="1">
       <arcpath arcPointType="false" id="0" xCoord="1116" yCoord="329"/>
       <arcpath arcPointType="false" id="1" xCoord="1215" yCoord="540"/>
-      <arcpath arcPointType="false" id="2" xCoord="1240" yCoord="551"/>
+      <arcpath arcPointType="false" id="2" xCoord="1245" yCoord="555"/>
     </arc>
     <arc id="A52" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="shipping_ready" target="skip_shipping" type="timed" weight="1">
       <hlinscription>
@@ -5368,7 +5368,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1110" yCoord="556"/>
-      <arcpath arcPointType="false" id="1" xCoord="1240" yCoord="561"/>
+      <arcpath arcPointType="false" id="1" xCoord="1245" yCoord="555"/>
     </arc>
     <arc id="A53" inscription="1" nameOffsetX="0" nameOffsetY="0" source="skip_shipping" target="shipping_done" type="normal" weight="1">
       <hlinscription>
@@ -5901,7 +5901,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="775" yCoord="490"/>
-      <arcpath arcPointType="false" id="1" xCoord="689" yCoord="533"/>
+      <arcpath arcPointType="false" id="1" xCoord="690" yCoord="540"/>
     </arc>
     <arc id="A5" inscription="1" nameOffsetX="0" nameOffsetY="0" source="next_tick" target="m1_ready" type="normal" weight="1">
       <hlinscription>
@@ -5939,7 +5939,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="784" yCoord="501"/>
-      <arcpath arcPointType="false" id="1" xCoord="847" yCoord="602"/>
+      <arcpath arcPointType="false" id="1" xCoord="840" yCoord="600"/>
     </arc>
     <arc id="A7" inscription="1" nameOffsetX="0" nameOffsetY="0" source="next_tick" target="combine_ready" type="normal" weight="1">
       <hlinscription>
@@ -5958,7 +5958,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="785" yCoord="486"/>
-      <arcpath arcPointType="false" id="1" xCoord="903" yCoord="576"/>
+      <arcpath arcPointType="false" id="1" xCoord="900" yCoord="570"/>
     </arc>
     <arc id="A8" inscription="1" nameOffsetX="0" nameOffsetY="0" source="next_tick" target="ticks" type="normal" weight="1">
       <hlinscription>
@@ -5977,7 +5977,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="780" yCoord="480"/>
-      <arcpath arcPointType="false" id="1" xCoord="780" yCoord="359"/>
+      <arcpath arcPointType="false" id="1" xCoord="780" yCoord="360"/>
     </arc>
     <arc id="A9" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="oven_done" target="begin_transfer" type="timed" weight="1">
       <hlinscription>
@@ -5996,7 +5996,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="460" yCoord="386"/>
-      <arcpath arcPointType="false" id="1" xCoord="550" yCoord="490"/>
+      <arcpath arcPointType="false" id="1" xCoord="555" yCoord="495"/>
     </arc>
     <arc id="A10" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m1_done" target="begin_transfer" type="timed" weight="1">
       <hlinscription>
@@ -6015,7 +6015,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="418" yCoord="426"/>
-      <arcpath arcPointType="false" id="1" xCoord="550" yCoord="495"/>
+      <arcpath arcPointType="false" id="1" xCoord="555" yCoord="495"/>
     </arc>
     <arc id="A11" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="m2_done" target="begin_transfer" type="timed" weight="1">
       <hlinscription>
@@ -6034,7 +6034,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="405" yCoord="494"/>
-      <arcpath arcPointType="false" id="1" xCoord="549" yCoord="500"/>
+      <arcpath arcPointType="false" id="1" xCoord="555" yCoord="495"/>
     </arc>
     <arc id="A12" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="combine_done" target="begin_transfer" type="timed" weight="1">
       <hlinscription>
@@ -6053,7 +6053,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="449" yCoord="549"/>
-      <arcpath arcPointType="false" id="1" xCoord="549" yCoord="505"/>
+      <arcpath arcPointType="false" id="1" xCoord="555" yCoord="510"/>
     </arc>
     <arc id="A13" inscription="1" nameOffsetX="0" nameOffsetY="0" source="begin_transfer" target="transfer_1" type="normal" weight="1">
       <hlinscription>
@@ -6072,7 +6072,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="550" yCoord="485"/>
-      <arcpath arcPointType="false" id="1" xCoord="398" yCoord="252"/>
+      <arcpath arcPointType="false" id="1" xCoord="405" yCoord="255"/>
     </arc>
     <arc id="A14" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="transfer_done" target="next_tick" type="timed" weight="1">
       <hlinscription>
@@ -6091,7 +6091,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1053" yCoord="710"/>
-      <arcpath arcPointType="false" id="1" xCoord="784" yCoord="493"/>
+      <arcpath arcPointType="false" id="1" xCoord="780" yCoord="495"/>
     </arc>
     <arc id="A15" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="transfer_1" target="move_buffer_1" type="timed" weight="1">
       <hlinscription>
@@ -6110,7 +6110,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="399" yCoord="227"/>
-      <arcpath arcPointType="false" id="1" xCoord="430" yCoord="185"/>
+      <arcpath arcPointType="false" id="1" xCoord="435" yCoord="180"/>
     </arc>
     <arc id="A16" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_1_pending" target="move_buffer_1" type="timed" weight="1">
       <hlinscription>
@@ -6148,7 +6148,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="431" yCoord="175"/>
-      <arcpath arcPointType="false" id="1" xCoord="383" yCoord="102"/>
+      <arcpath arcPointType="false" id="1" xCoord="390" yCoord="105"/>
     </arc>
     <arc id="A18" inscription="1" nameOffsetX="0" nameOffsetY="0" source="move_buffer_1" target="transfer_2" type="normal" weight="1">
       <hlinscription>
@@ -6167,7 +6167,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="440" yCoord="180"/>
-      <arcpath arcPointType="false" id="1" xCoord="720" yCoord="236"/>
+      <arcpath arcPointType="false" id="1" xCoord="720" yCoord="240"/>
     </arc>
     <arc id="A19" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="transfer_1" target="skip_buffer_1" type="timed" weight="1">
       <hlinscription>
@@ -6186,7 +6186,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="405" yCoord="236"/>
-      <arcpath arcPointType="false" id="1" xCoord="639" yCoord="170"/>
+      <arcpath arcPointType="false" id="1" xCoord="645" yCoord="165"/>
     </arc>
     <arc id="A21" inscription="1" nameOffsetX="0" nameOffsetY="0" source="skip_buffer_1" target="transfer_2" type="normal" weight="1">
       <hlinscription>
@@ -6205,11 +6205,11 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="649" yCoord="165"/>
-      <arcpath arcPointType="false" id="1" xCoord="724" yCoord="231"/>
+      <arcpath arcPointType="false" id="1" xCoord="720" yCoord="225"/>
     </arc>
     <arc id="I17" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_1_pending" target="skip_buffer_1" type="tapnInhibitor" weight="1">
       <arcpath arcPointType="false" id="0" xCoord="477" yCoord="67"/>
-      <arcpath arcPointType="false" id="1" xCoord="640" yCoord="160"/>
+      <arcpath arcPointType="false" id="1" xCoord="645" yCoord="165"/>
     </arc>
     <arc id="A22" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_2_pending" target="move_buffer_2" type="timed" weight="1">
       <hlinscription>
@@ -6247,11 +6247,11 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="760" yCoord="166"/>
-      <arcpath arcPointType="false" id="1" xCoord="713" yCoord="88"/>
+      <arcpath arcPointType="false" id="1" xCoord="720" yCoord="90"/>
     </arc>
-    <arc id="I24" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_2_pending" target="skip_buffer_2" type="tapnInhibitor" weight="1">
+    <arc id="I20" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_2_pending" target="skip_buffer_2" type="tapnInhibitor" weight="1">
       <arcpath arcPointType="false" id="0" xCoord="806" yCoord="53"/>
-      <arcpath arcPointType="false" id="1" xCoord="956" yCoord="175"/>
+      <arcpath arcPointType="false" id="1" xCoord="960" yCoord="180"/>
     </arc>
     <arc id="A26" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="transfer_2" target="move_buffer_2" type="timed" weight="1">
       <hlinscription>
@@ -6289,7 +6289,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1120" yCoord="58"/>
-      <arcpath arcPointType="false" id="1" xCoord="1094" yCoord="150"/>
+      <arcpath arcPointType="false" id="1" xCoord="1095" yCoord="150"/>
     </arc>
     <arc id="A30" inscription="1" nameOffsetX="0" nameOffsetY="0" source="move_buffer_3" target="buffer_3" type="normal" weight="1">
       <hlinscription>
@@ -6308,11 +6308,11 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1094" yCoord="150"/>
-      <arcpath arcPointType="false" id="1" xCoord="1070" yCoord="89"/>
+      <arcpath arcPointType="false" id="1" xCoord="1065" yCoord="90"/>
     </arc>
-    <arc id="I32" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_3_pending" target="skip_buffer_3" type="tapnInhibitor" weight="1">
+    <arc id="I24" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_3_pending" target="skip_buffer_3" type="tapnInhibitor" weight="1">
       <arcpath arcPointType="false" id="0" xCoord="1138" yCoord="52"/>
-      <arcpath arcPointType="false" id="1" xCoord="1300" yCoord="160"/>
+      <arcpath arcPointType="false" id="1" xCoord="1305" yCoord="165"/>
     </arc>
     <arc id="A34" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="transfer_2" target="skip_buffer_2" type="timed" weight="1">
       <hlinscription>
@@ -6331,7 +6331,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="750" yCoord="236"/>
-      <arcpath arcPointType="false" id="1" xCoord="955" yCoord="185"/>
+      <arcpath arcPointType="false" id="1" xCoord="960" yCoord="180"/>
     </arc>
     <arc id="A35" inscription="1" nameOffsetX="0" nameOffsetY="0" source="move_buffer_2" target="transfer_3" type="normal" weight="1">
       <hlinscription>
@@ -6350,7 +6350,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="769" yCoord="165"/>
-      <arcpath arcPointType="false" id="1" xCoord="1006" yCoord="235"/>
+      <arcpath arcPointType="false" id="1" xCoord="1005" yCoord="240"/>
     </arc>
     <arc id="A36" inscription="1" nameOffsetX="0" nameOffsetY="0" source="skip_buffer_2" target="transfer_3" type="normal" weight="1">
       <hlinscription>
@@ -6369,7 +6369,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="965" yCoord="180"/>
-      <arcpath arcPointType="false" id="1" xCoord="1009" yCoord="228"/>
+      <arcpath arcPointType="false" id="1" xCoord="1005" yCoord="225"/>
     </arc>
     <arc id="A33" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="transfer_3" target="move_buffer_3" type="timed" weight="1">
       <hlinscription>
@@ -6388,7 +6388,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1030" yCoord="230"/>
-      <arcpath arcPointType="false" id="1" xCoord="1090" yCoord="166"/>
+      <arcpath arcPointType="false" id="1" xCoord="1095" yCoord="165"/>
     </arc>
     <arc id="A37" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="transfer_3" target="skip_buffer_3" type="timed" weight="1">
       <hlinscription>
@@ -6407,7 +6407,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1034" yCoord="236"/>
-      <arcpath arcPointType="false" id="1" xCoord="1299" yCoord="170"/>
+      <arcpath arcPointType="false" id="1" xCoord="1305" yCoord="165"/>
     </arc>
     <arc id="A38" inscription="1" nameOffsetX="0" nameOffsetY="0" source="move_buffer_3" target="transfer_4" type="normal" weight="1">
       <hlinscription>
@@ -6426,7 +6426,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1099" yCoord="165"/>
-      <arcpath arcPointType="false" id="1" xCoord="1350" yCoord="235"/>
+      <arcpath arcPointType="false" id="1" xCoord="1350" yCoord="240"/>
     </arc>
     <arc id="A39" inscription="1" nameOffsetX="0" nameOffsetY="0" source="skip_buffer_3" target="transfer_4" type="normal" weight="1">
       <hlinscription>
@@ -6445,7 +6445,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1309" yCoord="165"/>
-      <arcpath arcPointType="false" id="1" xCoord="1356" yCoord="228"/>
+      <arcpath arcPointType="false" id="1" xCoord="1350" yCoord="225"/>
     </arc>
     <arc id="A32" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_4_pending" target="move_buffer_4" type="timed" weight="1">
       <hlinscription>
@@ -6483,7 +6483,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1440" yCoord="150"/>
-      <arcpath arcPointType="false" id="1" xCoord="1416" yCoord="89"/>
+      <arcpath arcPointType="false" id="1" xCoord="1410" yCoord="90"/>
     </arc>
     <arc id="A40" inscription="1" nameOffsetX="0" nameOffsetY="0" source="move_buffer_4" target="transfer_5" type="normal" weight="1">
       <hlinscription>
@@ -6502,7 +6502,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1444" yCoord="165"/>
-      <arcpath arcPointType="false" id="1" xCoord="1695" yCoord="235"/>
+      <arcpath arcPointType="false" id="1" xCoord="1695" yCoord="240"/>
     </arc>
     <arc id="A41" inscription="1" nameOffsetX="0" nameOffsetY="0" source="skip_buffer_4" target="transfer_5" type="normal" weight="1">
       <hlinscription>
@@ -6521,11 +6521,11 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1655" yCoord="165"/>
-      <arcpath arcPointType="false" id="1" xCoord="1701" yCoord="228"/>
+      <arcpath arcPointType="false" id="1" xCoord="1695" yCoord="225"/>
     </arc>
     <arc id="I36" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_4_pending" target="skip_buffer_4" type="tapnInhibitor" weight="1">
       <arcpath arcPointType="false" id="0" xCoord="1482" yCoord="52"/>
-      <arcpath arcPointType="false" id="1" xCoord="1645" yCoord="160"/>
+      <arcpath arcPointType="false" id="1" xCoord="1650" yCoord="165"/>
     </arc>
     <arc id="A42" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_5_pending" target="move_buffer_5" type="timed" weight="1">
       <hlinscription>
@@ -6563,11 +6563,11 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1815" yCoord="135"/>
-      <arcpath arcPointType="false" id="1" xCoord="1791" yCoord="74"/>
+      <arcpath arcPointType="false" id="1" xCoord="1785" yCoord="75"/>
     </arc>
-    <arc id="I41" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_5_pending" target="skip_buffer_5" type="tapnInhibitor" weight="1">
+    <arc id="I39" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="buffer_5_pending" target="skip_buffer_5" type="tapnInhibitor" weight="1">
       <arcpath arcPointType="false" id="0" xCoord="1857" yCoord="38"/>
-      <arcpath arcPointType="false" id="1" xCoord="2020" yCoord="144"/>
+      <arcpath arcPointType="false" id="1" xCoord="2025" yCoord="150"/>
     </arc>
     <arc id="A46" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="transfer_4" target="move_buffer_4" type="timed" weight="1">
       <hlinscription>
@@ -6586,7 +6586,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1375" yCoord="230"/>
-      <arcpath arcPointType="false" id="1" xCoord="1435" yCoord="166"/>
+      <arcpath arcPointType="false" id="1" xCoord="1440" yCoord="165"/>
     </arc>
     <arc id="A47" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="transfer_4" target="skip_buffer_4" type="timed" weight="1">
       <hlinscription>
@@ -6605,7 +6605,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1380" yCoord="236"/>
-      <arcpath arcPointType="false" id="1" xCoord="1644" yCoord="170"/>
+      <arcpath arcPointType="false" id="1" xCoord="1650" yCoord="165"/>
     </arc>
     <arc id="A48" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="transfer_5" target="move_buffer_5" type="timed" weight="1">
       <hlinscription>
@@ -6624,7 +6624,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1722" yCoord="230"/>
-      <arcpath arcPointType="false" id="1" xCoord="1810" yCoord="151"/>
+      <arcpath arcPointType="false" id="1" xCoord="1815" yCoord="150"/>
     </arc>
     <arc id="A49" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="transfer_5" target="skip_buffer_5" type="timed" weight="1">
       <hlinscription>
@@ -6643,7 +6643,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1725" yCoord="235"/>
-      <arcpath arcPointType="false" id="1" xCoord="2020" yCoord="152"/>
+      <arcpath arcPointType="false" id="1" xCoord="2025" yCoord="150"/>
     </arc>
     <arc id="A50" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="repair_transfer" target="return_worker" type="timed" weight="1">
       <hlinscription>
@@ -6662,7 +6662,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1094" yCoord="497"/>
-      <arcpath arcPointType="false" id="1" xCoord="1194" yCoord="516"/>
+      <arcpath arcPointType="false" id="1" xCoord="1200" yCoord="510"/>
     </arc>
     <arc id="A51" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="returned_repairman" target="return_worker" type="timed" weight="1">
       <hlinscription>
@@ -6700,7 +6700,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1195" yCoord="506"/>
-      <arcpath arcPointType="false" id="1" xCoord="1094" yCoord="495"/>
+      <arcpath arcPointType="false" id="1" xCoord="1095" yCoord="495"/>
     </arc>
     <arc id="A53" inscription="1" nameOffsetX="0" nameOffsetY="0" source="return_worker" target="availible_repairmen" type="normal" weight="1">
       <hlinscription>
@@ -6757,11 +6757,11 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1080" yCoord="675"/>
-      <arcpath arcPointType="false" id="1" xCoord="1069" yCoord="706"/>
+      <arcpath arcPointType="false" id="1" xCoord="1065" yCoord="705"/>
     </arc>
-    <arc id="I52" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="returned_repairman" target="workers_done" type="tapnInhibitor" weight="1">
+    <arc id="I50" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="returned_repairman" target="workers_done" type="tapnInhibitor" weight="1">
       <arcpath arcPointType="false" id="0" xCoord="1143" yCoord="609"/>
-      <arcpath arcPointType="false" id="1" xCoord="1084" yCoord="660"/>
+      <arcpath arcPointType="false" id="1" xCoord="1080" yCoord="660"/>
     </arc>
     <arc id="A55" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="input_done" target="begin_transfer" type="timed" weight="1">
       <hlinscription>
@@ -6782,7 +6782,7 @@
       <arcpath arcPointType="false" id="0" xCoord="517" yCoord="602"/>
       <arcpath arcPointType="false" id="1" xCoord="570" yCoord="510"/>
       <arcpath arcPointType="false" id="2" xCoord="570" yCoord="510"/>
-      <arcpath arcPointType="false" id="3" xCoord="559" yCoord="500"/>
+      <arcpath arcPointType="false" id="3" xCoord="555" yCoord="495"/>
     </arc>
     <arc id="A57" inscription="1" nameOffsetX="0" nameOffsetY="0" source="next_tick" target="input_active" type="normal" weight="1">
       <hlinscription>
@@ -6801,7 +6801,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="774" yCoord="500"/>
-      <arcpath arcPointType="false" id="1" xCoord="685" yCoord="603"/>
+      <arcpath arcPointType="false" id="1" xCoord="690" yCoord="600"/>
     </arc>
     <arc id="A56" inscription="1" nameOffsetX="0" nameOffsetY="0" source="move_buffer_5" target="queue_transfer_A" type="normal" weight="1">
       <hlinscription>
@@ -6820,7 +6820,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1815" yCoord="165"/>
-      <arcpath arcPointType="false" id="1" xCoord="1842" yCoord="315"/>
+      <arcpath arcPointType="false" id="1" xCoord="1845" yCoord="315"/>
     </arc>
     <arc id="A58" inscription="1" nameOffsetX="0" nameOffsetY="0" source="skip_buffer_5" target="queue_transfer_A" type="normal" weight="1">
       <hlinscription>
@@ -6839,7 +6839,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="2019" yCoord="159"/>
-      <arcpath arcPointType="false" id="1" xCoord="1855" yCoord="319"/>
+      <arcpath arcPointType="false" id="1" xCoord="1860" yCoord="315"/>
     </arc>
     <arc id="A57" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="queue_transfer_A" target="move_queue_A" type="timed" weight="1">
       <hlinscription>
@@ -6858,7 +6858,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1853" yCoord="341"/>
-      <arcpath arcPointType="false" id="1" xCoord="1884" yCoord="381"/>
+      <arcpath arcPointType="false" id="1" xCoord="1890" yCoord="375"/>
     </arc>
     <arc id="A59" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="queue_A_pending" target="move_queue_A" type="timed" weight="1">
       <hlinscription>
@@ -6896,7 +6896,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1885" yCoord="370"/>
-      <arcpath arcPointType="false" id="1" xCoord="1855" yCoord="340"/>
+      <arcpath arcPointType="false" id="1" xCoord="1860" yCoord="345"/>
     </arc>
     <arc id="A61" inscription="1" nameOffsetX="0" nameOffsetY="0" source="move_queue_A" target="queue_A" type="normal" weight="1">
       <hlinscription>
@@ -6934,11 +6934,11 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1838" yCoord="343"/>
-      <arcpath arcPointType="false" id="1" xCoord="1769" yCoord="480"/>
+      <arcpath arcPointType="false" id="1" xCoord="1770" yCoord="480"/>
     </arc>
     <arc id="I60" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="queue_A_pending" target="queue_A_done" type="tapnInhibitor" weight="1">
       <arcpath arcPointType="false" id="0" xCoord="1890" yCoord="494"/>
-      <arcpath arcPointType="false" id="1" xCoord="1774" yCoord="494"/>
+      <arcpath arcPointType="false" id="1" xCoord="1770" yCoord="495"/>
     </arc>
     <arc id="A63" inscription="1" nameOffsetX="0" nameOffsetY="0" source="queue_A_done" target="queue_transfer_B" type="normal" weight="1">
       <hlinscription>
@@ -6957,7 +6957,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1769" yCoord="509"/>
-      <arcpath arcPointType="false" id="1" xCoord="1783" yCoord="630"/>
+      <arcpath arcPointType="false" id="1" xCoord="1785" yCoord="630"/>
     </arc>
     <arc id="A64" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="queue_transfer_B" target="move_queue_B" type="timed" weight="1">
       <hlinscription>
@@ -6976,7 +6976,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1770" yCoord="641"/>
-      <arcpath arcPointType="false" id="1" xCoord="1656" yCoord="610"/>
+      <arcpath arcPointType="false" id="1" xCoord="1650" yCoord="615"/>
     </arc>
     <arc id="A65" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="queue_B_pending" target="move_queue_B" type="timed" weight="1">
       <hlinscription>
@@ -6995,7 +6995,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1556" yCoord="535"/>
-      <arcpath arcPointType="false" id="1" xCoord="1645" yCoord="616"/>
+      <arcpath arcPointType="false" id="1" xCoord="1650" yCoord="615"/>
     </arc>
     <arc id="A66" inscription="1" nameOffsetX="0" nameOffsetY="0" source="move_queue_B" target="queue_transfer_B" type="normal" weight="1">
       <hlinscription>
@@ -7014,7 +7014,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1655" yCoord="620"/>
-      <arcpath arcPointType="false" id="1" xCoord="1770" yCoord="642"/>
+      <arcpath arcPointType="false" id="1" xCoord="1770" yCoord="645"/>
     </arc>
     <arc id="A67" inscription="1" nameOffsetX="0" nameOffsetY="0" source="move_queue_B" target="queue_B" type="normal" weight="1">
       <hlinscription>
@@ -7033,7 +7033,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1650" yCoord="600"/>
-      <arcpath arcPointType="false" id="1" xCoord="1638" yCoord="509"/>
+      <arcpath arcPointType="false" id="1" xCoord="1635" yCoord="510"/>
     </arc>
     <arc id="A68" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="queue_transfer_B" target="queue_B_done" type="timed" weight="1">
       <hlinscription>
@@ -7052,11 +7052,11 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1770" yCoord="647"/>
-      <arcpath arcPointType="false" id="1" xCoord="1549" yCoord="690"/>
+      <arcpath arcPointType="false" id="1" xCoord="1545" yCoord="690"/>
     </arc>
     <arc id="I67" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="queue_B_pending" target="queue_B_done" type="tapnInhibitor" weight="1">
       <arcpath arcPointType="false" id="0" xCoord="1544" yCoord="540"/>
-      <arcpath arcPointType="false" id="1" xCoord="1544" yCoord="675"/>
+      <arcpath arcPointType="false" id="1" xCoord="1545" yCoord="675"/>
     </arc>
     <arc id="A69" inscription="1" nameOffsetX="0" nameOffsetY="0" source="queue_B_done" target="repair_transfer" type="normal" weight="1">
       <hlinscription>
@@ -7075,7 +7075,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="1540" yCoord="691"/>
-      <arcpath arcPointType="false" id="1" xCoord="1093" yCoord="500"/>
+      <arcpath arcPointType="false" id="1" xCoord="1095" yCoord="495"/>
     </arc>
     <arc id="A70" inscription="1" nameOffsetX="0" nameOffsetY="0" source="next_tick" target="shipping_ready" type="normal" weight="1">
       <hlinscription>
@@ -7094,7 +7094,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="780" yCoord="509"/>
-      <arcpath arcPointType="false" id="1" xCoord="710" yCoord="676"/>
+      <arcpath arcPointType="false" id="1" xCoord="705" yCoord="675"/>
     </arc>
     <arc id="A71" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="shipping_done" target="begin_transfer" type="timed" weight="1">
       <hlinscription>
@@ -7113,7 +7113,7 @@
         </structure>
       </hlinscription>
       <arcpath arcPointType="false" id="0" xCoord="617" yCoord="457"/>
-      <arcpath arcPointType="false" id="1" xCoord="560" yCoord="490"/>
+      <arcpath arcPointType="false" id="1" xCoord="555" yCoord="495"/>
     </arc>
   </net>
   <feature isColored="false" isGame="false" isStochastic="false" isTimed="false"/>
