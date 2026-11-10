@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<trace>
+  <transition id="combine__skip_idle_no_A">
+    <token age="0" place="Shared__combine_ready"/>
+    <token age="0" place="combine__combine_idle"/>
+  </transition>
+  <transition id="combine__skip_shipping">
+    <token age="0" place="Shared__shipping_ready"/>
+  </transition>
+  <transition id="machines__skip_idle_m1">
+    <token age="0" place="Shared__m1_ready"/>
+    <token age="0" place="machines__m1_idle"/>
+  </transition>
+  <transition id="machines__skip_idle_m2">
+    <token age="0" place="Shared__m2_ready"/>
+    <token age="0" place="machines__m2_idle"/>
+  </transition>
+  <transition id="oven__input_a">
+    <token age="0" place="Shared__input_active"/>
+  </transition>
+  <transition id="oven__input_a">
+    <token age="0" place="Shared__input_active"/>
+  </transition>
+  <transition id="oven__close_input">
+    <token age="0" place="Shared__input_active"/>
+  </transition>
+  <transition id="oven__skip_idle">
+    <token age="0" place="Shared__oven_ready"/>
+    <token age="0" place="oven__oven_idle"/>
+  </transition>
+  <transition id="clock__begin_transfer">
+    <token age="0" place="Shared__oven_done"/>
+    <token age="0" place="Shared__m1_done"/>
+    <token age="0" place="Shared__m2_done"/>
+    <token age="0" place="Shared__combine_done"/>
+    <token age="0" place="Shared__input_done"/>
+    <token age="0" place="Shared__shipping_done"/>
+  </transition>
+  <transition id="clock__skip_buffer_1">
+    <token age="0" place="clock__transfer_1"/>
+  </transition>
+  <transition id="clock__skip_buffer_2">
+    <token age="0" place="clock__transfer_2"/>
+  </transition>
+  <transition id="clock__skip_buffer_3">
+    <token age="0" place="clock__transfer_3"/>
+  </transition>
+  <transition id="clock__skip_buffer_4">
+    <token age="0" place="clock__transfer_4"/>
+  </transition>
+  <transition id="clock__skip_buffer_5">
+    <token age="0" place="clock__transfer_5"/>
+  </transition>
+  <transition id="clock__move_queue_A">
+    <token age="0" place="clock__queue_transfer_A"/>
+    <token age="0" place="Shared__queue_A_pending"/>
+  </transition>
+  <transition id="clock__move_queue_A">
+    <token age="0" place="clock__queue_transfer_A"/>
+    <token age="0" place="Shared__queue_A_pending"/>
+  </transition>
+  <transition id="clock__queue_A_done">
+    <token age="0" place="clock__queue_transfer_A"/>
+  </transition>
+  <transition id="clock__queue_B_done">
+    <token age="0" place="clock__queue_transfer_B"/>
+  </transition>
+  <transition id="clock__workers_done">
+    <token age="0" place="clock__repair_transfer"/>
+  </transition>
+  <transition id="clock__next_tick">
+    <token age="0" place="clock__transfer_done"/>
+  </transition>
+  <transition id="combine__skip_idle_no_A">
+    <token age="0" place="Shared__combine_ready"/>
+    <token age="0" place="combine__combine_idle"/>
+  </transition>
+  <transition id="combine__skip_shipping">
+    <token age="0" place="Shared__shipping_ready"/>
+  </transition>
+  <transition id="machines__skip_idle_m1">
+    <token age="0" place="Shared__m1_ready"/>
+    <token age="0" place="machines__m1_idle"/>
+  </transition>
+  <transition id="machines__skip_idle_m2">
+    <token age="0" place="Shared__m2_ready"/>
+    <token age="0" place="machines__m2_idle"/>
+  </transition>
+  <transition id="oven__close_input">
+    <token age="0" place="Shared__input_active"/>
+  </transition>
+  <transition id="oven__start_A_priority">
+    <token age="0" place="Shared__queue_A"/>
+    <token age="0" place="oven__oven_idle"/>
+    <token age="0" place="Shared__oven_ready"/>
+    <token age="0" place="oven__priority_A"/>
+  </transition>
+  <transition id="clock__begin_transfer">
+    <token age="0" place="Shared__oven_done"/>
+    <token age="0" place="Shared__m1_done"/>
+    <token age="0" place="Shared__m2_done"/>
+    <token age="0" place="Shared__combine_done"/>
+    <token age="0" place="Shared__input_done"/>
+    <token age="0" place="Shared__shipping_done"/>
+  </transition>
+  <transition id="clock__skip_buffer_1">
+    <token age="0" place="clock__transfer_1"/>
+  </transition>
+  <transition id="clock__skip_buffer_2">
+    <token age="0" place="clock__transfer_2"/>
+  </transition>
+  <transition id="clock__skip_buffer_3">
+    <token age="0" place="clock__transfer_3"/>
+  </transition>
+  <transition id="clock__skip_buffer_4">
+    <token age="0" place="clock__transfer_4"/>
+  </transition>
+  <transition id="clock__skip_buffer_5">
+    <token age="0" place="clock__transfer_5"/>
+  </transition>
+  <transition id="clock__queue_A_done">
+    <token age="0" place="clock__queue_transfer_A"/>
+  </transition>
+  <transition id="clock__queue_B_done">
+    <token age="0" place="clock__queue_transfer_B"/>
+  </transition>
+  <transition id="clock__workers_done">
+    <token age="0" place="clock__repair_transfer"/>
+  </transition>
+  <transition id="clock__next_tick">
+    <token age="0" place="clock__transfer_done"/>
+  </transition>
+  <transition id="combine__skip_idle_no_A">
+    <token age="0" place="Shared__combine_ready"/>
+    <token age="0" place="combine__combine_idle"/>
+  </transition>
+  <transition id="combine__skip_shipping">
+    <token age="0" place="Shared__shipping_ready"/>
+  </transition>
+  <transition id="machines__skip_idle_m1">
+    <token age="0" place="Shared__m1_ready"/>
+    <token age="0" place="machines__m1_idle"/>
+  </transition>
+  <transition id="machines__skip_idle_m2">
+    <token age="0" place="Shared__m2_ready"/>
+    <token age="0" place="machines__m2_idle"/>
+  </transition>
+  <transition id="oven__close_input">
+    <token age="0" place="Shared__input_active"/>
+  </transition>
+  <transition id="oven__finish_A">
+    <token age="0" place="oven__oven_busy_A"/>
+    <token age="0" place="Shared__oven_ready"/>
+  </transition>
+  <transition id="clock__begin_transfer">
+    <token age="0" place="Shared__oven_done"/>
+    <token age="0" place="Shared__m1_done"/>
+    <token age="0" place="Shared__m2_done"/>
+    <token age="0" place="Shared__combine_done"/>
+    <token age="0" place="Shared__input_done"/>
+    <token age="0" place="Shared__shipping_done"/>
+  </transition>
+  <transition id="clock__move_buffer_1">
+    <token age="0" place="clock__transfer_1"/>
+    <token age="0" place="Shared__buffer_1_pending"/>
+  </transition>
+  <transition id="clock__skip_buffer_2">
+    <token age="0" place="clock__transfer_2"/>
+  </transition>
+  <transition id="clock__skip_buffer_3">
+    <token age="0" place="clock__transfer_3"/>
+  </transition>
+  <transition id="clock__skip_buffer_4">
+    <token age="0" place="clock__transfer_4"/>
+  </transition>
+  <transition id="clock__skip_buffer_5">
+    <token age="0" place="clock__transfer_5"/>
+  </transition>
+  <transition id="clock__queue_A_done">
+    <token age="0" place="clock__queue_transfer_A"/>
+  </transition>
+  <transition id="clock__queue_B_done">
+    <token age="0" place="clock__queue_transfer_B"/>
+  </transition>
+  <transition id="clock__workers_done">
+    <token age="0" place="clock__repair_transfer"/>
+  </transition>
+  <transition id="clock__next_tick">
+    <token age="0" place="clock__transfer_done"/>
+  </transition>
+  <transition id="combine__skip_idle_no_A">
+    <token age="0" place="Shared__combine_ready"/>
+    <token age="0" place="combine__combine_idle"/>
+  </transition>
+  <transition id="combine__skip_shipping">
+    <token age="0" place="Shared__shipping_ready"/>
+  </transition>
+  <transition id="machines__skip_idle_m2">
+    <token age="0" place="Shared__m2_ready"/>
+    <token age="0" place="machines__m2_idle"/>
+  </transition>
+  <transition id="machines__start_m1">
+    <token age="0" place="Shared__buffer_1"/>
+    <token age="0" place="machines__m1_idle"/>
+    <token age="0" place="Shared__m1_ready"/>
+  </transition>
+  <transition id="oven__close_input">
+    <token age="0" place="Shared__input_active"/>
+  </transition>
+  <transition id="oven__start_A_fallback">
+    <token age="0" place="Shared__queue_A"/>
+    <token age="0" place="oven__oven_idle"/>
+    <token age="0" place="Shared__oven_ready"/>
+    <token age="0" place="oven__priority_B"/>
+  </transition>
+  <transition id="clock__begin_transfer">
+    <token age="0" place="Shared__oven_done"/>
+    <token age="0" place="Shared__m1_done"/>
+    <token age="0" place="Shared__m2_done"/>
+    <token age="0" place="Shared__combine_done"/>
+    <token age="0" place="Shared__input_done"/>
+    <token age="0" place="Shared__shipping_done"/>
+  </transition>
+  <transition id="clock__skip_buffer_1">
+    <token age="0" place="clock__transfer_1"/>
+  </transition>
+  <transition id="clock__skip_buffer_2">
+    <token age="0" place="clock__transfer_2"/>
+  </transition>
+  <transition id="clock__skip_buffer_3">
+    <token age="0" place="clock__transfer_3"/>
+  </transition>
+  <transition id="clock__skip_buffer_4">
+    <token age="0" place="clock__transfer_4"/>
+  </transition>
+  <transition id="clock__skip_buffer_5">
+    <token age="0" place="clock__transfer_5"/>
+  </transition>
+  <transition id="clock__queue_A_done">
+    <token age="0" place="clock__queue_transfer_A"/>
+  </transition>
+  <transition id="clock__queue_B_done">
+    <token age="0" place="clock__queue_transfer_B"/>
+  </transition>
+  <transition id="clock__workers_done">
+    <token age="0" place="clock__repair_transfer"/>
+  </transition>
+  <transition id="clock__next_tick">
+    <token age="0" place="clock__transfer_done"/>
+  </transition>
+  <transition id="combine__skip_idle_no_A">
+    <token age="0" place="Shared__combine_ready"/>
+    <token age="0" place="combine__combine_idle"/>
+  </transition>
+  <transition id="combine__skip_shipping">
+    <token age="0" place="Shared__shipping_ready"/>
+  </transition>
+  <transition id="machines__finish_m1">
+    <token age="0" place="machines__m1_busy"/>
+    <token age="0" place="Shared__m1_ready"/>
+  </transition>
+  <transition id="machines__skip_idle_m2">
+    <token age="0" place="Shared__m2_ready"/>
+    <token age="0" place="machines__m2_idle"/>
+  </transition>
+  <transition id="oven__close_input">
+    <token age="0" place="Shared__input_active"/>
+  </transition>
+  <transition id="oven__finish_A">
+    <token age="0" place="oven__oven_busy_A"/>
+    <token age="0" place="Shared__oven_ready"/>
+  </transition>
+  <transition id="clock__begin_transfer">
+    <token age="0" place="Shared__oven_done"/>
+    <token age="0" place="Shared__m1_done"/>
+    <token age="0" place="Shared__m2_done"/>
+    <token age="0" place="Shared__combine_done"/>
+    <token age="0" place="Shared__input_done"/>
+    <token age="0" place="Shared__shipping_done"/>
+  </transition>
+  <transition id="clock__move_buffer_1">
+    <token age="0" place="clock__transfer_1"/>
+    <token age="0" place="Shared__buffer_1_pending"/>
+  </transition>
+  <transition id="clock__skip_buffer_2">
+    <token age="0" place="clock__transfer_2"/>
+  </transition>
+  <transition id="clock__move_buffer_3">
+    <token age="0" place="Shared__buffer_3_pending"/>
+    <token age="0" place="clock__transfer_3"/>
+  </transition>
+  <transition id="clock__skip_buffer_4">
+    <token age="0" place="clock__transfer_4"/>
+  </transition>
+  <transition id="clock__skip_buffer_5">
+    <token age="0" place="clock__transfer_5"/>
+  </transition>
+  <transition id="clock__queue_A_done">
+    <token age="0" place="clock__queue_transfer_A"/>
+  </transition>
+  <transition id="clock__queue_B_done">
+    <token age="0" place="clock__queue_transfer_B"/>
+  </transition>
+  <transition id="clock__workers_done">
+    <token age="0" place="clock__repair_transfer"/>
+  </transition>
+  <transition id="clock__next_tick">
+    <token age="0" place="clock__transfer_done"/>
+  </transition>
+  <transition id="combine__skip_idle_no_B">
+    <token age="0" place="Shared__combine_ready"/>
+    <token age="0" place="combine__combine_idle"/>
+  </transition>
+  <transition id="combine__skip_shipping">
+    <token age="0" place="Shared__shipping_ready"/>
+  </transition>
+  <transition id="machines__skip_idle_m2">
+    <token age="0" place="Shared__m2_ready"/>
+    <token age="0" place="machines__m2_idle"/>
+  </transition>
+  <transition id="machines__start_m1">
+    <token age="0" place="Shared__buffer_1"/>
+    <token age="0" place="machines__m1_idle"/>
+    <token age="0" place="Shared__m1_ready"/>
+  </transition>
+  <transition id="oven__close_input">
+    <token age="0" place="Shared__input_active"/>
+  </transition>
+  <transition id="oven__skip_idle">
+    <token age="0" place="Shared__oven_ready"/>
+    <token age="0" place="oven__oven_idle"/>
+  </transition>
+  <transition id="clock__begin_transfer">
+    <token age="0" place="Shared__oven_done"/>
+    <token age="0" place="Shared__m1_done"/>
+    <token age="0" place="Shared__m2_done"/>
+    <token age="0" place="Shared__combine_done"/>
+    <token age="0" place="Shared__input_done"/>
+    <token age="0" place="Shared__shipping_done"/>
+  </transition>
+  <transition id="clock__skip_buffer_1">
+    <token age="0" place="clock__transfer_1"/>
+  </transition>
+  <transition id="clock__skip_buffer_2">
+    <token age="0" place="clock__transfer_2"/>
+  </transition>
+  <transition id="clock__skip_buffer_3">
+    <token age="0" place="clock__transfer_3"/>
+  </transition>
+  <transition id="clock__skip_buffer_4">
+    <token age="0" place="clock__transfer_4"/>
+  </transition>
+  <transition id="clock__skip_buffer_5">
+    <token age="0" place="clock__transfer_5"/>
+  </transition>
+  <transition id="clock__queue_A_done">
+    <token age="0" place="clock__queue_transfer_A"/>
+  </transition>
+  <transition id="clock__queue_B_done">
+    <token age="0" place="clock__queue_transfer_B"/>
+  </transition>
+  <transition id="clock__workers_done">
+    <token age="0" place="clock__repair_transfer"/>
+  </transition>
+  <transition id="clock__next_tick">
+    <token age="0" place="clock__transfer_done"/>
+  </transition>
+  <transition id="combine__skip_idle_no_B">
+    <token age="0" place="Shared__combine_ready"/>
+    <token age="0" place="combine__combine_idle"/>
+  </transition>
+  <transition id="combine__skip_shipping">
+    <token age="0" place="Shared__shipping_ready"/>
+  </transition>
+  <transition id="machines__skip_busy_m1">
+    <token age="0" place="machines__m1_busy"/>
+    <token age="0" place="Shared__m1_ready"/>
+  </transition>
+  <transition id="machines__skip_idle_m2">
+    <token age="0" place="Shared__m2_ready"/>
+    <token age="0" place="machines__m2_idle"/>
+  </transition>
+  <transition id="oven__close_input">
+    <token age="0" place="Shared__input_active"/>
+  </transition>
+  <transition id="oven__skip_idle">
+    <token age="0" place="Shared__oven_ready"/>
+    <token age="0" place="oven__oven_idle"/>
+  </transition>
+  <transition id="clock__begin_transfer">
+    <token age="0" place="Shared__oven_done"/>
+    <token age="0" place="Shared__m1_done"/>
+    <token age="0" place="Shared__m2_done"/>
+    <token age="0" place="Shared__combine_done"/>
+    <token age="0" place="Shared__input_done"/>
+    <token age="0" place="Shared__shipping_done"/>
+  </transition>
+  <transition id="clock__skip_buffer_1">
+    <token age="0" place="clock__transfer_1"/>
+  </transition>
+  <transition id="clock__skip_buffer_2">
+    <token age="0" place="clock__transfer_2"/>
+  </transition>
+  <transition id="clock__skip_buffer_3">
+    <token age="0" place="clock__transfer_3"/>
+  </transition>
+  <transition id="clock__skip_buffer_4">
+    <token age="0" place="clock__transfer_4"/>
+  </transition>
+  <transition id="clock__skip_buffer_5">
+    <token age="0" place="clock__transfer_5"/>
+  </transition>
+  <transition id="clock__queue_A_done">
+    <token age="0" place="clock__queue_transfer_A"/>
+  </transition>
+  <transition id="clock__queue_B_done">
+    <token age="0" place="clock__queue_transfer_B"/>
+  </transition>
+  <transition id="clock__workers_done">
+    <token age="0" place="clock__repair_transfer"/>
+  </transition>
+  <transition id="clock__next_tick">
+    <token age="0" place="clock__transfer_done"/>
+  </transition>
+  <transition id="combine__skip_idle_no_B">
+    <token age="0" place="Shared__combine_ready"/>
+    <token age="0" place="combine__combine_idle"/>
+  </transition>
+  <transition id="combine__skip_shipping">
+    <token age="0" place="Shared__shipping_ready"/>
+  </transition>
+  <transition id="machines__skip_busy_m1">
+    <token age="0" place="machines__m1_busy"/>
+    <token age="0" place="Shared__m1_ready"/>
+  </transition>
+  <transition id="machines__skip_idle_m2">
+    <token age="0" place="Shared__m2_ready"/>
+    <token age="0" place="machines__m2_idle"/>
+  </transition>
+  <transition id="oven__close_input">
+    <token age="0" place="Shared__input_active"/>
+  </transition>
+  <transition id="oven__skip_idle">
+    <token age="0" place="Shared__oven_ready"/>
+    <token age="0" place="oven__oven_idle"/>
+  </transition>
+  <transition id="clock__begin_transfer">
+    <token age="0" place="Shared__oven_done"/>
+    <token age="0" place="Shared__m1_done"/>
+    <token age="0" place="Shared__m2_done"/>
+    <token age="0" place="Shared__combine_done"/>
+    <token age="0" place="Shared__input_done"/>
+    <token age="0" place="Shared__shipping_done"/>
+  </transition>
+  <transition id="clock__skip_buffer_1">
+    <token age="0" place="clock__transfer_1"/>
+  </transition>
+  <transition id="clock__skip_buffer_2">
+    <token age="0" place="clock__transfer_2"/>
+  </transition>
+  <transition id="clock__skip_buffer_3">
+    <token age="0" place="clock__transfer_3"/>
+  </transition>
+  <transition id="clock__skip_buffer_4">
+    <token age="0" place="clock__transfer_4"/>
+  </transition>
+  <transition id="clock__skip_buffer_5">
+    <token age="0" place="clock__transfer_5"/>
+  </transition>
+  <transition id="clock__queue_A_done">
+    <token age="0" place="clock__queue_transfer_A"/>
+  </transition>
+  <transition id="clock__queue_B_done">
+    <token age="0" place="clock__queue_transfer_B"/>
+  </transition>
+  <transition id="clock__workers_done">
+    <token age="0" place="clock__repair_transfer"/>
+  </transition>
+  <transition id="clock__next_tick">
+    <token age="0" place="clock__transfer_done"/>
+  </transition>
+</trace>
