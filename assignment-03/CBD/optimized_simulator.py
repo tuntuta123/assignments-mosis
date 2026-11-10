@@ -169,6 +169,8 @@ class Simulator:
         self._constant_blocks = None
         self._constant_cache = {}
         self._matrix_cache = {}
+        #key 0 -> iteration 0, key 1 -> iteration >= 1
+        self._schedule_cache = {}
 
     def setDeltaT(self, delta_t):
         if delta_t <= 0:
@@ -248,10 +250,7 @@ class Simulator:
         if self._constant_blocks is None:
             self._constant_blocks = self._find_constant_blocks()
 
-        self._dep_graph = self._build_dependency_graph(curIteration)
-
-        components = strongly_connected_components(self._dep_graph)
-        ordered = topological_sort(self._dep_graph, components)
+        self._dep_graph, ordered = self._get_schedule(curIteration)
 
         for component in ordered:
             if not is_algebraic_loop(component, self._dep_graph):
@@ -283,6 +282,19 @@ class Simulator:
                 raise ValueError(f"Non-linear algebraic loop detected: {names}")
 
         self._update_cbd_ports(self.model, time)
+
+    def _get_schedule(self, curIteration):
+        #only DelayBlocks change their dependencies between iteration 0 and 1
+        #build the graph + SCCs + topological sort at most twice, then reuse
+        key = min(curIteration, 1)
+
+        if key not in self._schedule_cache:
+            graph = self._build_dependency_graph(key)
+            components = strongly_connected_components(graph)
+            ordered = topological_sort(graph, components)
+            self._schedule_cache[key] = (graph, ordered)
+
+        return self._schedule_cache[key]
 
     def _update_cbd_ports(self, cbd, time):
         """Copy each nested output onto the CBD port that exposes it.

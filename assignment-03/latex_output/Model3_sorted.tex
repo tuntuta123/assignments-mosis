@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\begin{document}
+\newlength{\lhswidth}
+\settowidth{\lhswidth}{$\begin{array}{@{}r@{}}\mathrm{Model3.c5.OUT1}(i) \\ \mathrm{Model3.c2.OUT1}(i) \\ \mathrm{Model3.prod1.OUT1}(i) \\ \mathrm{Model3.inv1.OUT1}(i) \\ \mathrm{Model3.neg1.OUT1}(i) \\ \mathrm{Model3.sum1.OUT1}(i)\end{array}$}
+\[
+\resizebox{\textwidth}{!}{$\begin{array}{@{}l@{}l@{}}
+ & \begin{array}{rcl}
+\makebox[\lhswidth][r]{$\mathrm{Model3.c5.OUT1}(i)$} & = & 5 \\
+\makebox[\lhswidth][r]{$\mathrm{Model3.c2.OUT1}(i)$} & = & 2
+\end{array} \\
+\left\{\vphantom{\begin{array}{rcl}
+\makebox[\lhswidth][r]{$\mathrm{Model3.prod1.OUT1}(i)$} & = & \mathrm{Model3.sum1.OUT1}(i) \cdot \mathrm{Model3.c2.OUT1}(i) \\
+\makebox[\lhswidth][r]{$\mathrm{Model3.inv1.OUT1}(i)$} & = & \frac{1}{\mathrm{Model3.prod1.OUT1}(i)} \\
+\makebox[\lhswidth][r]{$\mathrm{Model3.neg1.OUT1}(i)$} & = & -\mathrm{Model3.inv1.OUT1}(i) \\
+\makebox[\lhswidth][r]{$\mathrm{Model3.sum1.OUT1}(i)$} & = & \mathrm{Model3.c5.OUT1}(i) + \mathrm{Model3.neg1.OUT1}(i)
+\end{array}}\right. & \begin{array}{rcl}
+\makebox[\lhswidth][r]{$\mathrm{Model3.prod1.OUT1}(i)$} & = & \mathrm{Model3.sum1.OUT1}(i) \cdot \mathrm{Model3.c2.OUT1}(i) \\
+\makebox[\lhswidth][r]{$\mathrm{Model3.inv1.OUT1}(i)$} & = & \frac{1}{\mathrm{Model3.prod1.OUT1}(i)} \\
+\makebox[\lhswidth][r]{$\mathrm{Model3.neg1.OUT1}(i)$} & = & -\mathrm{Model3.inv1.OUT1}(i) \\
+\makebox[\lhswidth][r]{$\mathrm{Model3.sum1.OUT1}(i)$} & = & \mathrm{Model3.c5.OUT1}(i) + \mathrm{Model3.neg1.OUT1}(i)
+\end{array}
+\end{array}$}
+\]
+\end{document}
